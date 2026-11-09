@@ -132,26 +132,7 @@ jobs:
             --manifest "$OUT/system-manifest.json"
           mkdir -p "$OUT/unpacked"
           (cd "$OUT/unpacked" && unzip -q ../system.zip)
-          node -e '
-            const fs = require("node:fs");
-            const want = new Set(JSON.parse(fs.readFileSync("build/artifact-files.json", "utf8")).files.map((e) => e.path));
-            const have = new Set();
-            const walk = (dir, rel = "") => {
-              for (const name of fs.readdirSync(dir)) {
-                const p = `${dir}/${name}`;
-                const r = rel ? `${rel}/${name}` : name;
-                if (fs.statSync(p).isDirectory()) walk(p, r); else have.add(r);
-              }
-            };
-            walk(process.argv[1]);
-            const missing = [...want].filter((p) => !have.has(p));
-            const extra = [...have].filter((p) => !want.has(p));
-            if (missing.length || extra.length) {
-              console.error(JSON.stringify({ missing: missing.slice(0, 10), extra: extra.slice(0, 10) }));
-              process.exit(1);
-            }
-            console.log(`解包后 ${have.size} 文件，与清单文件集完全一致`);
-          ' "$OUT/unpacked"
+          node tools/owner-ci/check-unpacked.mjs "$OUT/unpacked"
           sha256sum "$OUT/system.zip" "$OUT/system-manifest.json" "$OUT/system-receipt.json" >> "$GITHUB_STEP_SUMMARY"
 
       - name: publish GitHub Release (tag-addressed coordinate)
