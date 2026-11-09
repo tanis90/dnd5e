@@ -554,8 +554,8 @@
     },
     {
       "type": "setup",
-      "url": "systems/dnd5e/ui/official/dnd5e-repo.jpg",
-      "thumbnail": "systems/dnd5e/ui/official/dnd5e-thumbnail.jpg"
+      "url": "assets/system/background.svg",
+      "thumbnail": "assets/system/thumbnail.svg"
     }
   ],
   "socket": true,
@@ -564,7 +564,7 @@
     "units": "ft"
   },
   "primaryTokenAttribute": "attributes.hp",
-  "background": "systems/dnd5e/ui/official/dnd5e-background.webp",
+  "background": "assets/system/background.svg",
   "flags": {
     "compendiumArtMappings": {
       "dnd5e": {
