@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="498" height="200" viewBox="0 0 498 200">
+  <!-- banner-item — 物品卡头部横幅（ArcaneDesk 自绘 2026-10-11，替换 ui/official/banner-item-dark.webp）。
+       构图：右上刻面宝石（旋转 45° 方形 + 十字棱 + 内核），左侧散置小三角与斜束光；
+       CSS ::before 以 opacity .5 + 底部渐隐 mask 显示，可见区约上 3/4。 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.6">
+      <stop offset="0" stop-color="#131722"/>
+      <stop offset="0.55" stop-color="#1a2030"/>
+      <stop offset="1" stop-color="#0f1118"/>
+    </linearGradient>
+    <radialGradient id="glow-violet" cx="0.24" cy="0.3" r="0.6">
+      <stop offset="0" stop-color="#8b7cff" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#8b7cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-amber" cx="0.76" cy="0.45" r="0.42">
+      <stop offset="0" stop-color="#e8b84b" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#e8b84b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1016" stop-opacity="0.45"/>
+      <stop offset="0.5" stop-color="#0e1016" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0e1016" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="498" height="200" fill="url(#bg)"/>
+  <rect width="498" height="200" fill="url(#glow-violet)"/>
+  <rect width="498" height="200" fill="url(#glow-amber)"/>
+  <path d="M0 0H70L230 200H140Z" fill="#f0eee5" opacity="0.04"/>
+  <path d="M0 40H30L160 200H110Z" fill="#f0eee5" opacity="0.03"/>
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <polygon points="370,26 430,86 370,146 310,86" stroke="#e8b84b" stroke-width="3" opacity="0.8"/>
+    <path d="M310 86H430M370 26V146" stroke="#e8b84b" stroke-width="2" opacity="0.4"/>
+    <polygon points="370,56 400,86 370,116 340,86" stroke="#f0eee5" stroke-width="2" opacity="0.45"/>
+    <path d="M448 52L462 38M452 66L466 62" stroke="#f0eee5" stroke-width="2" opacity="0.5"/>
+    <polygon points="90,70 120,118 60,118" stroke="#f0eee5" stroke-width="2" opacity="0.3"/>
+    <polygon points="170,40 192,76 148,76" stroke="#e8b84b" stroke-width="2" opacity="0.35"/>
+    <polygon points="140,130 158,158 122,158" stroke="#f0eee5" stroke-width="2" opacity="0.22"/>
+  </g>
+  <rect width="498" height="200" fill="url(#seat)"/>
+</svg>

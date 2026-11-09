@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1391" height="510" viewBox="0 0 1391 510">
+  <!-- banner-character-background — dark 主题角色卡体上衬纹理（ArcaneDesk 自绘 2026-10-11，
+       替换 ui/official/banner-character-dark.webp）。展示形态（dnd5e.css .window-content::before）：
+       300px 条带 top center/cover、opacity .5、底部渐隐 mask——可见重心在上半。构图比表头横幅
+       安静：右置放大版 chevron/六边印母题（与 banner-character 徽记同 x 域，上下呼应），左侧
+       超大尺度幽灵 chevron 稀疏应和，光晕减半，下半整幅留空交给 mask。 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.3">
+      <stop offset="0" stop-color="#14161d"/>
+      <stop offset="0.55" stop-color="#1b1f2c"/>
+      <stop offset="1" stop-color="#101219"/>
+    </linearGradient>
+    <radialGradient id="glow-violet" cx="0.72" cy="0.25" r="0.5">
+      <stop offset="0" stop-color="#8b7cff" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#8b7cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-amber" cx="0.73" cy="0.3" r="0.28">
+      <stop offset="0" stop-color="#e8b84b" stop-opacity="0.07"/>
+      <stop offset="1" stop-color="#e8b84b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1016" stop-opacity="0.35"/>
+      <stop offset="0.45" stop-color="#0e1016" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0e1016" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="1391" height="510" fill="url(#bg)"/>
+  <rect width="1391" height="510" fill="url(#glow-violet)"/>
+  <rect width="1391" height="510" fill="url(#glow-amber)"/>
+  <path d="M0 0H390L1110 510H630Z" fill="#f0eee5" opacity="0.035"/>
+  <path d="M480 0H660L1360 510H1130Z" fill="#f0eee5" opacity="0.025"/>
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M862 250L1010 130L1158 250" stroke="#e8b84b" stroke-width="6" opacity="0.28"/>
+    <path d="M862 290L1010 170L1158 290" stroke="#e8b84b" stroke-width="6" opacity="0.16"/>
+    <path d="M862 330L1010 210L1158 330" stroke="#e8b84b" stroke-width="6" opacity="0.09"/>
+    <polygon points="1010,60 1030.8,72 1030.8,96 1010,108 989.2,96 989.2,72" stroke="#e8b84b" stroke-width="4" opacity="0.22"/>
+    <polygon points="1010,74 1018,84 1010,94 1002,84" stroke="#f0eee5" stroke-width="2.5" opacity="0.15"/>
+    <path d="M120 420L420 190L720 420" stroke="#f0eee5" stroke-width="3" opacity="0.055"/>
+    <path d="M240 470L470 300L700 470" stroke="#f0eee5" stroke-width="3" opacity="0.04"/>
+    <polygon points="250,90 276,105 276,135 250,150 224,135 224,105" stroke="#f0eee5" stroke-width="2.5" opacity="0.06"/>
+    <path d="M540 96H592M660 380L704 344" stroke="#f0eee5" stroke-width="2" opacity="0.08"/>
+  </g>
+  <rect width="1391" height="510" fill="url(#seat)"/>
+</svg>

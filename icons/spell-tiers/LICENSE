@@ -1,1 +1,16 @@
-The icons included in this directory are Derivative Works based on original icons by Rexard and used under license. These icons are packaged with and provided for use in the dnd5e game system for Foundry Virtual Tabletop and may not be redistributed or used for any other purpose except as permitted by a separate license agreement with the original copyright holder.
+==============================================
+法术位阶徽章（2026-10-19 替换记录）
+==============================================
+
+本目录随包提供的 9 枚法术位阶图标（spell1.webp … spell9.webp）现为 **ArcaneDesk 自绘**
+素材（位阶数字 + 多边形线稿；SVG 源与栅格化产物同源，见 asset-pack/spell-tiers/），
+为自有版权、非第三方内容。
+
+此前随包提供的同名图标为 Rexard 原图的衍生作品（"Derivative Works based on original
+icons by Rexard"），仅在「在 Foundry Virtual Tabletop 内运行 dnd5e 系统」范围内被许可，
+且须另行取得原权利人授权方可再分发。这批原件自 2026-10-19 起已从本分发面整体替换，
+不再随本包分发。
+
+替换件署名与设计说明：asset-pack/DESIGN-NOTES.md（第三刀 3.1/3.2）；
+分发面声明见 THIRD_PARTY_NOTICES.txt 第三节（ArcaneDesk 自绘素材）。
+完整替换记录登记在 asset-pack/PROVENANCE.md。

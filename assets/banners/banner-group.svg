@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="744" height="323" viewBox="0 0 744 323">
+  <!-- banner-group — 队伍卡头部横幅（ArcaneDesk 自绘 2026-10-11，替换 ui/official/banner-group-dark.jpg）。
+       构图：下三分之一五枚交叠圆环（一行冒险者）压在基线上，中环镶钻；CSS bottom/cover
+       裁掉上部，故主体全部坐低下带；上方三束短促上升刻线作「出发」余韵。 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141722"/>
+      <stop offset="0.55" stop-color="#1a1e2c"/>
+      <stop offset="1" stop-color="#10131b"/>
+    </linearGradient>
+    <radialGradient id="glow-violet" cx="0.5" cy="0.74" r="0.55">
+      <stop offset="0" stop-color="#8b7cff" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#8b7cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-amber" cx="0.34" cy="0.8" r="0.32">
+      <stop offset="0" stop-color="#e8b84b" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#e8b84b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1016" stop-opacity="0.5"/>
+      <stop offset="0.5" stop-color="#0e1016" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0e1016" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+  <rect width="744" height="323" fill="url(#bg)"/>
+  <rect width="744" height="323" fill="url(#glow-violet)"/>
+  <rect width="744" height="323" fill="url(#glow-amber)"/>
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="186" cy="252" r="44" stroke="#e8b84b" stroke-width="3.5" opacity="0.65"/>
+    <circle cx="262" cy="252" r="44" stroke="#e8b84b" stroke-width="3.5" opacity="0.5"/>
+    <circle cx="338" cy="252" r="44" stroke="#e8b84b" stroke-width="3.5" opacity="0.65"/>
+    <circle cx="414" cy="252" r="44" stroke="#e8b84b" stroke-width="3.5" opacity="0.5"/>
+    <circle cx="490" cy="252" r="44" stroke="#e8b84b" stroke-width="3.5" opacity="0.65"/>
+    <polygon points="338,238 348,252 338,266 328,252" stroke="#f0eee5" stroke-width="2.5" opacity="0.6"/>
+    <path d="M60 312H684" stroke="#e8b84b" stroke-width="2" opacity="0.3"/>
+    <path d="M180 180L196 164M300 160L316 146M440 170L456 154" stroke="#f0eee5" stroke-width="3" opacity="0.3"/>
+  </g>
+  <rect width="744" height="323" fill="url(#seat)"/>
+</svg>

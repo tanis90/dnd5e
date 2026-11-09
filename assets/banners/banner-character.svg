@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="170" viewBox="0 0 800 170">
+  <!-- banner-character — 角色卡头部横幅（ArcaneDesk 自绘 2026-10-11，替换 ui/official/banner-character.jpg）。
+       构图：左 2/3 留白给角色名（CSS center/cover 裁掉上下缘，可见带约 y40..130），
+       右 1/3 三层 chevron + 六边印 + 顶钻的徽记；细束光斜扫，暗角压顶底托白字。 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0" stop-color="#14161d"/>
+      <stop offset="0.55" stop-color="#1c2030"/>
+      <stop offset="1" stop-color="#101219"/>
+    </linearGradient>
+    <radialGradient id="glow-violet" cx="0.75" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#8b7cff" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#8b7cff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-amber" cx="0.8" cy="0.5" r="0.32">
+      <stop offset="0" stop-color="#e8b84b" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#e8b84b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1016" stop-opacity="0.5"/>
+      <stop offset="0.45" stop-color="#0e1016" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0e1016" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="170" fill="url(#bg)"/>
+  <rect width="800" height="170" fill="url(#glow-violet)"/>
+  <rect width="800" height="170" fill="url(#glow-amber)"/>
+  <path d="M0 0H130L370 170H210Z" fill="#f0eee5" opacity="0.04"/>
+  <path d="M160 0H224L464 170H388Z" fill="#f0eee5" opacity="0.03"/>
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M556 136L640 62L724 136" stroke="#e8b84b" stroke-width="4" opacity="0.9"/>
+    <path d="M556 162L640 88L724 162" stroke="#e8b84b" stroke-width="4" opacity="0.5"/>
+    <path d="M556 188L640 114L724 188" stroke="#e8b84b" stroke-width="4" opacity="0.28"/>
+    <polygon points="640,28 653.9,36 653.9,52 640,60 626.1,52 626.1,36" stroke="#e8b84b" stroke-width="3" opacity="0.8"/>
+    <polygon points="640,38 645,44 640,50 635,44" stroke="#f0eee5" stroke-width="2" opacity="0.7"/>
+    <path d="M96 44L148 44M204 118L262 118" stroke="#f0eee5" stroke-width="2" opacity="0.1"/>
+  </g>
+  <rect width="800" height="170" fill="url(#seat)"/>
+</svg>

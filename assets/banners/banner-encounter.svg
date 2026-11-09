@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="572" height="376" viewBox="0 0 572 376">
+  <!-- banner-encounter — 遭遇卡头部横幅（ArcaneDesk 自绘 2026-10-11，替换 ui/official/banner-encounter-dark.avif）。
+       构图：CSS top/cover 只露上带（约 y0..143），主体交叉双锋 + 交点火花 + 汇聚 chevron
+       全部压在上带；底色掺暗红停靠点示冲突，opacity .1 下仍成剪影。 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.9" y2="1">
+      <stop offset="0" stop-color="#1a1216"/>
+      <stop offset="0.55" stop-color="#141824"/>
+      <stop offset="1" stop-color="#0e1016"/>
+    </linearGradient>
+    <radialGradient id="glow-red" cx="0.5" cy="0.32" r="0.62">
+      <stop offset="0" stop-color="#b03a3a" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#b03a3a" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-amber" cx="0.5" cy="0.24" r="0.36">
+      <stop offset="0" stop-color="#e8b84b" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#e8b84b" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1016" stop-opacity="0.35"/>
+      <stop offset="0.5" stop-color="#0e1016" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0e1016" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="572" height="376" fill="url(#bg)"/>
+  <rect width="572" height="376" fill="url(#glow-red)"/>
+  <rect width="572" height="376" fill="url(#glow-amber)"/>
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M80 170L480 20" stroke="#e8b84b" stroke-width="4" opacity="0.55"/>
+    <path d="M492 170L92 20" stroke="#f0eee5" stroke-width="4" opacity="0.35"/>
+    <path d="M286 60L300 90M286 120L272 90M256 90L286 76M316 90L286 104" stroke="#e8b84b" stroke-width="3" opacity="0.7"/>
+    <path d="M206 132L286 92L366 132" stroke="#e8b84b" stroke-width="4" opacity="0.45"/>
+    <path d="M226 152L286 118L346 152" stroke="#e8b84b" stroke-width="4" opacity="0.3"/>
+    <path d="M40 118H532" stroke="#f0eee5" stroke-width="2" opacity="0.06"/>
+  </g>
+  <rect width="572" height="376" fill="url(#seat)"/>
+</svg>

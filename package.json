@@ -4,6 +4,7 @@
     "build:clean": "node ./utils/packs.mjs package clean",
     "build:code": "rollup dnd5e.mjs -f es -o dnd5e-compiled.mjs -p node-resolve -m --sourcemapFile dnd5e.mjs",
     "build:css": "lessc less/dnd5e.less dnd5e.css --source-map",
+    "build:templates": "node tools/owner-ci/build.mjs templates --out templates.json",
     "build:db": "node ./utils/packs.mjs package pack",
     "build:json": "node ./utils/packs.mjs package unpack",
     "build:source": "node ./utils/packs.mjs package unpack",

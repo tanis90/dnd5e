@@ -109,44 +109,38 @@ The dnd5e system for Foundry Virtual Tabletop includes icon artwork licensed fro
 /svg/statuses/transformed.svg - "Flat paw print icon" by Lorc under CC BY 3.0
 
 ==============================================
-Icons from mikiko.art
+Icons from mikiko.art（2026-10-11 替换记录）
 ==============================================
 
-The dnd5e system for Foundry Virtual Tabletop includes icon artwork licensed from mikiko.art under CC BY-NC-SA 4.0. These icons are packaged with and provided for use in the dnd5e system under the terms of their license, which can be found here: https://creativecommons.org/licenses/by-nc-sa/4.0/
+原此处列出的 mikiko.art 图标（CC BY-NC-SA 4.0，禁商用）已从本分发面整体替换，共 33 个文件
+（27 项状态 + /svg/damage/poison.svg + 5 项货币）。原 mikiko.art 图自此不再随本包分发。
 
-/currency/copper.webp
-/currency/electrum.webp
-/currency/gold.webp
-/currency/platinum.webp
-/currency/silver.webp
-/svg/damage/poison.svg
-/svg/statuses/bleeding.svg
-/svg/statuses/blinded.svg
-/svg/statuses/charmed.svg
-/svg/statuses/concentrating.svg
-/svg/statuses/dead.svg
-/svg/statuses/deafened.svg
-/svg/statuses/exhaustion.svg
-/svg/statuses/exhaustion-1.svg
-/svg/statuses/exhaustion-2.svg
-/svg/statuses/exhaustion-3.svg
-/svg/statuses/exhaustion-4.svg
-/svg/statuses/exhaustion-5.svg
-/svg/statuses/exhaustion-6.svg
-/svg/statuses/frightened.svg
-/svg/statuses/grappled.svg
-/svg/statuses/incapacitated.svg
-/svg/statuses/invisible.svg
-/svg/statuses/marked.svg
-/svg/statuses/paralyzed.svg
-/svg/statuses/petrified.svg
-/svg/statuses/poisoned.svg
-/svg/statuses/prone.svg
-/svg/statuses/restrained.svg
-/svg/statuses/silenced.svg
-/svg/statuses/stunned.svg
-/svg/statuses/surprised.svg
-/svg/statuses/unconscious.svg
+替换后的素材与署名：
+· 27 项状态 与 /svg/damage/poison.svg —— Game-Icons.net 图标（CC BY 3.0）；逐枚「图标名 by 作者」
+  见分发面 THIRD_PARTY_NOTICES.txt 第六节。其中 deafened（追加红斜杠）与 exhaustion-1..6
+  （分级圆点）为基于 Human-ear / Tired-eye 的衍生图。
+· /currency/{copper,silver,electrum,gold,platinum}.webp —— ArcaneDesk 自绘（16×16）。
+
+==============================================
+Wizards of the Coast 受限图标（2026-10-19 替换记录）
+==============================================
+
+原 /svg/schools/ 下的 8 枚法术学派图标（随包 schools/LICENSE：©2023 Wizards of the Coast，
+仅限在 Foundry Virtual Tabletop 内运行 dnd5e 系统使用）已从本分发面整体替换；原件与
+其许可文本自此不再随本包分发。
+
+替换后的素材与署名（Game-Icons.net，CC BY 3.0，https://game-icons.net，逐枚
+「图标名 by 作者」）：
+/svg/schools/abjuration.svg - "Magic Shield" by Lorc under CC BY 3.0
+/svg/schools/conjuration.svg - "Portal" by Lorc under CC BY 3.0
+/svg/schools/divination.svg - "Crystal Ball" by Lorc under CC BY 3.0
+/svg/schools/enchantment.svg - "Chained Heart" by Lorc under CC BY 3.0
+/svg/schools/evocation.svg - "Explosion Rays" by Lorc under CC BY 3.0
+/svg/schools/illusion.svg - "Domino Mask" by Lorc under CC BY 3.0
+/svg/schools/necromancy.svg - "Raise Skeleton" by Skoll under CC BY 3.0
+/svg/schools/transmutation.svg - "Molecule" by Lorc under CC BY 3.0
+（取用与重包方式同其他 Game-Icons 替换件：仅保留路径数据、统一 512×512 与
+`var(--icon-fill)` 上色壳；逐枚出处 URL 见 asset-pack/icons/ATTRIBUTION.md。）
 
 ==============================================
 SVG Icons from Noun Project
