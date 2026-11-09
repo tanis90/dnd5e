@@ -1,0 +1,5137 @@
+{
+  "schema": "dnd5e-owner-ci-payload/1",
+  "system": {
+    "id": "dnd5e",
+    "version": "5.3.3"
+  },
+  "recipe": "paths sorted (code-unit order); sha256 over \"<path>\\n<size>\\n<sha256>\\n\"",
+  "reference": {
+    "note": "出件 zip 的成员白名单与逐文件字节口径。生成基准 = 现行部署面 mt-foundry-compat@384eeaa5 的 web/packages/dnd5e（1022 文件），即 OSS artifact eb6a6a0b5 的逐字节同源面。",
+    "repo": "BaccanoEva/mt-foundry-compat",
+    "commit": "384eeaa5248b5dbf66710f34e171f8cd190d3355",
+    "path": "web/packages/dnd5e",
+    "artifactHash": "cd745d66e5d7a5b907b9cc6dafd0b426e234d17fcc91ad73ed872768dd154de3",
+    "generatedAt": "2026-11-10"
+  },
+  "generated": {
+    "dnd5e.mjs": "rollup（package.json build:code，源树 dnd5e.mjs → 编译包）",
+    "dnd5e.css": "lessc（build:css，less/dnd5e.less --source-map）",
+    "templates.json": "templates/**/*.hbs → {相对路径: 模板文本}（tools/owner-ci/build.mjs）",
+    "system.json": "源树 system.json + 发行期变换（hotReload=false / Free Rules 书目 / 中性 system 图）"
+  },
+  "fileCount": 1022,
+  "bytes": 48447889,
+  "setHash": "fd9c3248d9a36a233ab7e3959dc7b4ca2ac78e0420c955cf374d6935aa5fe672",
+  "files": [
+    {
+      "path": "COMPLIANCE.md",
+      "size": 10123,
+      "sha256": "abd8099c4cdce17c9c87a97257090d68cb1af87543da092c6a738e93efb68989"
+    },
+    {
+      "path": "LICENSE.txt",
+      "size": 1054,
+      "sha256": "bd846b9ef9f17198de6278678eb2e848734141182dc193e9c7bcff3985fe2b26"
+    },
+    {
+      "path": "assets/banners/banner-character-background.svg",
+      "size": 2959,
+      "sha256": "f7ca21d8389a1380c7ea38a00de1d5f8949f53085396675807b762983198509c"
+    },
+    {
+      "path": "assets/banners/banner-character.svg",
+      "size": 2407,
+      "sha256": "3ce184563a7459785980679c3a6c36232d4cde251c7232c332d7901d80ea595a"
+    },
+    {
+      "path": "assets/banners/banner-encounter.svg",
+      "size": 2219,
+      "sha256": "eeabdfe7141112aa3201c7fd5874f85ef250d0c028878f101e69ae2386ca2136"
+    },
+    {
+      "path": "assets/banners/banner-group.svg",
+      "size": 2438,
+      "sha256": "187fb7a38fe140a7e6d8e9b58e6f74ccbc0c93614c088700ab2a6009b42c7af0"
+    },
+    {
+      "path": "assets/banners/banner-item.svg",
+      "size": 2473,
+      "sha256": "68e2035bcd6ba832eab5145d798e9c9538225e132e5c54a053a03233ef7489a3"
+    },
+    {
+      "path": "assets/banners/banner-npc.svg",
+      "size": 2305,
+      "sha256": "13675d1567302de73283706fcfbeb5ea08b2b8e9b2b9b2dcfb4aec0c17191d02"
+    },
+    {
+      "path": "assets/banners/banner-vehicle.svg",
+      "size": 2863,
+      "sha256": "9ac65f04ff25a3879727e6328ee978d3213efe42368bb66b264aba407743794d"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP033_Vikings/VikingAxeman.webp",
+      "size": 26026,
+      "sha256": "f44d05912691002f32a302b58d0baa5393a3e4f0cfeaf1e8f09c353f14daf652"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP033_Vikings/VikingBerserk.webp",
+      "size": 26650,
+      "sha256": "023b8fb2692a54dd3814dc70545f7715de246f5aa05e345f9500ec67c2beaa8c"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP033_Vikings/VikingFighter.webp",
+      "size": 30632,
+      "sha256": "5de9eb79ce222a7d607c83179b399f045383e173f27612e9a3f1245d45c224d6"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Elf_Female_Druidstaff_geen.webp",
+      "size": 41426,
+      "sha256": "afaae50a19e3c02c81c7ff83bc827f9e4d9abbdaf80473c949bcb0ebcb9a1446"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Elf_Male_Archerbow_elf_archer.webp",
+      "size": 58272,
+      "sha256": "d41012667cf44bb2a43f6b867307cb7163272e45588887c2760fac486f6798ba"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Elf_Male_Mageelf_magicuser_wand.webp",
+      "size": 43142,
+      "sha256": "34abc3373bff633e2bd330f0da8ec75ec6832fc38fcd65d883bf85fb43665984"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Halfling_Male_Barddagger_lute_bard.webp",
+      "size": 38546,
+      "sha256": "43d3c840dd3976c8f26e4aa641028031eb9780ad98f3387e9084a5a6feae4502"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Halfling_Rogue_Bluedaggers.webp",
+      "size": 34326,
+      "sha256": "a41fb7f3202fffd317881707850f194cb749f07f068c26bb6fe30c735de5812f"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Human_Female_Fightershield_longsword.webp",
+      "size": 51482,
+      "sha256": "acf61435d9cdf0d624345c1c33a2ec44a8b1205df26d0e1adadc96129efd6a6e"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Human_Male_Cleric2mace_shield_helm.webp",
+      "size": 41270,
+      "sha256": "b73058ae1a930f2cf93d8b34f53ebcc45e58618c0cbf9bed46764e3e335bb2ad"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Human_Male_Clericstaff_healing_priest.webp",
+      "size": 48850,
+      "sha256": "484c520cad929fca2a7812c9eb0955e48d31408efe5cf52ea4e9deb0f09fc551"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Human_Male_Druid_Skinsskins_hide_crossbow.webp",
+      "size": 40634,
+      "sha256": "d016a58e45c8011d44838b494a64cf1705882020828f15a430f1ad55de79b767"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Human_Male_Monkunarmed_flute_martial.webp",
+      "size": 45750,
+      "sha256": "ad038c6d3287a16e2d16143ff32bf09fc1b30e78b0341e88e56f02e7114ee70d"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP045_HC1/Human_Male_Paladinhammer_book_bald.webp",
+      "size": 40238,
+      "sha256": "53533fa764621da206fe96e652e1c61551e40e9649305c5d98c60628d6738eb1"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP046_HC2/DemonKin_Male_Mage_demon_spell_caster_book.webp",
+      "size": 45338,
+      "sha256": "079db8a5d917285e52280422baf1006c210b99c4c7a715121233e525143725ed"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP046_HC2/Dwarf_Male_Duergar_Captain_hammer_bald_bearded.webp",
+      "size": 27934,
+      "sha256": "b395fe4cf80587243503a293211b1cace2a3b5fef5fb7595b4ba4bea4389bf05"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP046_HC2/Gnome_Male_Mage_spell_wand.webp",
+      "size": 30886,
+      "sha256": "7eac019ed41dc16b9823d6152a2246ddeeb94e743afb579d5b2ab5283499fb75"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP046_HC2/Human_Male_DarkAcolyte_robed_hooded_dark.webp",
+      "size": 20302,
+      "sha256": "08c52160feaea172ffe52bf448f62c2e6d8e306441afd71ca7a664f5059ac69c"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP046_HC2/Human_Male_Demonologist_staff_red.webp",
+      "size": 29948,
+      "sha256": "5c1a31a2a9934445725b01f98542a2259802ebb7020b8a3863efd37e22b53808"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP046_HC2/Human_Male_Warlock_rod_dark.webp",
+      "size": 31182,
+      "sha256": "079aa7353b991422b960cc9be6adece7d902656b9982afcc1a8d391d4fa15a82"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP047_HC3/DemonKin_Male_Fighter_demon_horns_longsword_shortsword.webp",
+      "size": 36954,
+      "sha256": "0d894a6350cd18d730960e493c474c2b0dbade1642bf4abfcb091ddd70165ace"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP047_HC3/Dwarf_Male_Priest_spell_holy_shield.webp",
+      "size": 42424,
+      "sha256": "ad8403d20af3b01aa118ea7a2a930caedb8b894bc048e381e155b5576b5c0e9d"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP047_HC3/Halfelf_Male_Bard_longsword_lute.webp",
+      "size": 41604,
+      "sha256": "9b4733206b373a69ec30cb2b70ce404add07a12b9b2b59af3f52e067cbf1c682"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP047_HC3/Human_Female_Fighter3_sword_shield.webp",
+      "size": 34782,
+      "sha256": "be01fca2e3aebbbbd8ffe90793e0c0386d15c5069323912699a59483d6dd177b"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP047_HC3/Human_Female_Sorceress_staff.webp",
+      "size": 37668,
+      "sha256": "2f26b744d76b83fbf5df8b9bb16759940b6bf00cb04be17e273fb295d117f723"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP047_HC3/Human_Male_Knight_helmed_soldier_shield.webp",
+      "size": 29280,
+      "sha256": "1a6df4daefb73a92b9c9c99ab5e90c92192b7ae0a0ea8244d6a318702c2e4d6b"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP047_HC3/Human_Male_Rogue_crossbow_dagger.webp",
+      "size": 28854,
+      "sha256": "cc6533f1de973d1a63b49be46cccdb359f29ab25a7a15e00808c8afd76157dbe"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP048_HC4/Elf_Female_Wizard_cloth_02.webp",
+      "size": 44100,
+      "sha256": "0f15bd7c10d3b731081faaf5f7b408f451eab9d3a8ce4c3a06176a9be7ad3ebc"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP048_HC4/Halfelf_male_Ranger_TwoSwords_02.webp",
+      "size": 32468,
+      "sha256": "977ae7d76461432bb86ce570c0122a749e279767e7995566294a2fd10243385d"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP048_HC4/Human_Male_Assassin1_02.webp",
+      "size": 29814,
+      "sha256": "dbc43fe8b39d1bf8b535b5f4aa8af63e6983a1f15365e13e78e015e90d75c9ba"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP048_HC4/Human_Male_Barbarian_BigHammer_02.webp",
+      "size": 28354,
+      "sha256": "18c52b1f0a985d0ee5df0e45929fe584a830e2a1286065e8f411786c28f4067a"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP048_HC4/Human_Male_mage2_02.webp",
+      "size": 26108,
+      "sha256": "fa29c007471d9c68f1c00a51a842dcfb69689e10ce84c51d8eaff040fba989cb"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP048_HC4/Human_Male_mage_02.webp",
+      "size": 52202,
+      "sha256": "3a4176c0ca534008df09af99c2a1bf678c11d472c692d86169c69a624efdbb0a"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP048_HC4/Human_Male_rogue_MIB_02.webp",
+      "size": 20324,
+      "sha256": "5a9211509b8d42f8406021b92ed15863b23dd3337716067a2c7dc6f151551e1d"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP049_HC5/DragonKin_Gladiator_02.webp",
+      "size": 29918,
+      "sha256": "4e01a864371854d39951c4907baee40d2379c771e6a4f84cdf63df561a403175"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP049_HC5/Human_Female_Druid_02.webp",
+      "size": 33008,
+      "sha256": "d925e0856741a30808f92a6206e99bc149f7b59051f3a5ee1436f250ec99665f"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP049_HC5/Human_Male_Mage_Browncloak_02.webp",
+      "size": 22660,
+      "sha256": "ebe5208c8daa155b29a376c729994550f66f5592e1eccc7c3639f96af35c8617"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP049_HC5/Human_Male_Monk_Sai_02.webp",
+      "size": 33070,
+      "sha256": "d2aa46c14a12aaf43dc5c461cc10a7162ad3c33150346feb4a0722b5e776a048"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP049_HC5/Human_Male_Scribe_02.webp",
+      "size": 31964,
+      "sha256": "d8cd5e13380991a43857b15704af3216f0676984c6c16ad98dcb663df2f46f85"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP050_Troll_Lizard_Rockmen-Characters/half_dragon_02.webp",
+      "size": 35752,
+      "sha256": "8c1d2cc7c4549c67434e19523dff9b730a8530c912e8cd4cdc752174c3b71901"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP050_Troll_Lizard_Rockmen-Characters/rockman-Scout_02.webp",
+      "size": 21070,
+      "sha256": "d859c850af3e6e51896502344d9a0f9e31b63acde5e3665eb27f80ab1c63990b"
+    },
+    {
+      "path": "assets/tokens/dn/character/TP050_Troll_Lizard_Rockmen-Characters/rockman_priest_02.webp",
+      "size": 35986,
+      "sha256": "ebb77f74aef6b445b36506a62e15e00b7912fdf5b4e8dfa0afb80c57e49b79fe"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP021_Brigands/DN_0001_Brigand.webp",
+      "size": 18214,
+      "sha256": "0e1d8e41ccaa6d8b7def1e59b7b66be6797d512c6a32f10ac39f6fdfeccc4a6a"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP021_Brigands/DN_0010_Brigand.webp",
+      "size": 21984,
+      "sha256": "a8cb9cf0fdb6ef3631fbd8b7e8639db62570e276af891c31252561812dc2a5bb"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP021_Brigands/DN_0016_Brigand.webp",
+      "size": 21028,
+      "sha256": "f24258cf40ecab5d20fac20308b4584bca08acfa4f62f83e2a306bd3132aa3f5"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP022_Amazons/DN_0005_amazonspear.webp",
+      "size": 16780,
+      "sha256": "07bca2bfe4bef77f846876f132b35d17a09f2a78c28f855c087912bfcc81d7b4"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP023_GoblinsOrcs/DN_0011_hobgoblin.webp",
+      "size": 27224,
+      "sha256": "1ddaaac521e3ef4ecd14b39ad414bde116c75640c753cfbadedd550d6168edbd"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP024_Frozen North/NorthmanBarbarian2_axe.webp",
+      "size": 32666,
+      "sha256": "fe1723958fa60d1043011723ced4b8a28ea6937d5b1b242caacdb2295c988aee"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP024_Frozen North/NorthmanPaladin_sword.webp",
+      "size": 25318,
+      "sha256": "1ef7d26bef1a89f4e502a46cf8835cde01d17cd9471dc80224ab79dc911e9f8b"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP024_Frozen North/PolarBear.webp",
+      "size": 24478,
+      "sha256": "e425485af26c8b443178242c524771979528e4348a796a006f688a85b5a1ae82"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP024_Frozen North/WinterMage.webp",
+      "size": 30312,
+      "sha256": "89010c249c14140666eb253a775472c3616586d253f28d193740700e24bae671"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP024_Frozen North/ice_Spider.webp",
+      "size": 38730,
+      "sha256": "31a819b7933acd6e84ba9cf90b5c20a7577c1429553c8344c6b76598d13383b9"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP026_Undead_1/DN_0000_skeleton.webp",
+      "size": 46582,
+      "sha256": "cc2184e5ceebf2f71831f17efcecaf48d136f9b36d7dce82bf599ab83e961497"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP026_Undead_1/DN_0002_skeleton2.webp",
+      "size": 66168,
+      "sha256": "dfc053972a684ca94cc6105f5c0d30da80b7f1348a4db35db9c19d183f8131b2"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP026_Undead_1/DN_0004_skeleton3.webp",
+      "size": 26414,
+      "sha256": "e40b59242e19084cb128082d9a378fe8473565604dc2784f891fd630cf4ac9bf"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP026_Undead_1/DN_0012_mummy1.webp",
+      "size": 22326,
+      "sha256": "24908db9ac631556ebc178bc8bcff68f3f0ee10796de78f819e7f289e463e505"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP026_Undead_1/DN_0014_wraith.webp",
+      "size": 39704,
+      "sha256": "086b8dfd58c66c612ac04f8a98236ed259730e7a91ab5e9fdbfe91abb62014da"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP026_Undead_1/DN_0017_wight.webp",
+      "size": 38132,
+      "sha256": "b46b738d3234765e477547ab06afbf93d9f8f7481c46b45d5117f2ef0648ec2a"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP028_Giants/EttinHi_05.webp",
+      "size": 28462,
+      "sha256": "17e9f99f3f566017431809d6e0258a8489a3a92883b8ba7cd9b5544658ad089a"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP029_Townsfolk_2/townsfolk_merchant_02.webp",
+      "size": 26732,
+      "sha256": "bd2602adb691c2c17aab45fb779fcab347b2c7ccae700320afbf195df2eef826"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP029_Townsfolk_2/townsfolk_peasant_02.webp",
+      "size": 23204,
+      "sha256": "56dba86074510afeb4c18486aaed23dff8426b3cb836d7b8afe1240f2325dfcc"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP053_MoreMonsters/Elephant_02.webp",
+      "size": 16924,
+      "sha256": "545ba7023dfa2f67162ef2796b027de369e881a94724c20f1fe734999e7eb855"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP053_MoreMonsters/Panther_02.webp",
+      "size": 12500,
+      "sha256": "2e235f0c292b26e4f774fe872e14174c95637d78dc460fcb90a7bd692596db2c"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP053_MoreMonsters/Shadow_Demon2_02.webp",
+      "size": 76780,
+      "sha256": "88a1df2a228170e331bdf6c1ac734958c05a3f479519c19e5608a7fce3472f38"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP053_MoreMonsters/Shark_2_02.webp",
+      "size": 19158,
+      "sha256": "9e1a205c55d67ffeb514a56f85126c3b816ec2280b9b326bb47257fa0617a08b"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP053_MoreMonsters/Unicorn_02.webp",
+      "size": 25318,
+      "sha256": "f1d762c29502d11a3163d43b2926b51485e458aee8feb55b4d46d30435084b8e"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP053_MoreMonsters/VampireBat2_02.webp",
+      "size": 43940,
+      "sha256": "27368e0f01426126d31d49ab4633811299b941b6515cac7ac8e360394ff00504"
+    },
+    {
+      "path": "assets/tokens/dn/fantasy/TP053_MoreMonsters/lizard2_02.webp",
+      "size": 25962,
+      "sha256": "b395989f3e25ee6c630b09820140328eab00b690c0a139444d3883fc38fd8a20"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/ape.webp",
+      "size": 22902,
+      "sha256": "3432b2434fb3ca3f107f8a9a83963f6083a2e4952b37cf8e02494d11270a61f4"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/baboon.webp",
+      "size": 22694,
+      "sha256": "7f105dd2b6ef7c51693510fc638643c64ef58d4d8dfed21a2ad6c892863dcd29"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/badger.webp",
+      "size": 27420,
+      "sha256": "9a7f5543bf0f2d9a1d8c9364219575d4de9b2e12b6a8dd1406e5ede4c012c745"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/badger_honey.webp",
+      "size": 20838,
+      "sha256": "1795888c6f8b4ae8e79d3e917c0c81820d1c471f291375f1cb9163f13a368d1f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/bat.webp",
+      "size": 15250,
+      "sha256": "1cb51e1b141722b3389bced7a7c3c435617967ffce1e5c4a4c76de993f2b6653"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/bear_black.webp",
+      "size": 20000,
+      "sha256": "51928281861da789e4a83184666ec0e23583ef2b6d257578a7427e084f130ae5"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/bear_brown.webp",
+      "size": 22026,
+      "sha256": "4b1f61da61fcc318d0fcea8d31c3fe2087c18f3a4aac4b6969f2c9cce8f1255c"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/boar.webp",
+      "size": 16610,
+      "sha256": "302e2786d08cfa6ce3a03298c0f417c4585a55bb122cef775acc94167a52cd71"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/camel.webp",
+      "size": 18804,
+      "sha256": "4dfd2beb9f93cd44bf35cf24e83b1cf3d0dc960a539cb29bbffab4c1cffd2df6"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/cat.webp",
+      "size": 17938,
+      "sha256": "e947455f0ab1321cf1101e0ee7d22268c6227f25ce3a1632c82e64ed65e9cc29"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/cow.webp",
+      "size": 16744,
+      "sha256": "6d3bd2c67b166534ae7911cd32bb36ee8a300f0f2216bcd2759169aa4079508c"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/crocodile.webp",
+      "size": 16020,
+      "sha256": "094a74d030089d815445ec0915c308d7cd77751a02938c9b01fabeac86084037"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/crocodile_large.webp",
+      "size": 23692,
+      "sha256": "57f25892bcc0c99ed9db00f317172b66b76d4ea876275b53513297a99972c5bb"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/dogmedium.webp",
+      "size": 15028,
+      "sha256": "9522dc5a3897c79c1989389a0f12d38d1d473d9bde7153af1d9bc5fb60de8474"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/eagle.webp",
+      "size": 17998,
+      "sha256": "a04988658b2b216a4a17a37644c3900426cb8a3c0093cdc80acb7e89b87b7104"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/goat.webp",
+      "size": 17454,
+      "sha256": "a49272a9bbda489f3f7e26c53a0a078bfd45bfcaef88cb0b2301b216896993e7"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/hawk.webp",
+      "size": 22684,
+      "sha256": "263a5da973770540032401221f45261c0e03810ecb75904e35a79517f69a3f36"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/horse.webp",
+      "size": 16132,
+      "sha256": "8cbe3ee90c2115761dcd97982c3974eb1920bc03164875e3563a0811a3165c7c"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/horse_riding.webp",
+      "size": 17704,
+      "sha256": "5a4240da308148218057470732923d7d2ff585d70fb1307ff2369a3d830a90e8"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/hyena.webp",
+      "size": 19802,
+      "sha256": "8f4e913fd61eb2fbf221c98cbcc5ce7ee726fcb3a9bc655c8964981cdd86b9a6"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/lion.webp",
+      "size": 21758,
+      "sha256": "d61666ef0e3e0c14f094f274c5a7f8caa61e6be0025ded4ff001daa8adfb71b6"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/lizard.webp",
+      "size": 27006,
+      "sha256": "9b3b978131f294754f0691edd938ba6db1ee8f5b8c4e11ffeeb5562f670fbad3"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/mule.webp",
+      "size": 15558,
+      "sha256": "acf9babbd4752487935a07b3ff71a6c2ef449b41c7877e825bcae4bf8b65388f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/octopus.webp",
+      "size": 52586,
+      "sha256": "1ad909e90e91f6f170ac1e0fc6dde1ce05eadf067cae568ad51cab7991f0f3af"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/owl.webp",
+      "size": 30082,
+      "sha256": "bf9e6010dd82c85ddf5bdaf0bae4338bca38ef639a80d501df8b412ffc251348"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/owl_brown.webp",
+      "size": 21278,
+      "sha256": "effb97a1770180432840ecfcfcccbb1e5fcf4d53b764e1833faeb6b09d4911ba"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/pig.webp",
+      "size": 13742,
+      "sha256": "8fc6a9d5b7f89b6535006117130ba96201e2967faea4e87932d7b109e086ec32"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/rat.webp",
+      "size": 27704,
+      "sha256": "24fc0e536f20220fee62395d89aefdce284ab67401f97daee003b2ecbed28ec9"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/raven.webp",
+      "size": 21478,
+      "sha256": "a4f5215e7639fe2904764f15bbe72e66f3336e99075da08ab08b3076f55eae26"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/rhinoceros.webp",
+      "size": 13284,
+      "sha256": "070e8a7951f8d6cb8da37947a19a3addbd126a4c7495003e1dc3543a17403038"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/shaggymountainpony.webp",
+      "size": 18106,
+      "sha256": "c7d2c67eacb2ea25fad6cfc89a9da876ae502d2d3ada92d6726a4af3cec5e42b"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/shark.webp",
+      "size": 17202,
+      "sha256": "8f771398816cdb1a00c2d58d9f6fb80c0ca5b8d8ed473a4eba6b1bce155865ef"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/snake_Constrictor_Giant.webp",
+      "size": 29588,
+      "sha256": "2967c8c4e128da0c4e374541635f9f2267167ce1dea399b16575215069bf0449"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/snake_constrictor.webp",
+      "size": 26728,
+      "sha256": "bdb963ed95e5dd2c028c5dab94052b680b0c3fe4f4bd116e141aacb3a9136e40"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/tiger.webp",
+      "size": 29386,
+      "sha256": "634843d3e427a669447e0906ccc2f03580221c2615d5d85bba0122692984dc86"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/toad.webp",
+      "size": 29258,
+      "sha256": "032c1c812ee8a76a9d1b7fc999f9aa332848a25cb75f3ddebe5c73f5c64fc9eb"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/weasel.webp",
+      "size": 15532,
+      "sha256": "03e336ca7138f613217b0fc4257ef98743adba9cbd4fcb8678d7b4b91d9d9b47"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/whale.webp",
+      "size": 10920,
+      "sha256": "d7a920e677f1430579f2571d775a90a1cc7605a7d7cf668ee4149fc8026de3c4"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP034_Animals_KS/wolf.webp",
+      "size": 16192,
+      "sha256": "b13a327083841f4685ca87c24a86bca6e86a37cb08ea358faeed9d93dde849f4"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/bonedevil.webp",
+      "size": 42512,
+      "sha256": "5bc319156b6a9eaa96eff93871f38d8376d7cdc5e3f6542b09962c09d97bdab2"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/demon_balor.webp",
+      "size": 63632,
+      "sha256": "0cae1df3bc0d0ce72c1e69506aa03ec543400a8b372ca625e6c406327faf4621"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/demon_dretch1.webp",
+      "size": 22590,
+      "sha256": "c097e4f111f47e0e8f06c942a5123ca724876537ec49c112cd64e3337f56c5cc"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/demon_glabrezu.webp",
+      "size": 38504,
+      "sha256": "36dd57b23feb2a81358e950baaac8d410c5d4680ce587e6e8dff9ef565527c41"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/demon_hezrou.webp",
+      "size": 26204,
+      "sha256": "9cfaecba83e0f467736f40d7963c3d2f20e2fdfef16dc78f983fbeffcbef96ba"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/demon_nalfeshnee.webp",
+      "size": 37618,
+      "sha256": "992e620bb280039fc472f748331e99df18dad8da1664658b54ce1b8dc03ab5fe"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/demon_succubus.webp",
+      "size": 33926,
+      "sha256": "03c092597af63fe9aea3284361da8e60c281a73a1d16c5450726a1260b7fdbdf"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/devil_ Chain_Kyton.webp",
+      "size": 49890,
+      "sha256": "52f6cafb3c7b949071964de2baf4f67fab7aa8be84921487dc6bac8521bf2dca"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/devil_ horned_cornugon.webp",
+      "size": 32694,
+      "sha256": "7012ebb490c09adca855c61696317864ee7427d95219ede0c21fd6e250da7c2a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/devil_ ice_gelugon.webp",
+      "size": 33974,
+      "sha256": "1ace450eb832cb5c0598e386c735d38c1e4510217573d38a2763d2a037981da5"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/devil_barbazu_bearded.webp",
+      "size": 34972,
+      "sha256": "2ce22878e524859b0202712c2971a48e669a60a4e65d1a2d1b9b560897861ed0"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/devil_imp3.webp",
+      "size": 31212,
+      "sha256": "6365d6334b1ec4d948a2fd2a31aff8271a01ff9e92ad0c4929851a8133d8d497"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/devil_lemure.webp",
+      "size": 24842,
+      "sha256": "2d83f815e42a7fe5d581471458603da80ea0d7be8a7350729a45db4e72a5f44e"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP035_DemonsDevils_KS/devil_pit_fiend.webp",
+      "size": 42308,
+      "sha256": "c419454cb4ae1437257fdbc6b8f4f9413313c97f2e90a86ce88e668749e9a492"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/bugbear_archer.webp",
+      "size": 29258,
+      "sha256": "cfaa74b42ba2125d9d6c3a2812735d81a2e4fab10900da9710ff53cbb9c59bdd"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/gnoll_2_sword.webp",
+      "size": 37538,
+      "sha256": "37196b13eba43a7b92baf4bbf360b258343dc63ca9de2c0588b60b73c713b160"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/gnoll_3_axe.webp",
+      "size": 37880,
+      "sha256": "c843fb37e5ebab29545b02a3a6bfadcfd263bb18071c45ed6bd8bf3946d65aeb"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/goblin_archer.webp",
+      "size": 34910,
+      "sha256": "c49e5cb620f3a1191c033617127e2df9b49c2b6cdba68934d735026cbe65b39e"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/kobold_spear.webp",
+      "size": 28284,
+      "sha256": "352c5775ee5780a846d678516b00855d31f1858024cfc77b79b26dcd600803ec"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/kobold_spear2.webp",
+      "size": 23078,
+      "sha256": "ee2aba8d946ce64344b9bd2632bd8bfaafba76d815800afc8b023a343d604a95"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/lizardfolk_axe_shield.webp",
+      "size": 35722,
+      "sha256": "a34d7dc20eb12af1edcee4078d85541cc7891b843eb7ce5eab390d5fcbe44d75"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/ogre.webp",
+      "size": 31618,
+      "sha256": "418af11749fa4800e57a46a3a34f8c0d9a25657f129251bfa8ebabeee89c9dbc"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/ogre_merrow.webp",
+      "size": 37620,
+      "sha256": "7231d04c47666eda02447d4901d6bc9f8667785a2dd18f0616b560ca7371cb78"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/orc_axe.webp",
+      "size": 31674,
+      "sha256": "8d129becf4d23de5087e69030616d950d24ecda56ee2294d9367f098322d5149"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/orc_axe_shield.webp",
+      "size": 26206,
+      "sha256": "498582d56fae92f41a188cd739bc1d61127f7840a9b25e7040e609830e8862c6"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/orc_worg_rider.webp",
+      "size": 28854,
+      "sha256": "46e3c4d9e9cc9deb9678ce93637002b2859d63da4e2592a6855ab7d78b9e7778"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/troglodyte.webp",
+      "size": 39498,
+      "sha256": "93099c965df18a28a10be50e9e3abed39d90a90060d1cd4f40e948e805914b97"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP036_Humanoidmonsters_KS/troll.webp",
+      "size": 30178,
+      "sha256": "c89fda39d064e9db8f3c7de55d7fedf04237140efe9e620dd76248fb6ffac7e1"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/angel_planetar.webp",
+      "size": 42578,
+      "sha256": "e5504eb3bcd04a026be16e9d4b12e52de8ef81a6edbb6bcac62c0b6de14c1f97"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/angel_solar.webp",
+      "size": 45758,
+      "sha256": "3cb31bbae93d9fa686815ed7e82320a80fb0ad8458f0ec76b4b19d2e3fd86f24"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/dark_solar.webp",
+      "size": 28012,
+      "sha256": "cb9e7816c78a753672ff68b5a7819eaa226682b8a742f3f10da5bdfaa34094de"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/dire_ape.webp",
+      "size": 29144,
+      "sha256": "cbe6e08a1dc2fbb29868f5ea4038c023fc5c6da84f2fd1630b6a14889d13fe14"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/dire_boar.webp",
+      "size": 20302,
+      "sha256": "76fd42bd903dbeefbcaf7994ef88a77b523fc941263946f115ab5c03f9977481"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/dire_rat.webp",
+      "size": 26540,
+      "sha256": "982765ae1ee07462f456656f5b5e26f809ec7f6af5c9ae340ff2f307a65a0394"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/dire_weasel.webp",
+      "size": 21926,
+      "sha256": "6d11027ef5a75683dbbbda5fec1eaec8104c7e1220f2833bc01d32de2a57d48d"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/dire_wolf.webp",
+      "size": 22628,
+      "sha256": "4b1addf20702754edc2d6d91b2a5aef5023c2bdcb6794a8efde40a3f82ef8800"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/genie_djinni.webp",
+      "size": 46050,
+      "sha256": "fa86114e9278b1e717e31624f894ba9f3c74531c391fd9cfc62c9dd0f2060c1c"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/genie_efreeti.webp",
+      "size": 34408,
+      "sha256": "062732ceaf852a7c18f98e6b5d842a46088559666eb2520cf322ee3c3759a08f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/pegasus.webp",
+      "size": 34156,
+      "sha256": "dad9201b4acc60344d9706c629f0b95f287051fa1da215b406da38e07ecd5a04"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP037_Summonedhelpers_KS/sprite.webp",
+      "size": 36110,
+      "sha256": "9093e86390a17897bd7be9c8ab44de62db8b2988405bdc609f635c0335fff3e0"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/devourer.webp",
+      "size": 41862,
+      "sha256": "1bb034ca4ae4382b35f045fd37e3a3b56af964b5561fd2b6224ad6e1f96f3fff"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/ghost.webp",
+      "size": 43520,
+      "sha256": "0bf91fab9a40675fd8048286bdcbcf5f24d7677000c1c3cb06a361de4d98e31a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/ghoul_ghast.webp",
+      "size": 34882,
+      "sha256": "1b3b60a8e4459d34bcaeaf397becab0761b9ae1fb3cb9303f658a3b256b30427"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/ghoul_lacedon.webp",
+      "size": 69018,
+      "sha256": "9533f334a8f7c2d0027a9db330c7ed839531c8e2f495a82b51db80727ce01703"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/lich.webp",
+      "size": 26898,
+      "sha256": "f8f4862afab831a4d0420e335df4dc9077d065bbec6ec3400a31f86ada839c78"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/mummy.webp",
+      "size": 28836,
+      "sha256": "447717a50f9b73dec3ecf7bdbfa3c0c7f065a95d1998b4debec43fd93f079d33"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/mummy_lord.webp",
+      "size": 45486,
+      "sha256": "3513854b7414f462df176acc7e031a9e674e643919f9b552ec8a42b5359e30b0"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/nightmare.webp",
+      "size": 43770,
+      "sha256": "5086a1709c52b4b917f2f52d421885306340c1afe570f298c423aac8a0575ad1"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/vampire.webp",
+      "size": 26826,
+      "sha256": "4b6284f3d0a1bcd055100923a4a114dc70818c10e4c744f8db3af0f657e382aa"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/vampire_spawn.webp",
+      "size": 23400,
+      "sha256": "40bfc519c59170d62518b3b8bbb47579e54088cfc945d21dc01d226180eef7d8"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP038_Undead2_KS/zombie.webp",
+      "size": 25056,
+      "sha256": "5c0b52ed0db83661d64479390fec444a571ff246252c06e6c52944a0e4457ba0"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/chimera.webp",
+      "size": 31274,
+      "sha256": "84f3e388e318c0dc641c8922d8b03069841e1b6c20ff35ff17beda67e8d9d146"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/cloaker_flying.webp",
+      "size": 19228,
+      "sha256": "dc73e1c06c59d904afb29a9cb438c37bac689aa24c07f2f2313cd2edb99311c7"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/cockatrice.webp",
+      "size": 31760,
+      "sha256": "39130b1c903206110b23ae775be5dca3b7ebfaa3be1a7999f396603a3ded45a2"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/couatl.webp",
+      "size": 48868,
+      "sha256": "9a267e8e0f860dd9a6a02876131e1320edcc4b6078769754f56c14f308b70408"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_black_dragon.webp",
+      "size": 35264,
+      "sha256": "f98bd75dc4e7dd8c6b696c378d1b256e1abcfc3001967babad174c1f6dcf3fe0"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_blue_dragon.webp",
+      "size": 45266,
+      "sha256": "203d19bdc8bca0832935340f38c36063047039519bffe730fb8424b083ca1804"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_bronze_dragon.webp",
+      "size": 34608,
+      "sha256": "1f524675c090e54fc26f9b78c71a4b7ba8a9b9c42ac4076777e8027209972fbe"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_copper_dragon.webp",
+      "size": 33002,
+      "sha256": "463bbdac651f35925d2fd9d2c5719463f48a888e900813a75c864952ed2b42f8"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_gold_dragon.webp",
+      "size": 50436,
+      "sha256": "aee82e9a2879830e8cfe0503cfdb26e9d1e0b930d5387b76105c38c04242a516"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_green_dragon.webp",
+      "size": 39578,
+      "sha256": "f01139195b0d91c0bf3eef956a4872b786894fb204c8ef9679ce5b6f5f4fed08"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_red_dragon.webp",
+      "size": 38022,
+      "sha256": "b550b3c75c16b6e8a9edab07bd2507bf85c4ca41ca35b211dd2cc8be4f2198b3"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_silver_dragon.webp",
+      "size": 49832,
+      "sha256": "5b15ac686136ea3b54ef4a7aca1014776b5b1ea0c250fa077b7659c3e840e1f1"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/dragon_white_dragon.webp",
+      "size": 43146,
+      "sha256": "d77f885b62d78119dba0247002f2517fdaec8ff1136b7134e7fc7651e4946d62"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/erinyes.webp",
+      "size": 26932,
+      "sha256": "8954978a914993e7226fc4170a5db14dbb16084f4c9ff160b3b63b2fdbb2abd3"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/gargoyle.webp",
+      "size": 41048,
+      "sha256": "bf338d4bbef6be0c297eb273e464f26ad21d823194dbe404f791ce899a2e301a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/griffon.webp",
+      "size": 36766,
+      "sha256": "b50f6d1eb23b23fc1d942b1a78f3cb102a605c0495e4259c9c1f041c27436667"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/harpy.webp",
+      "size": 30972,
+      "sha256": "5f51e95bddf570a8a51c72bc70aa23a762dda102ea27ad22d190b8ed5128ea8a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/mephit_dust.webp",
+      "size": 33730,
+      "sha256": "cf93cfd93942a0e46726d5b1d952ca4b23f9a784254c420312a978baa0c7dd4a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/mephit_fire.webp",
+      "size": 37046,
+      "sha256": "b9ed49ba05ef6547a1eac7e50eb79e2f505304a41af87e2e716394ba45f43a0b"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/mephit_ice.webp",
+      "size": 38994,
+      "sha256": "221251fe5e8b000f373aeefc694149086dd1d7df54f3c6c41fd21267cb878ec0"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/mephit_magma.webp",
+      "size": 24450,
+      "sha256": "c782059b58bf640096a057259ea3a5ac58f344fb9cc90a3780e4b252b9bd1c3a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/mephit_steam.webp",
+      "size": 60986,
+      "sha256": "5ff54b808a8bd443212ae1457cb95f3da4ee66c0c82826e2a69c89c496595964"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/pseudodragon.webp",
+      "size": 43848,
+      "sha256": "ec46291e722275e6dddf307ecd6dc0688afaacd99b5ec2a28855778cd996b2db"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/quasit.webp",
+      "size": 29476,
+      "sha256": "a92d81fd5e1217344770c73124a1c8cbfef0687c3fabd97f734beabe76be9f56"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/stirge.webp",
+      "size": 34954,
+      "sha256": "2b048a103ab3b7f79a0272159cc33f647eb2d30b64d01e5bb5c8ad6160c33e27"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/vrock.webp",
+      "size": 47744,
+      "sha256": "7f0492ae5f9a440c6562f882bfa78774ccf0d54b6d838e297bd2096a9f987145"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP039_WingedFiends_KS/wyvern.webp",
+      "size": 38158,
+      "sha256": "9cfb28ebe97c7d24b1515e3d1f233d5da57c9f3a003bda469237f9b46e264d45"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/aboleth.webp",
+      "size": 37836,
+      "sha256": "1cbb5d9c3cb6fe97c6ef136f716a79e276ace8043cc3e3cda273d8e9ee8c30ef"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/aboleth_mage.webp",
+      "size": 38008,
+      "sha256": "1d8870ad40d49d5a8d2836e9f7e67107b472f6467078fb7077993d434d7463f3"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/assassin_ore.webp",
+      "size": 42920,
+      "sha256": "46b9b1ca14e30d22e0d2a37b229a2aa5858e0eb0a2c4c0c1ae28a3cf40feb6f4"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/darkmantle.webp",
+      "size": 29096,
+      "sha256": "f1ed6aec05e42aab89560a8c0fb16cbb2f52b7536a729cb73b1aac7b3e01ec87"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/dryad.webp",
+      "size": 45190,
+      "sha256": "74002896b63f1cf403648381a8fff5f248cd65f02822f0d1051ced101986210e"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/elemental_earth_elemental.webp",
+      "size": 26196,
+      "sha256": "9da62d0fb20570ed1306a41588c689c9ba942bdf9617d5b3ad672d87571b6735"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/elemental_fire_elemental.webp",
+      "size": 60776,
+      "sha256": "4cf85dea68ba963df5b0b906fe1a0a73d0ac1cf83f6fe8af4827c5d76f27a7d7"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/elemental_water_elemental.webp",
+      "size": 50984,
+      "sha256": "46832423a928fde063072987132154772f94be8c49853341fcea8d4ea43eddc7"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/fungus.webp",
+      "size": 42676,
+      "sha256": "2c18765f812d25126a4b068fba9e63284e88bb192a0dcedd2c8992c10ecfcc7b"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/fungus_shrieker.webp",
+      "size": 38876,
+      "sha256": "db0ce9b6d408a1ad66fd76eb62c9c298f0b6024ff83511aeb1b0d2cfa0f06924"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/fungus_violet_fungus.webp",
+      "size": 44262,
+      "sha256": "23d6c9871a099f8bf809c57244ee3e4eb814ad26aea49398a754ff9c18205c20"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/gibberingmouther.webp",
+      "size": 43768,
+      "sha256": "99b0ee3dd26a0e47c7f2b3abd847503920e1172354c9fac6e1ee7bb374d04718"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/grick.webp",
+      "size": 29024,
+      "sha256": "98cc30ee6477c674e3b0131c01a99730e51e8a1769ea722c441814b3922c0b0e"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/lamia.webp",
+      "size": 27288,
+      "sha256": "d635bcbd75ed425c4d8dcd4aeca62af523508e962e3abb28ac70ca255f34a9fb"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/marilith.webp",
+      "size": 38890,
+      "sha256": "da5f873a9ff2808e305678563e8e74e0510f0876c8c94daf61f27b5531d81d74"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/mimic.webp",
+      "size": 17162,
+      "sha256": "2ad321dd1e91f9dd59b3c53454a26d803984a37c0191366cecf27f04fa67d985"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/mimic_open.webp",
+      "size": 30258,
+      "sha256": "720ea5af87d0f5f1feb28e303bbda3f5a9d1ac5ddf6ecc8704b65a961b0de686"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/naga_guardian.webp",
+      "size": 24122,
+      "sha256": "be1062ade16fb8c982fc1257fc2bfc8a05d675878d802593f64ed3a78938a1d1"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/naga_spirit.webp",
+      "size": 27818,
+      "sha256": "606cc7c0da7f052eb926ff71d3637f712eb8f41f51d840c3cf7fa43c26dec760"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/ooze_black_pudding.webp",
+      "size": 21300,
+      "sha256": "d082cb29332eb786f3265035a10acbd7755e11beaa4e86027882490ed3f1582a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/ooze_gelatinous_cube.webp",
+      "size": 33574,
+      "sha256": "e2fe33e00f43808717352cb15124ade784ecbd87f8bf6639432072b374afaea9"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/ooze_gray_ooze.webp",
+      "size": 53030,
+      "sha256": "1f7b2c94a7485ae6a6f1342458a9fcdf3ee23c4bb0294dae549d4ea39d60aa8e"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/ooze_ochre_jelly.webp",
+      "size": 56604,
+      "sha256": "0b57c8b018655dd4b9273a94f7c25bdc88b36404a3027eb411ef37e97ffcb07d"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/roper.webp",
+      "size": 54592,
+      "sha256": "082b3a3e98973b43a6bd2324b7739e47aed50e8e0ef6108f9377150882ac540f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP040_NoLegedFiends_KS/salamander.webp",
+      "size": 37726,
+      "sha256": "30a2bca23d139cce4fea46da0608d6d98b868a7731afa41322b5190e4e16a434"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/azer_male.webp",
+      "size": 27056,
+      "sha256": "f826dfd8494ce356a9d0f940ba738688d248d5a4def2e5b5486deb1dc924c3b5"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/dino_deinonychus.webp",
+      "size": 32206,
+      "sha256": "96a8102e8e4acd71842159b5f545cce0f4ab6383bc7e514c0e836967a4ec50dd"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/doppelganger.webp",
+      "size": 24370,
+      "sha256": "88f91a10e7ba86ee7b047a265b043d3214c1ddfc70a858c8dff2df228ec2f1b2"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/ettercap.webp",
+      "size": 31030,
+      "sha256": "693df4293b62d5ccb65f47e4adf839a9fd1739fca2eaac4c8f48adae7827f109"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/golem_clay_golem.webp",
+      "size": 25562,
+      "sha256": "e37037409c62e1991e3a7527ed955a042c193d7253e811b63f3ef8498df2783a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/golem_flesh_golem.webp",
+      "size": 21736,
+      "sha256": "147686de35f78ff22b6ece5b30fb844cb0b6eb418ab333e9b047dd85ced5f3c2"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/golem_iron_golem.webp",
+      "size": 32340,
+      "sha256": "aa3ff61cb4e4db5ce0d52192453b3f006118b2e8f4ec7c3906f38cc6f2473436"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/golem_stone_golem.webp",
+      "size": 26348,
+      "sha256": "b6371d97a8c0717e7ca706fede1ea86c783126ae77829d8e9c0bdbb3ec432c79"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/gray_render.webp",
+      "size": 31156,
+      "sha256": "8ae0574c63ea0489a8d246bdf53768321bfac5d8cd6784f9ae892b9057c30ecd"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/grimlock_handaxe.webp",
+      "size": 21826,
+      "sha256": "f57cdaf1a860e82e0f7276ec5225646918d202ecebbb20c5d77bc800a7ace182"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/hag.webp",
+      "size": 31486,
+      "sha256": "ccf2547ce41169c239147a5921e7bd1b962809a0fd0d8bc74cffc70de5444aaa"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/homonculus.webp",
+      "size": 27542,
+      "sha256": "43d47af1b434d8af017c172247da1a2ecd6467324c04a99c16a762e22206c546"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/invisible_stalker.webp",
+      "size": 69352,
+      "sha256": "89a14904e92066156f36faf132a3603137d736413fcaa8897313832f746db0c2"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/lycanthrope_werebear.webp",
+      "size": 28852,
+      "sha256": "05f678372fa36b41b179165f68680b33af340290b1ae12071969dece7a34ba33"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/lycanthrope_wereboar.webp",
+      "size": 26906,
+      "sha256": "e1f80e828ff01cecd42b0ae9cfd552e07b80738998cb93fc00dd2d4634e3360f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/lycanthrope_wererat.webp",
+      "size": 33050,
+      "sha256": "6e56c2215f8efed2781cf307d34350873359f68957eb673f882c4be4eafca18e"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/lycanthrope_weretiger.webp",
+      "size": 44732,
+      "sha256": "81bad8a01fc96f6cd5b7d9cc551b4dd0a78b63a68271b1ae559d70c125b8e8de"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/lycanthrope_werewolf.webp",
+      "size": 30466,
+      "sha256": "84539f18701cd4fad853e3bd4dddb215231885b8b3d1b2e5ed66ec268d86243b"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/magmin.webp",
+      "size": 39640,
+      "sha256": "fc4c81310aaeb3a660617a62c4c240950713125b98b3a948f0df33cc0e165d54"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/medusa.webp",
+      "size": 34624,
+      "sha256": "830d9704eedfa719a4c70fe7bff337c64fd0cac0bb275c696681d4c439396be7"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/minotaur.webp",
+      "size": 25122,
+      "sha256": "09313123032cf6828ef6ac1bae593faa1c96e13b43b6f75c62a2a5b970dd876f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/night_hag.webp",
+      "size": 37950,
+      "sha256": "88c44b309d59d7d4d77be4a04072a428812fd4bc67617136322d1e911855107b"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/owlbear.webp",
+      "size": 29642,
+      "sha256": "e30203343cde98b7f0df59f799d1eb3e7564bf01c85c396ee1fb299860cfb4a2"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/rakshasa.webp",
+      "size": 31764,
+      "sha256": "34c7898f3d5a28a77578be8138fd56b1f6517099edfb1d9013a857270215fb43"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/raven_man.webp",
+      "size": 33934,
+      "sha256": "fa4f3977f66c233bc7f70ea13dc8b1e9fff94ba27f5fae617c76104657e02be8"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/shambling_mound.webp",
+      "size": 39650,
+      "sha256": "5cd600ac7f47ef8c1d47005f70e9c80addd95c3586e5b5e697413d7bdf311a10"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP041_TwoLegedFiends_KS/treant.webp",
+      "size": 56888,
+      "sha256": "b33b64fd1c2c5d139f7a35bc0016469fbe4f273fcdc94c762d7428ffd6541c81"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/barghest.webp",
+      "size": 18708,
+      "sha256": "a9635d797035d8dba51930559364baefc91606db7be4380619ec387c5ef3f69c"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/blinkdog.webp",
+      "size": 25926,
+      "sha256": "99e583fb2032df79124416214606f821dddb95063c21c69c4d706ee769cb6403"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/centaur.webp",
+      "size": 24656,
+      "sha256": "6bf8179d671c719285b5b1625dcbe2638e2019dadafbde9a63b3823464d4e5c7"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/dino_triceratops.webp",
+      "size": 20102,
+      "sha256": "220b54bbdbe5742149eeb544a0cc256dd9006368906c5dd689539cedd6dcdaef"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/drow_lizard_rider.webp",
+      "size": 36032,
+      "sha256": "a01b3f06a8e953cfb1a1ad646b8a2390d1d5753d0016b3bbd82dd61d3594cbfa"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/gorgon.webp",
+      "size": 28040,
+      "sha256": "3e26d834860eb31042bf44028cd196eb1e472f9003b7e3603a565fdfa6974e6b"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/hell_hound.webp",
+      "size": 24612,
+      "sha256": "0f487b32819e2b6aed2dc59ddab8bf284d08cf251eff5417361cdaf2dcc4366c"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/hippogriff.webp",
+      "size": 27314,
+      "sha256": "e7536ea21466b7aa940bb3c5f2cc803b3ff0ad5d73830c2cf2438fa8bb55709f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/hydra.webp",
+      "size": 52056,
+      "sha256": "be01cb0829135e778e2c60ef5be340392d34c75b2329189d9bbaf5bfa9232cf1"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/rust_monster.webp",
+      "size": 53944,
+      "sha256": "0b65f2c5199d4775e26c204d4c6130f9ff1f6d5feeded5c10edba8e010777d09"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP042_FourLegedFiends_KS/tarrasque.webp",
+      "size": 94506,
+      "sha256": "15c2cecbf1dc6e4c5b5ed0775b16a3dad4f484b727bcaa241d653978dcaa79c4"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/ankheg_emerging.webp",
+      "size": 59144,
+      "sha256": "ffbcc8ed7a47596f0c2b358aa77bb68a66afd78e48fc77b47c8e8ed3239b41f4"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/basilisk.webp",
+      "size": 25972,
+      "sha256": "0b54c83e77dfb4c83ed4182b1469f0e382c1027db4253584cbec3cba24df6faf"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/behir.webp",
+      "size": 58836,
+      "sha256": "66d45bcb76d293c7a535b5f821b3e3f40a973245300e6ba12a7da5c771fe7b57"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/bulette.webp",
+      "size": 22278,
+      "sha256": "39eca39c13a22e3ba4240558e976d3a6ef61023a7dec42e1f795b691f157a503"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/drider.webp",
+      "size": 39868,
+      "sha256": "96c886ab00cd8bec715c31f63e00bfc5d73776c74e9db01bfcb678d2eba3de52"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/otyugh.webp",
+      "size": 39958,
+      "sha256": "240274be1164f9a05e972269f215f2a117a579e4e0e72f3d5e2a4245f7f90735"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/phase_spider.webp",
+      "size": 32356,
+      "sha256": "8f00cd96cc0e92d61e30fc13c24fb2be1a79f13ef3341448e193f9859aa09389"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/remorhaz.webp",
+      "size": 50580,
+      "sha256": "0c91856670845aa608a25af3b790226324f4ef138bf7915fa4bc60a907fecf3f"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/swarm_centipede_swarm.webp",
+      "size": 132254,
+      "sha256": "5ed5b4cd9a04f1514288895bd0373094c95afb0ab9f7b25f57c8ab9243a87a18"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/swarm_spider_swarm.webp",
+      "size": 88480,
+      "sha256": "a310a5515db9146836fbc858ac5b5ff8cb1b3c3484303798d96fe1f74e53b013"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/vermin_giant_fire_beetle.webp",
+      "size": 38240,
+      "sha256": "2be03632a568d7eb292055d00a6be32896b3d32d5c9e02967dbf84c1f8103f9a"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/vermin_giant_wasp_flying.webp",
+      "size": 44394,
+      "sha256": "3d123e29526d4a76c4d4a6a9176d6f0a10a13f3da226e12b803dd32fa8096d24"
+    },
+    {
+      "path": "assets/tokens/dn/ks/TP043_ManyLegedFiends_KS/xorn.webp",
+      "size": 31444,
+      "sha256": "04fe703747891444f4e290dc780ea7d8caec45df502efec7c5705c3c2e31412f"
+    },
+    {
+      "path": "assets/tokens/gi/beast/alligator.webp",
+      "size": 5894,
+      "sha256": "dfd165a340adcebadc63e2e26f044432651b8e0ca93728edcb988a4a13691c6c"
+    },
+    {
+      "path": "assets/tokens/gi/beast/almiraj.webp",
+      "size": 4264,
+      "sha256": "697ec0c89f017980971f7b2c4db33926289c69c54712836171af39d1151f409e"
+    },
+    {
+      "path": "assets/tokens/gi/beast/armadillo.webp",
+      "size": 5432,
+      "sha256": "2bd5462b92d48e548f34ed2df26698ab1ab0092fff472733df42afc028f54684"
+    },
+    {
+      "path": "assets/tokens/gi/beast/axebeak.webp",
+      "size": 4150,
+      "sha256": "1164741fcef6f740e695a277b9aa5264df448de97fc79eaced7a1c5fc95ce250"
+    },
+    {
+      "path": "assets/tokens/gi/beast/bats.webp",
+      "size": 7544,
+      "sha256": "ca94dc9de41dbc4c259e3e05d0d02f7f850c126d6d26be74d6ce3d3863d61fc3"
+    },
+    {
+      "path": "assets/tokens/gi/beast/beetles.webp",
+      "size": 7570,
+      "sha256": "21aa3012433435699ffbc437401011adbf00f9a0ec6ca0db304cd4a4770d5d2b"
+    },
+    {
+      "path": "assets/tokens/gi/beast/blackwidow.webp",
+      "size": 6930,
+      "sha256": "035387b8ac9757099fcef8698f8fe411aff56e43f07ee7b871e4c9b6e441dc0b"
+    },
+    {
+      "path": "assets/tokens/gi/beast/bloodhawk.webp",
+      "size": 4842,
+      "sha256": "e2786da7b6b5ed52c03725e4ed7367d803d2fd98b2a6be5619172624dba77c2a"
+    },
+    {
+      "path": "assets/tokens/gi/beast/capybara.webp",
+      "size": 3512,
+      "sha256": "052db621cec47fcbfc481b8fb6d5da5b0f7836abe5e3232b00168329936754d2"
+    },
+    {
+      "path": "assets/tokens/gi/beast/cavebear.webp",
+      "size": 3644,
+      "sha256": "ac58a38ec4e4f7298c96339f651c4dae68f957e564f3cec7800e04227ffdabef"
+    },
+    {
+      "path": "assets/tokens/gi/beast/centipedes.webp",
+      "size": 4558,
+      "sha256": "080b91365b2c4bccf451f27f07b47d35d52a760de1242df5d897c6c732aed316"
+    },
+    {
+      "path": "assets/tokens/gi/beast/corgi.webp",
+      "size": 3512,
+      "sha256": "e2769fd7791042667c6a2b30d38d8f554474f538f68b9a1d8890194ed9e06c07"
+    },
+    {
+      "path": "assets/tokens/gi/beast/crab.webp",
+      "size": 3782,
+      "sha256": "35576dd39448643ef8c74d559d1ab28a729b0fb5a9896eee3763cd166b2c23ca"
+    },
+    {
+      "path": "assets/tokens/gi/beast/deer.webp",
+      "size": 4774,
+      "sha256": "b3523f59f8e69cdac81145752dd301ff229cfee6f3f5e96ba4bfc9405a93bb5b"
+    },
+    {
+      "path": "assets/tokens/gi/beast/dimetrodon.webp",
+      "size": 3902,
+      "sha256": "26ec5053783c65874fea0294d0002234cf040af8118236e63dfc6b222351ba07"
+    },
+    {
+      "path": "assets/tokens/gi/beast/eagle.webp",
+      "size": 3296,
+      "sha256": "91ebb23e6c82dad7147f78a613bd4bb024a30d9561a422fcea32da885319742c"
+    },
+    {
+      "path": "assets/tokens/gi/beast/elk.webp",
+      "size": 4458,
+      "sha256": "4f8247b062b535a859d7c58fccf7574cff8d8bd51c7222845d8330239109c634"
+    },
+    {
+      "path": "assets/tokens/gi/beast/frog.webp",
+      "size": 5154,
+      "sha256": "0b12f9bf6bd3dd9682057904af619dfd522eb5af80df84a966425eabe08450d6"
+    },
+    {
+      "path": "assets/tokens/gi/beast/goat.webp",
+      "size": 4068,
+      "sha256": "908fafd1cdd7caa28ddbbd91c4f6d8e99530ca805d1451f29942a13e062e85d7"
+    },
+    {
+      "path": "assets/tokens/gi/beast/goose.webp",
+      "size": 3264,
+      "sha256": "0f3646057341eb2045a0876dbd6565663d56c899eb2b20655206b5a3fa8a403c"
+    },
+    {
+      "path": "assets/tokens/gi/beast/hadrosaurus.webp",
+      "size": 4262,
+      "sha256": "761bd3c7af3cbb149e100f0bca54aa453e64a389fd97059551c259db085a2c71"
+    },
+    {
+      "path": "assets/tokens/gi/beast/hamster.webp",
+      "size": 2760,
+      "sha256": "b31073359f32efb7b4e1c64769914a384f079682bf24edb3d6b7cc9d2357aa1a"
+    },
+    {
+      "path": "assets/tokens/gi/beast/hawk.webp",
+      "size": 8878,
+      "sha256": "4b767dd51629b4ac9b2344675aa12fa03171f31ba44a44c12e2c5770b94003f1"
+    },
+    {
+      "path": "assets/tokens/gi/beast/huntershark.webp",
+      "size": 3900,
+      "sha256": "ab4e8dd71039a0dac6734f7ec648d12a4d5f4cff2d94a065cc0c43b0d78c0d03"
+    },
+    {
+      "path": "assets/tokens/gi/beast/hyena.webp",
+      "size": 5308,
+      "sha256": "701897496c3c36b4a70f0747d60ff4e6d521bf53cdf54ff822141a6720fe5e51"
+    },
+    {
+      "path": "assets/tokens/gi/beast/insects.webp",
+      "size": 6680,
+      "sha256": "11c72080e1c81dcfe639c426b50d1e8e82708f90f74055d6d37cf7459bad36ea"
+    },
+    {
+      "path": "assets/tokens/gi/beast/jackal.webp",
+      "size": 4256,
+      "sha256": "9e34092ffe47469c75de047bcf65cef5b4711e10a2451288ee840d63ed56b8bc"
+    },
+    {
+      "path": "assets/tokens/gi/beast/killerwhale.webp",
+      "size": 3960,
+      "sha256": "fab371701610f73acbc3fd9407e26a0f8a93beebdc3b3ec401ef5aeadbb03db3"
+    },
+    {
+      "path": "assets/tokens/gi/beast/lioness.webp",
+      "size": 4188,
+      "sha256": "cbf1ec1afd9a31c2941c20756812c32a0c8d8c7c3106681552efa9f267556bd7"
+    },
+    {
+      "path": "assets/tokens/gi/beast/mammoth.webp",
+      "size": 4796,
+      "sha256": "c3712d31556ddeaf405831ebfc33aa39ca6a22d7f3aa9df24974a042b89756c3"
+    },
+    {
+      "path": "assets/tokens/gi/beast/mastiff.webp",
+      "size": 3512,
+      "sha256": "e2769fd7791042667c6a2b30d38d8f554474f538f68b9a1d8890194ed9e06c07"
+    },
+    {
+      "path": "assets/tokens/gi/beast/octopus.webp",
+      "size": 4930,
+      "sha256": "55bea66be04c2247ea04fa878ca0de27c5bb39e415681f31b115e22a6a679ce2"
+    },
+    {
+      "path": "assets/tokens/gi/beast/owl.webp",
+      "size": 6944,
+      "sha256": "3fc674c6b9769f350aa7729c947db8978a0a157737434cacc7b329b6857e4f20"
+    },
+    {
+      "path": "assets/tokens/gi/beast/ox.webp",
+      "size": 2750,
+      "sha256": "a53a6f8e560550f9ff90e85fe8e49381348e328457c629f89b538fa2e6027eb2"
+    },
+    {
+      "path": "assets/tokens/gi/beast/plesiosaurus.webp",
+      "size": 4526,
+      "sha256": "f0c29f7bbf8dc40907fc3a20e63a1053c29829030750700d95ce656096198c0b"
+    },
+    {
+      "path": "assets/tokens/gi/beast/pterosaur.webp",
+      "size": 3776,
+      "sha256": "eef3922a910cd50981556db3a44b8f6d64d77988c3c62f95a8501bd116e2b0d4"
+    },
+    {
+      "path": "assets/tokens/gi/beast/quipper.webp",
+      "size": 5824,
+      "sha256": "66f37ad7cb11a28e994a33cae27393e6d721c17d5c0310bd1e9a85049aa37d4a"
+    },
+    {
+      "path": "assets/tokens/gi/beast/rats.webp",
+      "size": 3718,
+      "sha256": "9ca43f16bee0a50b831a436b00ec7b644b46c46c18e77aea11405985ad675b53"
+    },
+    {
+      "path": "assets/tokens/gi/beast/ravens.webp",
+      "size": 2766,
+      "sha256": "145a575c4591f6e485ee5c704b2e4541f8fc639da3f2c6c5c99a0a8113e26473"
+    },
+    {
+      "path": "assets/tokens/gi/beast/reefshark.webp",
+      "size": 3882,
+      "sha256": "4c2cf7ba6e8b1a04736d27842d54f83fcd3df3079fcd3f0c46da3ec4e18ef05f"
+    },
+    {
+      "path": "assets/tokens/gi/beast/sabertooth.webp",
+      "size": 8706,
+      "sha256": "372a7312344600ca1622662d61f3a305a02c2c1e6fa14cb935c028a6d0c1676b"
+    },
+    {
+      "path": "assets/tokens/gi/beast/scorpion.webp",
+      "size": 4544,
+      "sha256": "2885c66a897325469300168c369f9d66a195ef79e59a0f142deff4a10d7b3cce"
+    },
+    {
+      "path": "assets/tokens/gi/beast/seahorse.webp",
+      "size": 3710,
+      "sha256": "68b8e91f443180664b87ce5c4ca9b4ee1db72c5d2e4e1e5ad8253803b1541ab6"
+    },
+    {
+      "path": "assets/tokens/gi/beast/sheep-ram.webp",
+      "size": 4328,
+      "sha256": "061db47b97da67a5df3b7ac29c963b27fe312d446e8b462ece5f5bd19b258cea"
+    },
+    {
+      "path": "assets/tokens/gi/beast/sheep.webp",
+      "size": 4316,
+      "sha256": "4324794bf8fbeda3163d654670a50022115580305909b52c38099e0b14de6d6f"
+    },
+    {
+      "path": "assets/tokens/gi/beast/snake.webp",
+      "size": 4496,
+      "sha256": "d7051792cbcdea42cbf0b066cfa938622e6037084953f3365548b6233c528315"
+    },
+    {
+      "path": "assets/tokens/gi/beast/spiders.webp",
+      "size": 9198,
+      "sha256": "28ff1f06c1bbe4312b249f15f3ed69b332654365bccb492a1e4f8d4bd5905b56"
+    },
+    {
+      "path": "assets/tokens/gi/beast/trex.webp",
+      "size": 4088,
+      "sha256": "29d73cd6f3a0259bfc3e2e38675a2f6ecb521ee6e3d133c59fb36115cd5ddda6"
+    },
+    {
+      "path": "assets/tokens/gi/beast/vulture.webp",
+      "size": 3332,
+      "sha256": "158c64828f9542a61977f5525db651204ca7c74e8cd122198cdb284bf4485fed"
+    },
+    {
+      "path": "assets/tokens/gi/beast/warhorse.webp",
+      "size": 4042,
+      "sha256": "611d9ada71fea74082c8b36d6519efdfd079db9991560954ee766f6082c79f71"
+    },
+    {
+      "path": "assets/tokens/gi/beast/wasps.webp",
+      "size": 6462,
+      "sha256": "ce4c29962fb311359e9120c0a66053e32cc04c0d85cf499a0bd9b4a2deed06fe"
+    },
+    {
+      "path": "assets/tokens/gi/beast/wolfspider.webp",
+      "size": 5124,
+      "sha256": "aec2d67d00f5b465a86a23e2458671f464602fc524cd7a224bbed1d7a2af5baa"
+    },
+    {
+      "path": "assets/tokens/gi/celestial/deva.webp",
+      "size": 6054,
+      "sha256": "23638b9c4c580089429f7b62005332548a23cd291fa954645e7492e694a7959a"
+    },
+    {
+      "path": "assets/tokens/gi/celestial/hollyphant.webp",
+      "size": 4592,
+      "sha256": "f885ec31bbe36ec08407f9232f39a8f66c4007401136cb2300bd4f2e06391f6a"
+    },
+    {
+      "path": "assets/tokens/gi/celestial/kirin.webp",
+      "size": 3660,
+      "sha256": "12d1bdb1b5e60145a5350ecda93a49d0ace000f9eabef5d4116294b3946c0416"
+    },
+    {
+      "path": "assets/tokens/gi/celestial/pegasus.webp",
+      "size": 4768,
+      "sha256": "1934946476d65d11a3014ab3847d33974a16963f59da628d807c3695537eeca4"
+    },
+    {
+      "path": "assets/tokens/gi/construct/animatedarmor.webp",
+      "size": 4144,
+      "sha256": "8e078cf37c732e01db2b36835ab1146ff7a18e73c3dd1749fb49c3bc5e3e77eb"
+    },
+    {
+      "path": "assets/tokens/gi/construct/flyingsword.webp",
+      "size": 6286,
+      "sha256": "e3ed67977d0b0c44327709ce5c03ca88f175e3de02176cfe0042c0557f425ba3"
+    },
+    {
+      "path": "assets/tokens/gi/construct/rug.webp",
+      "size": 5132,
+      "sha256": "7ce1b9b0d66bd8a3f5859e40abbdfb4139160c98d34e670626a0d4d55fe50420"
+    },
+    {
+      "path": "assets/tokens/gi/construct/shieldguardian.webp",
+      "size": 5558,
+      "sha256": "6786b33665f060e24dd6a1599af0f676cc79364cdccd2bed8bb1418fc35e07e5"
+    },
+    {
+      "path": "assets/tokens/gi/construct/steelspider.webp",
+      "size": 5652,
+      "sha256": "b17b2e7b1af084454552966c5942746991deac467f597adb7986a042ebf02884"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/air-myrmidon.webp",
+      "size": 6162,
+      "sha256": "3cda030c866322d8e8de10caf3f6390b3eb3305a9b2a5f7ec43a8e346ecffe27"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/dao.webp",
+      "size": 3926,
+      "sha256": "8cb6b800d93075a2fca4141880b6b26af1f607db342125f019a83d9d880231f4"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/earth-myrmidon.webp",
+      "size": 5706,
+      "sha256": "8f8bcf904843d31d1eae898264d724eeb194d2d14eae2eacb0cf880805313e03"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/fire-myrmidon.webp",
+      "size": 4630,
+      "sha256": "381a306fe22d242bd590f7003df0c0b97156b65bf0b06892a2209319c53cddf5"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/flailsnail.webp",
+      "size": 4402,
+      "sha256": "04a397b7cbe32e3bb952b8c542010645dcdd4d4f639b4e8d5022f04b701f6dee"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/gargoyle.webp",
+      "size": 7258,
+      "sha256": "618423f0e8d616a1c1e36d19da7012d99a5f8faf3c6ebf7f80f78f593b4be38e"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/marid.webp",
+      "size": 3926,
+      "sha256": "8cb6b800d93075a2fca4141880b6b26af1f607db342125f019a83d9d880231f4"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/mudmephit.webp",
+      "size": 4538,
+      "sha256": "acbe2785d51ab53092f796cc6eede49f06b78c650b764d423a60663e01c8eeb3"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/smokemephit.webp",
+      "size": 4840,
+      "sha256": "241f6843ea190839a3f465ef44cea475b2ad6721d6338c5296666d423ad2aae5"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/water-myrmidon.webp",
+      "size": 7984,
+      "sha256": "cff9bd77a3f34f338a8ea532e14c56487263fa595420d9c6c2c4e436dd312ba4"
+    },
+    {
+      "path": "assets/tokens/gi/elemental/windelemental.webp",
+      "size": 5554,
+      "sha256": "25a0556c85a449dd20cab04ba0a4be7b7cdee86b12ea900c8cf60a14fe362b96"
+    },
+    {
+      "path": "assets/tokens/gi/giant/cloudgiant.webp",
+      "size": 5904,
+      "sha256": "cb699088b6abb357d9d0a7eb741ed3950ac21aae60f8ba43fb707fb6b9a96f41"
+    },
+    {
+      "path": "assets/tokens/gi/giant/frostgiant.webp",
+      "size": 4060,
+      "sha256": "432f272257f7d93efa71f73000cb069fb77e58ed3d61d4be4e8b73b965940979"
+    },
+    {
+      "path": "assets/tokens/gi/giant/hillgiant.webp",
+      "size": 5874,
+      "sha256": "37dbd9fa21f697161f6651ab8f7ec46952049276e4850b3835d95cfd2d72657f"
+    },
+    {
+      "path": "assets/tokens/gi/giant/oni.webp",
+      "size": 5550,
+      "sha256": "4ec2b2f3e501b48a41588409c1b48effed7fbd67b0031b23451df8f856335b52"
+    },
+    {
+      "path": "assets/tokens/gi/giant/stonegiant.webp",
+      "size": 6158,
+      "sha256": "fe3b424c83911299cdcc3270fb1f4aa9f8ebaf334ab8985bba124bed21a39be3"
+    },
+    {
+      "path": "assets/tokens/gi/giant/stormgiant.webp",
+      "size": 4258,
+      "sha256": "e02e1ed54ad67d27a1f9fa42f466447bafb663dd67c616eeb5de0a8811a9f0ef"
+    },
+    {
+      "path": "assets/tokens/gi/humanoid/merfolk.webp",
+      "size": 4432,
+      "sha256": "fd2cae8ef77ec184bec8abb2915c63ffe1e6cd83e40d2814ba3c0786f5d41927"
+    },
+    {
+      "path": "assets/tokens/gi/humanoid/sahuagin.webp",
+      "size": 6980,
+      "sha256": "aae7aa68a905d03730682f9ede5f4696ff3225bbb394416fa561eb9d7921640c"
+    },
+    {
+      "path": "assets/tokens/gi/humanoid/werebear.webp",
+      "size": 3644,
+      "sha256": "ac58a38ec4e4f7298c96339f651c4dae68f957e564f3cec7800e04227ffdabef"
+    },
+    {
+      "path": "assets/tokens/gi/humanoid/wereboar.webp",
+      "size": 4508,
+      "sha256": "8a4b8c7bb970af3bf0ff43f389f83f1f625fc95c1915107fa24b0631521b919f"
+    },
+    {
+      "path": "assets/tokens/gi/humanoid/wererat.webp",
+      "size": 3718,
+      "sha256": "9ca43f16bee0a50b831a436b00ec7b644b46c46c18e77aea11405985ad675b53"
+    },
+    {
+      "path": "assets/tokens/gi/humanoid/wereshark.webp",
+      "size": 4950,
+      "sha256": "719ab1e503dc80f0f48183555beb366a5dce3c73572f05a412b04b5177d03b70"
+    },
+    {
+      "path": "assets/tokens/gi/humanoid/weretiger.webp",
+      "size": 8706,
+      "sha256": "372a7312344600ca1622662d61f3a305a02c2c1e6fa14cb935c028a6d0c1676b"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/androsphinx.webp",
+      "size": 4856,
+      "sha256": "6300026271241b9a3135681b2c44cdfd149093998f0a788e5e00eb126b7bfab4"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/carrioncrawler.webp",
+      "size": 4558,
+      "sha256": "080b91365b2c4bccf451f27f07b47d35d52a760de1242df5d897c6c732aed316"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/gorgon.webp",
+      "size": 2750,
+      "sha256": "a53a6f8e560550f9ff90e85fe8e49381348e328457c629f89b538fa2e6027eb2"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/gynosphinx.webp",
+      "size": 3214,
+      "sha256": "53aaed0913fcae9d7c203fa2a7a6805d4d4ad8d68e9aab801c9312c35be30ae3"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/hellboar.webp",
+      "size": 4508,
+      "sha256": "8a4b8c7bb970af3bf0ff43f389f83f1f625fc95c1915107fa24b0631521b919f"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/hippocampus.webp",
+      "size": 3710,
+      "sha256": "68b8e91f443180664b87ce5c4ca9b4ee1db72c5d2e4e1e5ad8253803b1541ab6"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/hippogriff.webp",
+      "size": 5446,
+      "sha256": "12c30f18aa26e71fdf9f78acda5f60619634eacaf12251f59d3a32d3259204bd"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/merrow.webp",
+      "size": 5874,
+      "sha256": "37dbd9fa21f697161f6651ab8f7ec46952049276e4850b3835d95cfd2d72657f"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/mimic.webp",
+      "size": 7360,
+      "sha256": "128d38704e4d4c21a0479deda5a42834676f06aa037e85ea9f80f1af2a30b7b0"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/necrodrider.webp",
+      "size": 5712,
+      "sha256": "9b94647370d95d7c793f06432678e74d40a30eb08a376daccb907ff2d037ca5e"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/necrospider.webp",
+      "size": 6578,
+      "sha256": "c7ff6b358c6ebfe28f0c57cac3b3d1f7a5978f414c06c8f9f4577758030604ed"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/phasepanther.webp",
+      "size": 3478,
+      "sha256": "22345310cce5b418d552a27104fdb8a3675948790483d18c8ee1dc1bf7d67c6b"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/roc.webp",
+      "size": 8378,
+      "sha256": "57a4440599c2ab1fe6cdff3ba99a12ce75f208fc8eca456911f3efa73fae90db"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/roper.webp",
+      "size": 5254,
+      "sha256": "f08fdfdcf8605bd028c47da10ff51af910236857c7f515b2a8a345043af9f8cd"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/tarrasque.webp",
+      "size": 4088,
+      "sha256": "29d73cd6f3a0259bfc3e2e38675a2f6ecb521ee6e3d133c59fb36115cd5ddda6"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/voidshark.webp",
+      "size": 3900,
+      "sha256": "ab4e8dd71039a0dac6734f7ec648d12a4d5f4cff2d94a065cc0c43b0d78c0d03"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/wingedcat.webp",
+      "size": 3478,
+      "sha256": "22345310cce5b418d552a27104fdb8a3675948790483d18c8ee1dc1bf7d67c6b"
+    },
+    {
+      "path": "assets/tokens/gi/monstrosity/winterwolf.webp",
+      "size": 5128,
+      "sha256": "a8f500528736fe9d9cb68ebbd60d4ac8b7e17d72490b07541393ac2c2517331c"
+    },
+    {
+      "path": "assets/tokens/gi/plant/awakenedshrub.webp",
+      "size": 4588,
+      "sha256": "355f4c5dc5e8feb5a2ae661485112649b6daa63ef2d17c09de1a83c62a5f120b"
+    },
+    {
+      "path": "assets/tokens/gi/plant/gasspore.webp",
+      "size": 6470,
+      "sha256": "45561ef3a250218d5bd188936509f57b31da9c1d19ca5a47714cd63a59dd84e2"
+    },
+    {
+      "path": "assets/tokens/gi/plant/myconid-fungal.webp",
+      "size": 3992,
+      "sha256": "56e741b1af21d792818c03e43d8c6aed46f1d4ebdb13f0fe03233d5d51f0ab75"
+    },
+    {
+      "path": "assets/tokens/gi/plant/myconid-funguy.webp",
+      "size": 3000,
+      "sha256": "6e327e7f48f8f6360b5b0ffe2c379d9a3bc774dcfc98d6e9ba06b32463120a5b"
+    },
+    {
+      "path": "assets/tokens/gi/plant/myconid-sprout.webp",
+      "size": 3380,
+      "sha256": "5dc94c860f5ffe553179d94bea6446ce70f7ec559cf438650f0acd7149501084"
+    },
+    {
+      "path": "assets/tokens/gi/plant/twigblight.webp",
+      "size": 3428,
+      "sha256": "25e16b7e4a3405388cb4552880ee41dfb31041245e84bc387c9ca06a1dfb41c6"
+    },
+    {
+      "path": "assets/tokens/gi/plant/woodwoad.webp",
+      "size": 7896,
+      "sha256": "a27cac1af254b60ec772dd5399feb29c102cb1813fd85175288ef22699ba158a"
+    },
+    {
+      "path": "assets/tokens/gi/undead/ghast.webp",
+      "size": 4360,
+      "sha256": "a7c0baf07a472f5705e127708813d153368695b474a30f249b5b42b552ccd1e4"
+    },
+    {
+      "path": "assets/tokens/gi/undead/lich.webp",
+      "size": 3410,
+      "sha256": "48ded0dcf88ad1000cd7a189ca26ec95ef8a3743c725054848d70c746eed1c10"
+    },
+    {
+      "path": "assets/tokens/gi/undead/minotaurskeleton.webp",
+      "size": 4738,
+      "sha256": "7f623060a3fd77d2b4bdbd775435297d94f1422235bf29e75e1ed3a5dd3b4221"
+    },
+    {
+      "path": "assets/tokens/gi/undead/mummylord.webp",
+      "size": 6430,
+      "sha256": "c55981967747f626d98a0118a1c4d40e9efb2642c516e1714bea781570f9464d"
+    },
+    {
+      "path": "assets/tokens/gi/undead/ogrezombie.webp",
+      "size": 4216,
+      "sha256": "363dd0384afc2ed7689456fcd54aa6255e7e3f4bb45589ccf2f260ac13a31d6d"
+    },
+    {
+      "path": "assets/tokens/gi/undead/specter.webp",
+      "size": 4946,
+      "sha256": "37a3c80ab0d1bca1f8da3d231b12756a1e885a24097cb78941a6c87896126932"
+    },
+    {
+      "path": "assets/tokens/gi/undead/vampirelord-aged.webp",
+      "size": 3444,
+      "sha256": "a16522936fad7f7cc4dfcce8e944e9b0a60584c2931913e355b81b06a0fae2fd"
+    },
+    {
+      "path": "assets/tokens/gi/undead/vampirelord.webp",
+      "size": 5890,
+      "sha256": "81f2cecde61229f1b66bf61ac5339e09d55b18392b0484167dc8b67a15bbaec4"
+    },
+    {
+      "path": "assets/tokens/gi/undead/warhorseskeleton.webp",
+      "size": 4856,
+      "sha256": "c417fa3f0c14c82229506899810639bacb9a653b701968c6b4b58c5280a5c44b"
+    },
+    {
+      "path": "assets/tokens/gi/undead/willowisp.webp",
+      "size": 4894,
+      "sha256": "751fc3f4884b90036e43a0ce56f1b98ecaf41345fda4a88edf72f3b324b3e5fc"
+    },
+    {
+      "path": "dnd5e.css",
+      "size": 521053,
+      "sha256": "4084113aa89aea6880cd9da14d472bdb47edca6356f991a0dc4f0127b6761f17"
+    },
+    {
+      "path": "dnd5e.mjs",
+      "size": 3008073,
+      "sha256": "d334ce3fe38968811564c66991d93045743a49f50c6faadd8f2391882fef326f"
+    },
+    {
+      "path": "fonts/roboto-condensed/LICENSE",
+      "size": 4393,
+      "sha256": "ee94f8704aa81e9a3bf4271e8320e99d975a3ee08ea45a088b494b918476ec12"
+    },
+    {
+      "path": "fonts/roboto-condensed/LICENSE.txt",
+      "size": 4393,
+      "sha256": "ee94f8704aa81e9a3bf4271e8320e99d975a3ee08ea45a088b494b918476ec12"
+    },
+    {
+      "path": "fonts/roboto-condensed/RobotoCondensed-Bold.woff2",
+      "size": 64540,
+      "sha256": "94bc5d82ae20023a48dabf5ceacf737869825ea5dc115a14dfdd2210fb159f97"
+    },
+    {
+      "path": "fonts/roboto-condensed/RobotoCondensed-BoldItalic.woff2",
+      "size": 71056,
+      "sha256": "d814056557a035a952fce2e4a0080045cb71746909e4cc084cc2e5657912e0d7"
+    },
+    {
+      "path": "fonts/roboto-condensed/RobotoCondensed-Italic.woff2",
+      "size": 70596,
+      "sha256": "472602456b7cd58ceefeb0926ff2613d3bbb2260c6d5ee079f756ee6fcd2778f"
+    },
+    {
+      "path": "fonts/roboto-condensed/RobotoCondensed-Regular.woff2",
+      "size": 64736,
+      "sha256": "6e78dc8a8dd8229b5bb6d0349095655a3cc355829230cd9bfae438e6935f2898"
+    },
+    {
+      "path": "fonts/roboto-slab/LICENSE",
+      "size": 10869,
+      "sha256": "c95227b8e6d589e0abf6011c109bece9fbec5f1da9946a8e773f4d88aa06d553"
+    },
+    {
+      "path": "fonts/roboto-slab/LICENSE.txt",
+      "size": 10869,
+      "sha256": "c95227b8e6d589e0abf6011c109bece9fbec5f1da9946a8e773f4d88aa06d553"
+    },
+    {
+      "path": "fonts/roboto-slab/RobotoSlab-Bold.ttf",
+      "size": 127116,
+      "sha256": "8fa4e2b42b804631edcdf4f0c6ac4b451a3dc3a6e376adcc2665cef9e82ddea4"
+    },
+    {
+      "path": "fonts/roboto-slab/RobotoSlab-Regular.ttf",
+      "size": 126360,
+      "sha256": "ca3baf9fc5f3919164b0a4d5775d31a7e915ceb57d8fa82668d12a1fabac9901"
+    },
+    {
+      "path": "fonts/roboto/LICENSE",
+      "size": 10860,
+      "sha256": "20e30220b273d79aadaefa45610f2c313ecb28968b179a4bcf64f70dbe05f7d3"
+    },
+    {
+      "path": "fonts/roboto/LICENSE.txt",
+      "size": 10860,
+      "sha256": "20e30220b273d79aadaefa45610f2c313ecb28968b179a4bcf64f70dbe05f7d3"
+    },
+    {
+      "path": "fonts/roboto/Roboto-Bold.woff2",
+      "size": 64636,
+      "sha256": "210f6c6435b8b1f06e8926c511e2f02f09b7a73a4d96e7301188bc76aaf76f3d"
+    },
+    {
+      "path": "fonts/roboto/Roboto-BoldItalic.woff2",
+      "size": 70056,
+      "sha256": "1e0b00ffbef4eb727d5cec89cc8bc0f302abd3f34b63d9f81844eafbca2edc90"
+    },
+    {
+      "path": "fonts/roboto/Roboto-Italic.woff2",
+      "size": 69900,
+      "sha256": "2a9edd719a527f6c69b2642c95b934a61726ea35f5f4384d4560e20b606e7529"
+    },
+    {
+      "path": "fonts/roboto/Roboto-Regular.woff2",
+      "size": 64600,
+      "sha256": "dd22dfffdda805545fee7ec5f161a59cd7580a85d66a54d60c703f81f1c3942e"
+    },
+    {
+      "path": "icons/ATTRIBUTION-REPLACE.md",
+      "size": 6237,
+      "sha256": "8fbab703214762a74e0d79ccb13fc251eccba5143c71b11a6cc3e12ee43b14f0"
+    },
+    {
+      "path": "icons/LICENSE",
+      "size": 11113,
+      "sha256": "caa01d85306f3f70cc9389e806224806978d6f7f2e3a969cabd2ebaf2aeadd56"
+    },
+    {
+      "path": "icons/LICENSE.txt",
+      "size": 11113,
+      "sha256": "caa01d85306f3f70cc9389e806224806978d6f7f2e3a969cabd2ebaf2aeadd56"
+    },
+    {
+      "path": "icons/classes/barbarian.webp",
+      "size": 14000,
+      "sha256": "ae587d0533622893bb27e05806ac0b454bb9f08d2775f6256aa0739472b8e215"
+    },
+    {
+      "path": "icons/classes/bard.webp",
+      "size": 10424,
+      "sha256": "a5ed82d9514edccc8ffb6bd527156fe2280c32a278043f43073d0199c14eb03a"
+    },
+    {
+      "path": "icons/classes/berserker.webp",
+      "size": 12938,
+      "sha256": "81c7e2d043a68331068d434cb975683924103373d73b137ef5c26c4daabe3109"
+    },
+    {
+      "path": "icons/classes/champion.webp",
+      "size": 12702,
+      "sha256": "08f692dc2d44418af6cc2bb90c03d66e5286c118cdaeaba028b0374d718194ae"
+    },
+    {
+      "path": "icons/classes/cleric.webp",
+      "size": 15814,
+      "sha256": "4acf78a02aae7e056744b6ca924b620a7e09368c19b4e6c90c25c321e30890a4"
+    },
+    {
+      "path": "icons/classes/devotion.webp",
+      "size": 13162,
+      "sha256": "a66ef7f25612586247d395977996e0ecad72b672d1e6cab9385f60e3732f0015"
+    },
+    {
+      "path": "icons/classes/draconic.webp",
+      "size": 10978,
+      "sha256": "67e9020bde69a62639f1716dcc4b6ee936a1491a0a7dc40a033461b89123e287"
+    },
+    {
+      "path": "icons/classes/druid.webp",
+      "size": 13386,
+      "sha256": "9dc926acc72af174e6a0a8c071b8d486a7e1ad3615fe42ee129d926f9753c1be"
+    },
+    {
+      "path": "icons/classes/evoker.webp",
+      "size": 18618,
+      "sha256": "6dca9a7d0c9c39c4439be6513500abfd7936d7e277cebc92c82a831f90385fdc"
+    },
+    {
+      "path": "icons/classes/fiend.webp",
+      "size": 15194,
+      "sha256": "851704f6a3477f26a71d2b73362a5975974482ae4edc330bf0ae917c6a9bbe27"
+    },
+    {
+      "path": "icons/classes/fighter.webp",
+      "size": 13218,
+      "sha256": "41382534e1f608e63b7025adbffa1eb82a6bf7284678e826652cc00b07ceb2ce"
+    },
+    {
+      "path": "icons/classes/hunter.webp",
+      "size": 15700,
+      "sha256": "fb3050e580b1b74c83cb6a79e2e263ba989caf9afdfbd1c49ebf0861d2e20858"
+    },
+    {
+      "path": "icons/classes/land.webp",
+      "size": 14662,
+      "sha256": "4d99aa7fa307bb877e56b426268a14bfe80f3caa7c693ff24d0e5b764bd9cb12"
+    },
+    {
+      "path": "icons/classes/life.webp",
+      "size": 7320,
+      "sha256": "1f13aac6f88af7ad9ce91d78f6035da0553e6dc42d0ceb03a67f8f0625791ab8"
+    },
+    {
+      "path": "icons/classes/lore.webp",
+      "size": 7816,
+      "sha256": "2da415d9bf107fb918fcad6a547729b7cb66be3ee21562e5e4e309ba6313b062"
+    },
+    {
+      "path": "icons/classes/monk.webp",
+      "size": 10046,
+      "sha256": "f739e349908a7d97666dc0ce0dcc4f3f885707eb545bb44aa943e1b049e42027"
+    },
+    {
+      "path": "icons/classes/open-hand.webp",
+      "size": 8616,
+      "sha256": "b2e4334bb001960d3448bc4f443fd794df4e5e55bf215766900dd754c172f861"
+    },
+    {
+      "path": "icons/classes/paladin.webp",
+      "size": 12358,
+      "sha256": "d2ddcdd8947f2ea3d05286e1745b7fd6a0f8d0b7423a215381c277b09090a23d"
+    },
+    {
+      "path": "icons/classes/ranger.webp",
+      "size": 11450,
+      "sha256": "24828dda6fe86fde069a19d11b8992228ed5c19330835bfd59b6d908a2a6d8d7"
+    },
+    {
+      "path": "icons/classes/rogue.webp",
+      "size": 11082,
+      "sha256": "9700d2b96c752c48d10e396cb0551d4880d3806c0153946f6202c900eb2cfc41"
+    },
+    {
+      "path": "icons/classes/sorcerer.webp",
+      "size": 9286,
+      "sha256": "562229016bd9719b866c919e88ef2fafc8ccc71eb97263e55e176d7d3f880ec7"
+    },
+    {
+      "path": "icons/classes/thief.webp",
+      "size": 6640,
+      "sha256": "75138dca68965e4d2b7d12d70e35c1b8353e7c17bdaded80da5e2762b3fb00e6"
+    },
+    {
+      "path": "icons/classes/warlock.webp",
+      "size": 15962,
+      "sha256": "8b70f6f47d488569cda1264011837751839f29a30947b7bfc35da438bbb6f694"
+    },
+    {
+      "path": "icons/classes/wizard.webp",
+      "size": 12158,
+      "sha256": "5db853802a0ee29a9da51a0d19e347f840365aa51fd583d1c7a53dfd56c71360"
+    },
+    {
+      "path": "icons/currency/copper.webp",
+      "size": 962,
+      "sha256": "90d4aaf2c9b61f1cb5905499258396ac373232722c51f70af504494204f2c977"
+    },
+    {
+      "path": "icons/currency/electrum.webp",
+      "size": 958,
+      "sha256": "617aee05ae7aa7e8032683a957c2e372b585cdafbc33a1e479dfafabd54e2615"
+    },
+    {
+      "path": "icons/currency/gold.webp",
+      "size": 994,
+      "sha256": "030047b43769785454f27521aab97fa6534551973e0d6aa0d248a334a36723d3"
+    },
+    {
+      "path": "icons/currency/platinum.webp",
+      "size": 994,
+      "sha256": "50683e28ff884ae6ec8da721c4106d4a0d37251a2f2c3e8b271f9c7b2d1ab175"
+    },
+    {
+      "path": "icons/currency/silver.webp",
+      "size": 910,
+      "sha256": "1fe889e9d3a00958c72bd2863ff5a1d7d42ab8714aa2021c8ce09cae6b4d41c7"
+    },
+    {
+      "path": "icons/species/dragonborn.webp",
+      "size": 7292,
+      "sha256": "1a65cbbb8d1aacb93cd42f0e4a1203ee9b58b9f4f38a06846684c975af3b561e"
+    },
+    {
+      "path": "icons/species/drow.webp",
+      "size": 4130,
+      "sha256": "859d0d62b89050f23e6d5e3b87b83869f6897fd7ad97eaf7782bac5610f946e8"
+    },
+    {
+      "path": "icons/species/dwarf.webp",
+      "size": 5906,
+      "sha256": "4a1bded42efdca44f969f8711cdb40025a8675f518fafba562912978e076490c"
+    },
+    {
+      "path": "icons/species/elf-high.webp",
+      "size": 7558,
+      "sha256": "b89970a8d5197c8a6d421ebc6ce94ca7d2684afbad24ca69493b8ce73da88af4"
+    },
+    {
+      "path": "icons/species/elf-wood.webp",
+      "size": 8636,
+      "sha256": "d4b675f6b308fc3d993f35118ec1306660e39e1f36079790083c1daae339ed7c"
+    },
+    {
+      "path": "icons/species/gnome-forest.webp",
+      "size": 7056,
+      "sha256": "2b2d349b6633664b4affac6e9b19d42746115817343167f747920f6840920e36"
+    },
+    {
+      "path": "icons/species/gnome-rock.webp",
+      "size": 6166,
+      "sha256": "b86e8c9de7c7f2875737964e6a469f9985d909017fd16bf106f96442d76e4cb5"
+    },
+    {
+      "path": "icons/species/goliath.webp",
+      "size": 5062,
+      "sha256": "5294fc147950ee7688be891741d289fdedebf9cdd931300b1c118754ac1a78bf"
+    },
+    {
+      "path": "icons/species/halfling.webp",
+      "size": 3622,
+      "sha256": "8388eac2b553e6b6e4a005af0f46bb92a0289fb8b6e32ed1ccf7f2158af5fa0f"
+    },
+    {
+      "path": "icons/species/human.webp",
+      "size": 3112,
+      "sha256": "7b25e5607902f8ea2f1a9e548073fa63364c0f66bcd5fa923a0663cc1371c714"
+    },
+    {
+      "path": "icons/species/orc.webp",
+      "size": 7098,
+      "sha256": "46319bd10780d7bb1e70f8f4cfd1b69e0e2b294252f682f6f16ea553999758ab"
+    },
+    {
+      "path": "icons/species/tiefling-abyssal.webp",
+      "size": 5990,
+      "sha256": "48bbc155dbcf11bd741691e2a36d6132d4893e01a850ce28c019f4778d71ba28"
+    },
+    {
+      "path": "icons/species/tiefling-chthonic.webp",
+      "size": 5558,
+      "sha256": "6e95671091780605bde12fbfa95f8ae1f19de6592d7ced529b116b61dd39f139"
+    },
+    {
+      "path": "icons/species/tiefling-infernal.webp",
+      "size": 8026,
+      "sha256": "d6e390e4a2ee2685ff2bd2474cbe69940bbe22fe4ce3f15e20e92382d568c1b9"
+    },
+    {
+      "path": "icons/spell-tiers/LICENSE",
+      "size": 986,
+      "sha256": "34d052cba439f058a88fc3cac80a1a6c23a33e65212656cac2e1260b7b9993e3"
+    },
+    {
+      "path": "icons/spell-tiers/LICENSE.txt",
+      "size": 986,
+      "sha256": "34d052cba439f058a88fc3cac80a1a6c23a33e65212656cac2e1260b7b9993e3"
+    },
+    {
+      "path": "icons/spell-tiers/spell1.webp",
+      "size": 7554,
+      "sha256": "ed1bdb2588308358ab9b6985126563016906fc956f431abfacd920c4de0eba19"
+    },
+    {
+      "path": "icons/spell-tiers/spell2.webp",
+      "size": 10086,
+      "sha256": "11b4b2d71c8f0cb301e5b92a38898373e7e750cea3a0da7fb60595cb847a512c"
+    },
+    {
+      "path": "icons/spell-tiers/spell3.webp",
+      "size": 12864,
+      "sha256": "3e03e6dd83277f26c9d5ba85d5bd8ca19c92e52267e158844c5ef84d2e8622de"
+    },
+    {
+      "path": "icons/spell-tiers/spell4.webp",
+      "size": 11152,
+      "sha256": "2b5cc646b30b6b5f0aead58d0db17efda857c72f64b3434af77aab71ac8ca5f8"
+    },
+    {
+      "path": "icons/spell-tiers/spell5.webp",
+      "size": 13448,
+      "sha256": "1068036225a5d9c988cd90f5a41bed767a8d09ff0da1a254cbe95a3ae273e0ec"
+    },
+    {
+      "path": "icons/spell-tiers/spell6.webp",
+      "size": 15854,
+      "sha256": "28b0718a83ad8f9031e804d58dee6d8c60709e06e91057450b0beecc87d11f6f"
+    },
+    {
+      "path": "icons/spell-tiers/spell7.webp",
+      "size": 13060,
+      "sha256": "6dddb7248d86f844527ec00ccaa15b84f08aa4ce8bea452eb88fff8531ebaeea"
+    },
+    {
+      "path": "icons/spell-tiers/spell8.webp",
+      "size": 13994,
+      "sha256": "cde53f050de766cc0240c230117eb4f697835ecb5d50315b002af05a85bcc457"
+    },
+    {
+      "path": "icons/spell-tiers/spell9.webp",
+      "size": 13568,
+      "sha256": "6588c4877569c45a77e0b71ba0bc05ef1c99965288fa3c1942f4d91f99e3275e"
+    },
+    {
+      "path": "icons/svg/abilities/charisma.svg",
+      "size": 4749,
+      "sha256": "9cff3bed7275180578aa6342b0af73cf60974959a78e36e3840bd807509340a7"
+    },
+    {
+      "path": "icons/svg/abilities/constitution.svg",
+      "size": 5328,
+      "sha256": "5fe464dba74ee02064e55bc3641a5d543613fa9631ac0764ce71fddd0f67f0ab"
+    },
+    {
+      "path": "icons/svg/abilities/dexterity.svg",
+      "size": 7607,
+      "sha256": "5ec459c8809b0803ac0ac770acdd65a75aa19b634ad6d4c3b2bd8ad754f6aa5c"
+    },
+    {
+      "path": "icons/svg/abilities/intelligence.svg",
+      "size": 5799,
+      "sha256": "e454446640dcc8788c24fe75193f876a9c690fe9002edf61c6f9095f6a16f1db"
+    },
+    {
+      "path": "icons/svg/abilities/strength.svg",
+      "size": 11154,
+      "sha256": "2f8dc82c0bb7e31ed60455df9b5400fc4773ce4c6ff6c1a5802f4409a842f697"
+    },
+    {
+      "path": "icons/svg/abilities/wisdom.svg",
+      "size": 7021,
+      "sha256": "ee1dbdc9562575491dabd0c664503aca5e53bdfa5c137e456edef5f47de2ee79"
+    },
+    {
+      "path": "icons/svg/ability-score-improvement.svg",
+      "size": 1540,
+      "sha256": "2275e0a0094d2874efd1d929561b66f8563cb4f0aeddf556e77ec5316cf429b2"
+    },
+    {
+      "path": "icons/svg/active-effects/enchantment.svg",
+      "size": 1901,
+      "sha256": "f51e741831a0f99ca35a7ed3662a389a89dabdce807fc4432d936a848143a426"
+    },
+    {
+      "path": "icons/svg/active-effects/standard.svg",
+      "size": 898,
+      "sha256": "2085fdcb2166d717edb142eaf803a49157fe5869dd73573b4020649189cc8645"
+    },
+    {
+      "path": "icons/svg/activity/attack.svg",
+      "size": 1474,
+      "sha256": "41bffd8961b188463eeb0da3a02e4cac8e0b65fae8838fe78b56ecd32730ba91"
+    },
+    {
+      "path": "icons/svg/activity/cast.svg",
+      "size": 3201,
+      "sha256": "f8b5ea12a4a1124aadafe70a0c18cd36dac165618879b18cb9390a9f557f0e73"
+    },
+    {
+      "path": "icons/svg/activity/check.svg",
+      "size": 1623,
+      "sha256": "fcfe52282f8348c2dec763c4d5ab9e08972d8f3241f6fc0a27af7777001cfc96"
+    },
+    {
+      "path": "icons/svg/activity/damage.svg",
+      "size": 992,
+      "sha256": "3d455b9ab2e1017a1ee2c6243f2ac5448b62ca7413e5703d7c7b4d5e48306bc7"
+    },
+    {
+      "path": "icons/svg/activity/enchant.svg",
+      "size": 1911,
+      "sha256": "ab13d2d8775d1e5dbd91a48a9e37cf0588437323fdc82411726aca09452ed7dc"
+    },
+    {
+      "path": "icons/svg/activity/forward.svg",
+      "size": 648,
+      "sha256": "17e47cab487a66093660d7cbff684ff22fa1b62281b8705903e4f0987e7dce79"
+    },
+    {
+      "path": "icons/svg/activity/heal.svg",
+      "size": 511,
+      "sha256": "da481057015ff5c777b4d9eeef5a136baffba6a236f11123eed507d275c2d7f4"
+    },
+    {
+      "path": "icons/svg/activity/order.svg",
+      "size": 1073,
+      "sha256": "898f51072c20bebc4ca3e07e442dc96ff93c0f4cbd7808c0876792725a24ef8a"
+    },
+    {
+      "path": "icons/svg/activity/save.svg",
+      "size": 966,
+      "sha256": "c7ebbecd2a32ebe9d0244402b1e2333280c82f4dfd2ba579258b36ab50c11c1a"
+    },
+    {
+      "path": "icons/svg/activity/summon.svg",
+      "size": 2706,
+      "sha256": "3ad0006e172b20ea8ea7cdfca90214c0193f99ebf7736c986db75c257be7ea38"
+    },
+    {
+      "path": "icons/svg/activity/transform.svg",
+      "size": 2885,
+      "sha256": "1a113f36405f8df976c76752d74c662d497386398beac2222afc23a8c9966e3d"
+    },
+    {
+      "path": "icons/svg/activity/utility.svg",
+      "size": 670,
+      "sha256": "798758be71b06f0311d4f5614037874624263c6375ca81cc6f2d24864455b86e"
+    },
+    {
+      "path": "icons/svg/actors/character.svg",
+      "size": 8231,
+      "sha256": "6c9187963c8fc1bd33b11e5d5b08286a1842590a340f694385d6be9a40dd8e8e"
+    },
+    {
+      "path": "icons/svg/actors/encounter.svg",
+      "size": 1987,
+      "sha256": "ed7ac9cddf7905c8bc8c1f7ed21de315e36b14189740426b310e55b567f9b4ed"
+    },
+    {
+      "path": "icons/svg/actors/group.svg",
+      "size": 1093,
+      "sha256": "48dc0ce8e06fbf725522a0ae3de45401e2ab7fd5e0ceed34a4505e34c7b0fe21"
+    },
+    {
+      "path": "icons/svg/actors/npc.svg",
+      "size": 2086,
+      "sha256": "2359fe905f1f5e2fb6de24dec60458a60a96ee5f5723ad42a4cfa299366062c0"
+    },
+    {
+      "path": "icons/svg/actors/vehicle.svg",
+      "size": 4720,
+      "sha256": "043170fb21e781aed329e2d16637ce394cbe67c26ac4351cf3843a985b261c49"
+    },
+    {
+      "path": "icons/svg/backpack.svg",
+      "size": 1769,
+      "sha256": "f008dd2c37e23fd6d506bade54aec0fe803f22ba28396c1574cc35a48399583a"
+    },
+    {
+      "path": "icons/svg/barbarian.svg",
+      "size": 1468,
+      "sha256": "c2944fbe3b01f12636b34708d27342f9d11c1f216522c38d0e730690eb91bb62"
+    },
+    {
+      "path": "icons/svg/bard.svg",
+      "size": 2296,
+      "sha256": "de8932fb73a2c4160111cf6d9a584d06e52a0ae131d0c58109b3c5fa5660b882"
+    },
+    {
+      "path": "icons/svg/break-concentration.svg",
+      "size": 2108,
+      "sha256": "92d5ccf5408b21db56be3de6745d0121ef01622bc7c31b044681e5f8c3735c46"
+    },
+    {
+      "path": "icons/svg/checked-shield.svg",
+      "size": 693,
+      "sha256": "2300b0c6918e50f27f28f709a0e9ca2f86d73be3dbb81f8bcf616d7e038e28e8"
+    },
+    {
+      "path": "icons/svg/cleric.svg",
+      "size": 2038,
+      "sha256": "b62b286fd5f9fd10675cf025b851f98c4c5b29a368e352b420607f4a0b7a516c"
+    },
+    {
+      "path": "icons/svg/damage/acid.svg",
+      "size": 2381,
+      "sha256": "8377a9a4c8bcd2891268ffb95c05062a0a510dd09f1e4bcbaa5fd2fc6a6800bf"
+    },
+    {
+      "path": "icons/svg/damage/all.svg",
+      "size": 3997,
+      "sha256": "817b312fac246e2ab0c8a609b2f6ba19861b29d07c85be4dba271fbc1dbf74f2"
+    },
+    {
+      "path": "icons/svg/damage/bludgeoning.svg",
+      "size": 1362,
+      "sha256": "81f65903165a203c4f7ad9b1457d2aa3d0b121b95381df7ce76e7f3ac722e56f"
+    },
+    {
+      "path": "icons/svg/damage/cold.svg",
+      "size": 1654,
+      "sha256": "84810ac404b7497cb67cc0e7030037ef15338d80513bb4f99a3b751ccc8c808e"
+    },
+    {
+      "path": "icons/svg/damage/fire.svg",
+      "size": 425,
+      "sha256": "c59f80a308bf50fcf5aeda8e6f35943eeb6154a242b8632fb2b442d11aecf014"
+    },
+    {
+      "path": "icons/svg/damage/force.svg",
+      "size": 3300,
+      "sha256": "05b4a89d2aa27f153474bae55f4de8980c21351661419318e0922c375492b5b1"
+    },
+    {
+      "path": "icons/svg/damage/healing.svg",
+      "size": 5762,
+      "sha256": "9a06050bedd47f45b2e495b0bb2479ba48472a2693dd00c9f411227d0050b760"
+    },
+    {
+      "path": "icons/svg/damage/lightning.svg",
+      "size": 756,
+      "sha256": "0be8bb5976b905d6e0dde0f48d52bf0527fc8be2e48c99309899cf360a96f021"
+    },
+    {
+      "path": "icons/svg/damage/maxhp.svg",
+      "size": 1215,
+      "sha256": "a61f1953378321484535d68e8f20b1bffac0e6923523e2be70cdaa0ffa7fa59c"
+    },
+    {
+      "path": "icons/svg/damage/necrotic.svg",
+      "size": 1063,
+      "sha256": "ca5c4c9549027658facb357262f9613ed3b823c46c9a8b53378c18710db0565b"
+    },
+    {
+      "path": "icons/svg/damage/piercing.svg",
+      "size": 1044,
+      "sha256": "11554ba67cb1c7f00e96127ec44addb757b5a91046a45728de67af697f4edfed"
+    },
+    {
+      "path": "icons/svg/damage/poison.svg",
+      "size": 3046,
+      "sha256": "6ef0c436c43374694e9efcf5d6dc5ba413fd5eaf3126f644930997435cc4748f"
+    },
+    {
+      "path": "icons/svg/damage/psychic.svg",
+      "size": 1995,
+      "sha256": "ac035923532ea0dd3f5e875cf0c81ccfa6d6021f62d697edc0aa1ac3a264fa0d"
+    },
+    {
+      "path": "icons/svg/damage/radiant.svg",
+      "size": 1569,
+      "sha256": "bd25686aebf758dbf55a8e55b9614f46a4e5ffc495d9ef08d452b24fabd377ee"
+    },
+    {
+      "path": "icons/svg/damage/slashing.svg",
+      "size": 803,
+      "sha256": "cfb4622210b1336cb7a22dda2248c44520f2a539b4bed589d018d9ed4d491165"
+    },
+    {
+      "path": "icons/svg/damage/temphp.svg",
+      "size": 602,
+      "sha256": "42fa4c28fa2e4618535c2fc0f2462dd817ec70a48251546c2367d17d9678571e"
+    },
+    {
+      "path": "icons/svg/damage/threshold.svg",
+      "size": 1983,
+      "sha256": "eb459b1b2eaec8b200984f263c237e63af5550314c0478409ace19ecb5d5f78a"
+    },
+    {
+      "path": "icons/svg/damage/thunder.svg",
+      "size": 2503,
+      "sha256": "b901e646234688f1754d2a773dfcde4021657d819bdc990ba7eb932559b104a5"
+    },
+    {
+      "path": "icons/svg/dice/d10.svg",
+      "size": 693,
+      "sha256": "fecc6ee60103d9d01ded44ba38d84e7bf3081833ceefe100d30f8568189247c1"
+    },
+    {
+      "path": "icons/svg/dice/d12.svg",
+      "size": 730,
+      "sha256": "57a17ec937c0b6619334a9c6e22f6e13a94803e17d28cbe25ea1882b515ab4c7"
+    },
+    {
+      "path": "icons/svg/dice/d20.svg",
+      "size": 1793,
+      "sha256": "3ae231e39efb5fa3354195ce8be1d9b0eb4c652174cb665f7c44c2d3fc40f5ae"
+    },
+    {
+      "path": "icons/svg/dice/d4.svg",
+      "size": 550,
+      "sha256": "e81572da5d1edb517e26284adaf6459072b9fd57a5d5f5586d18daed1fdab3ba"
+    },
+    {
+      "path": "icons/svg/dice/d6.svg",
+      "size": 298,
+      "sha256": "33dd54508150bc897b96a1044b57dc2afbe545dc09f497dbb05fad008fa9003e"
+    },
+    {
+      "path": "icons/svg/dice/d8.svg",
+      "size": 568,
+      "sha256": "958b83656a5a74787274b0b9f5480425474ab75ef4d180ff1f90fe7fdfb82364"
+    },
+    {
+      "path": "icons/svg/documents/active-effect.svg",
+      "size": 898,
+      "sha256": "2085fdcb2166d717edb142eaf803a49157fe5869dd73573b4020649189cc8645"
+    },
+    {
+      "path": "icons/svg/documents/actor.svg",
+      "size": 1453,
+      "sha256": "47859524c6ebd5388b69165ef95fad5505f8ba3414eead8e2548281c8550b5a8"
+    },
+    {
+      "path": "icons/svg/documents/item.svg",
+      "size": 2305,
+      "sha256": "13f6075e900fb36f5b639e5809c11cc1238a1a372896f5fe4337b2402868a158"
+    },
+    {
+      "path": "icons/svg/druid.svg",
+      "size": 1909,
+      "sha256": "2adcf38061d9c14b8a8390d612cb244a21ce0b3cbd94042f5c1a920f38ef39e4"
+    },
+    {
+      "path": "icons/svg/facilities/build.svg",
+      "size": 2031,
+      "sha256": "553380004e5c8d0c89dcc4ab5d6debdcbf187aa8995ef7fa1a08c56ce3c08279"
+    },
+    {
+      "path": "icons/svg/facilities/change.svg",
+      "size": 1155,
+      "sha256": "e7bfc52ca35fec831be5d94242b5d67b4f6f1ca6029c2c2b166eea27b84fd13e"
+    },
+    {
+      "path": "icons/svg/facilities/craft.svg",
+      "size": 613,
+      "sha256": "c7e41bf4f76eb916aee09639e46c32108dec637c8efcadb439026ecc08407b6e"
+    },
+    {
+      "path": "icons/svg/facilities/empower.svg",
+      "size": 1199,
+      "sha256": "0c42f67de3d334c0e5f2490e11bebd3541292ea3c0ce180b868550d2d913da17"
+    },
+    {
+      "path": "icons/svg/facilities/enlarge.svg",
+      "size": 446,
+      "sha256": "6838f62033f00cf8ae7b62a854cfe8dd31fcadc805c4c8d4b043e2cb367ce784"
+    },
+    {
+      "path": "icons/svg/facilities/harvest.svg",
+      "size": 644,
+      "sha256": "cfac94fd9b88de461d805b7e2706ee6e8db133de013e2ce9c2f173563dfc3a91"
+    },
+    {
+      "path": "icons/svg/facilities/maintain.svg",
+      "size": 785,
+      "sha256": "84afa2d87bfeb12c3df0d3ad84339e9a921a5b999980b6031ce1eff3ef123e59"
+    },
+    {
+      "path": "icons/svg/facilities/recruit.svg",
+      "size": 1085,
+      "sha256": "88e83aa73e329263749cbc5c63fd075f3e6905f975ac7f7df14a1586750f0969"
+    },
+    {
+      "path": "icons/svg/facilities/repair.svg",
+      "size": 647,
+      "sha256": "615e01b1dedf3e074825dc14237d42eaaad6e3835221cc15818afeb59f2767ca"
+    },
+    {
+      "path": "icons/svg/facilities/research.svg",
+      "size": 1256,
+      "sha256": "81895ef5c242a4531d8ae7a1dcaea3c28d146c287e4e2d25cc1046a57a30deb6"
+    },
+    {
+      "path": "icons/svg/facilities/trade.svg",
+      "size": 3949,
+      "sha256": "1c89a9ed87c06d00edc3e4df457b826ad255cf151122efa7cee9833744c0ae07"
+    },
+    {
+      "path": "icons/svg/fighter.svg",
+      "size": 4067,
+      "sha256": "a6be47b785d8a7e0322be4c30b12d14f787b0e099e79aa73d6ea88201ab7ffbb"
+    },
+    {
+      "path": "icons/svg/hit-points.svg",
+      "size": 510,
+      "sha256": "9f7f032a681b6b840ad7d72333d5dfb52f9da32a9a7e10b66822c8f02c34abc2"
+    },
+    {
+      "path": "icons/svg/ink-pot.svg",
+      "size": 868,
+      "sha256": "a7a5988a625262f96431b366ba5295021c92f7dba43ade7a6d77abdbe898893f"
+    },
+    {
+      "path": "icons/svg/item-choice.svg",
+      "size": 691,
+      "sha256": "33e3a2c830482df032cdec6b790420274b4a59efdd62c4533163caf94b5339fd"
+    },
+    {
+      "path": "icons/svg/item-grant.svg",
+      "size": 957,
+      "sha256": "54d57a9daa29edf7d84e07c4a45f41802eec92b5261002fecd33eded7170783a"
+    },
+    {
+      "path": "icons/svg/items/background.svg",
+      "size": 653,
+      "sha256": "3a1896b404f3d9a08cf9a7fc1e0525344172c8d55c3c720d0e66cf6b8959f982"
+    },
+    {
+      "path": "icons/svg/items/class.svg",
+      "size": 948,
+      "sha256": "2e3dbaaf4a3a00a2def96ea478508ab03043585e6dd7d0d58cbb825aa667281f"
+    },
+    {
+      "path": "icons/svg/items/consumable.svg",
+      "size": 1096,
+      "sha256": "a1ed88e9c75a78d3e57b4e04bab5bcc2e9af091006780fb43c1283ba565cfeed"
+    },
+    {
+      "path": "icons/svg/items/container.svg",
+      "size": 3923,
+      "sha256": "30a1d705d95a9596fbaaac468e4c50ad25f77bfdffc0af61f65e0a4d9a95ad9d"
+    },
+    {
+      "path": "icons/svg/items/equipment.svg",
+      "size": 3133,
+      "sha256": "b32e061c80cf10601ec5b227a84d5f947b83ae4cf3918e54ab32adf903bf8572"
+    },
+    {
+      "path": "icons/svg/items/facility.svg",
+      "size": 829,
+      "sha256": "db2d9d33fb93e22ce390d48e50bd4d24695bfc46e6e0ce2b099757c928575adc"
+    },
+    {
+      "path": "icons/svg/items/feature.svg",
+      "size": 667,
+      "sha256": "19c510e89e97621a8cd1a1467542dae3d2b3c914cfabb1598a01569660b7051f"
+    },
+    {
+      "path": "icons/svg/items/loot.svg",
+      "size": 3432,
+      "sha256": "ef61d718a1115a76ca436a970e75b028bec7a325802885b23658836789966587"
+    },
+    {
+      "path": "icons/svg/items/race.svg",
+      "size": 1455,
+      "sha256": "5d0eca7998e50a4e0e4707949a5fde1f448a917377b6af5c057107fc0d8bfcd1"
+    },
+    {
+      "path": "icons/svg/items/spell.svg",
+      "size": 1238,
+      "sha256": "d677b1064d5447b68f8600beef8327d267d9bddc93fc06d5edc1ff3cfb9da1b5"
+    },
+    {
+      "path": "icons/svg/items/subclass.svg",
+      "size": 3065,
+      "sha256": "ca441a3b187ce97c144db60f3afc7060c517c49f8dea363a102bcbd6e9f4f471"
+    },
+    {
+      "path": "icons/svg/items/tool.svg",
+      "size": 980,
+      "sha256": "18e75281cd1d03f030502ce01e057058cfdc6afca7e2d58422e80620bd78b795"
+    },
+    {
+      "path": "icons/svg/items/weapon.svg",
+      "size": 1753,
+      "sha256": "8ff129986218d61b1768e7b63302934b5a6e5f1e4203b8ec56f7d6f6fe1a58fb"
+    },
+    {
+      "path": "icons/svg/left-filigree.svg",
+      "size": 812,
+      "sha256": "7169036d0e53a826c856a3eeb99a12d35dd587037e9afcdc761deae1aab3c2e0"
+    },
+    {
+      "path": "icons/svg/monk.svg",
+      "size": 1801,
+      "sha256": "be35fde82ce5290ebd68403764ec03c6a0f577ba2ceb5b1e66e8b1fa7c280842"
+    },
+    {
+      "path": "icons/svg/monster.svg",
+      "size": 2041,
+      "sha256": "58f0f373598b2b3ec1e217cb63c53b0d4378bd19a507176dda0c32d9f367275b"
+    },
+    {
+      "path": "icons/svg/mouse-left.svg",
+      "size": 986,
+      "sha256": "79f1de792af833f2b87fae5ede45829a0e66fbeaf4e689c6f1d765018a46ff13"
+    },
+    {
+      "path": "icons/svg/mouse-middle.svg",
+      "size": 1065,
+      "sha256": "1bbd856e96b2855fda5ae749946f3fb303c96abfe2bda8217740a87ffbf44513"
+    },
+    {
+      "path": "icons/svg/mouse.svg",
+      "size": 927,
+      "sha256": "a35bf982d019ca2eae1c182b6cbdeb77ba6172b1f44fa1814d40b763164d7f40"
+    },
+    {
+      "path": "icons/svg/multiclass.svg",
+      "size": 1859,
+      "sha256": "f293dabca479668a3490bee1a80513482109201159a54ff8cb04bcaca8a3e4c7"
+    },
+    {
+      "path": "icons/svg/original-class.svg",
+      "size": 1063,
+      "sha256": "a6c384d3fdf5382e411814c235fcd938a71c7a65e6a7c5bd5763224e1e4007b5"
+    },
+    {
+      "path": "icons/svg/paladin.svg",
+      "size": 1770,
+      "sha256": "1736744bea7dcbc0e16cc9edd772b54bf9fa006890c4d680fe1fb25ab9c75597"
+    },
+    {
+      "path": "icons/svg/properties/magical.svg",
+      "size": 1787,
+      "sha256": "f6ba9f21d069bee2868b94518f848bd5f3e88a6f0ba11a85dbd004833b672d05"
+    },
+    {
+      "path": "icons/svg/range-connector.svg",
+      "size": 385,
+      "sha256": "15399a7877090720c430a9b50eba155c98438a9917d536c1a0f18b4b4fbff3a9"
+    },
+    {
+      "path": "icons/svg/ranger.svg",
+      "size": 2254,
+      "sha256": "f74b3a32e0a0fd16478f31185cec4258c219f24a5a04be3b3ccf6b9be4d8e487"
+    },
+    {
+      "path": "icons/svg/rogue.svg",
+      "size": 3204,
+      "sha256": "fd6ffd425c39445c3cd0c585c81fc5f350ff26163ec1a3f8304ee58c64c7aa28"
+    },
+    {
+      "path": "icons/svg/rosa-shield.svg",
+      "size": 889,
+      "sha256": "6ec19fa217b6858fed1b12503ae5378cf6483bbbd405d215c9e584e7ad62dd8d"
+    },
+    {
+      "path": "icons/svg/scale-value.svg",
+      "size": 1763,
+      "sha256": "53e0c9cfe1d2e1470be950a71c1ddfe25b00c47825e8280fdfe94e1785170a92"
+    },
+    {
+      "path": "icons/svg/schools/abjuration.svg",
+      "size": 1370,
+      "sha256": "abf3f2381424e4328bd365b51385c92b78573f42fc29e165267379d52df2c3c4"
+    },
+    {
+      "path": "icons/svg/schools/conjuration.svg",
+      "size": 1796,
+      "sha256": "2ead4bcce8cbd9144d5a4b81bb04a32c8cbbfab318d39970e4556df2be3fdb04"
+    },
+    {
+      "path": "icons/svg/schools/divination.svg",
+      "size": 1454,
+      "sha256": "15bc2a54f2e5c382f70d53c0e838ecfb09cfeb612b5b130188bc232464093801"
+    },
+    {
+      "path": "icons/svg/schools/enchantment.svg",
+      "size": 3493,
+      "sha256": "67538ba1436ff09e819519791b3308152c9476bf11236be2bfe9242a50b15897"
+    },
+    {
+      "path": "icons/svg/schools/evocation.svg",
+      "size": 1042,
+      "sha256": "05388721d362475f7935f0ea496131d0d24bb10fc25c5a4525c8a9bc9673eea9"
+    },
+    {
+      "path": "icons/svg/schools/illusion.svg",
+      "size": 1112,
+      "sha256": "f729d983621d31c29de70d9ec603c858cd73abc114b17ae7bad7c66c69ca32f4"
+    },
+    {
+      "path": "icons/svg/schools/necromancy.svg",
+      "size": 1736,
+      "sha256": "f0a11381d58171595292b4c85210f284306264dfd6de278e46e97e073d0dfa05"
+    },
+    {
+      "path": "icons/svg/schools/transmutation.svg",
+      "size": 2841,
+      "sha256": "c276e821f45c6b8084f85e9bc2f0f12853fd3699aba53782b4779fe568c07a2c"
+    },
+    {
+      "path": "icons/svg/size.svg",
+      "size": 938,
+      "sha256": "5d5e9f783ac399a00e24397a9828d4291e072b297f7168db9fbbd19228131acc"
+    },
+    {
+      "path": "icons/svg/sorcerer.svg",
+      "size": 2626,
+      "sha256": "868eedb04651e22fd3b893de8f9d39ae1ee6101a29b665e73f3d162acd99352a"
+    },
+    {
+      "path": "icons/svg/spell-slot.svg",
+      "size": 436,
+      "sha256": "9fb4a152c3be2da0a34e06cbfcb5c8bc813a1b860f184609293c3a45cb3eb119"
+    },
+    {
+      "path": "icons/svg/statuses/bleeding.svg",
+      "size": 1069,
+      "sha256": "92c1832c1514103d5127eeb7678bd025fb55d01e0c2d893d7e1b618ad6d6ecf0"
+    },
+    {
+      "path": "icons/svg/statuses/blinded.svg",
+      "size": 3134,
+      "sha256": "1c178e68d9cc3b7a36bbe00cbef6cb2bcd352abef1af890cdfe8e68ae0ff7844"
+    },
+    {
+      "path": "icons/svg/statuses/bloodied.svg",
+      "size": 2181,
+      "sha256": "3acca9d9b6f55144d73b7e281bef9829c24e409b13194e266e063b9cf585f776"
+    },
+    {
+      "path": "icons/svg/statuses/burning.svg",
+      "size": 470,
+      "sha256": "63aeccf33bdb5afc75da16c1eed2f471943c17a6e28a563962a9c07e3ada1454"
+    },
+    {
+      "path": "icons/svg/statuses/burrowing.svg",
+      "size": 1263,
+      "sha256": "f20c4c0aac2efcafa2dcd9caf7aa58000feb7405c3e8046aff043978e85b51a5"
+    },
+    {
+      "path": "icons/svg/statuses/charmed.svg",
+      "size": 636,
+      "sha256": "f35e00753576a1ed7708f9445508d87b4b7ee3f64c6898c34cab4f088972646e"
+    },
+    {
+      "path": "icons/svg/statuses/concentrating.svg",
+      "size": 619,
+      "sha256": "dedf65c9a1eecfe05c6c6e7a929754decbe28a8dacaec9b04be61619725710fa"
+    },
+    {
+      "path": "icons/svg/statuses/cover-half.svg",
+      "size": 522,
+      "sha256": "8390ccd7d388114e7b773100817a94abb08657fdf7f9b82de0821084efb7faab"
+    },
+    {
+      "path": "icons/svg/statuses/cover-three-quarters.svg",
+      "size": 496,
+      "sha256": "3c36168d5d542fd13641f024c0f9f75cacb4b84408d76bc2f68e08773b325e89"
+    },
+    {
+      "path": "icons/svg/statuses/cover-total.svg",
+      "size": 317,
+      "sha256": "be9e90b06d95d78f3123edc2b3339118c786f4a45c5d5b6e6eeee1cbfce2ac25"
+    },
+    {
+      "path": "icons/svg/statuses/cursed.svg",
+      "size": 2759,
+      "sha256": "822b30e8f9b327f5f41de9f9e1926d7b947c02e3251f470ef164972cdfe88a52"
+    },
+    {
+      "path": "icons/svg/statuses/dead-outline.svg",
+      "size": 6737,
+      "sha256": "ffc9d26638c4e897baa6278a6e8b4ab414e1aa63366564710f88f42dbb277e4f"
+    },
+    {
+      "path": "icons/svg/statuses/dead.svg",
+      "size": 823,
+      "sha256": "17b2fe760c82c053b9411700b91c8bcf49b3d877384f3c027aa5b24407473fd1"
+    },
+    {
+      "path": "icons/svg/statuses/deafened.svg",
+      "size": 1894,
+      "sha256": "5445726a27025892210b49eb8e2d195d5dabb695d02de34643d61c784a281c45"
+    },
+    {
+      "path": "icons/svg/statuses/dehydration.svg",
+      "size": 3205,
+      "sha256": "e922db4c030d949c4e389231948d35b292e006c7492514ec5c977d3762374b4d"
+    },
+    {
+      "path": "icons/svg/statuses/diseased.svg",
+      "size": 2084,
+      "sha256": "581b963f42e90340572c6729365ed0b338d6ef6d6b4bfea2c970aef8796fe312"
+    },
+    {
+      "path": "icons/svg/statuses/dodging.svg",
+      "size": 3446,
+      "sha256": "3efa72c71c6158de4f0227c903cdaeed50bf654ba96a7210ffeaafebc3d1ce46"
+    },
+    {
+      "path": "icons/svg/statuses/encumbered.svg",
+      "size": 1030,
+      "sha256": "7169c246ec3fa891bc08c4db7c211c0e83d094da7db697c1cede9521a8b8835a"
+    },
+    {
+      "path": "icons/svg/statuses/ethereal.svg",
+      "size": 782,
+      "sha256": "3649f697088e169a4092581d6dbb502d1fe24ecb8ac896ba7ad354927e01ca0d"
+    },
+    {
+      "path": "icons/svg/statuses/exceeding-carrying-capacity.svg",
+      "size": 1845,
+      "sha256": "81c3a686012ffd4cbedae7cc2095cbea5b3ee6945e66af455ba78cb8c78eb9b7"
+    },
+    {
+      "path": "icons/svg/statuses/exhaustion-1.svg",
+      "size": 1243,
+      "sha256": "2bf9461d8f02c6dbc2e67edb5fb4a516f08bfa4a0c0e0adf4976f6fcf23d5d9c"
+    },
+    {
+      "path": "icons/svg/statuses/exhaustion-2.svg",
+      "size": 1278,
+      "sha256": "9f3d9369d3f1d3aefdefa38c260421f1e3e15e00a1133faccb0c3c7ff72f58fd"
+    },
+    {
+      "path": "icons/svg/statuses/exhaustion-3.svg",
+      "size": 1313,
+      "sha256": "28a6a408f9cfd01acecd16c19879098fe0b97409e1712022f5cf2bec6bd03348"
+    },
+    {
+      "path": "icons/svg/statuses/exhaustion-4.svg",
+      "size": 1348,
+      "sha256": "ecbdaf2a36eeee0ac2a50db3a86a261e4fbd695e23a36572517138c68afa6bd1"
+    },
+    {
+      "path": "icons/svg/statuses/exhaustion-5.svg",
+      "size": 1383,
+      "sha256": "9170c5f2549d6098bafb4f1fd44cb4fb3f38ce3af1e7b406d9bbb63776465b91"
+    },
+    {
+      "path": "icons/svg/statuses/exhaustion-6.svg",
+      "size": 1417,
+      "sha256": "c02a10d11d414bc3cf5a9126618db20cf36eb8dea450ea215fb519d61403eae1"
+    },
+    {
+      "path": "icons/svg/statuses/exhaustion.svg",
+      "size": 1167,
+      "sha256": "cebb3070684a901477f87eaee71f312c82ea95e1baf7abf4e897e5cd8a47c9d8"
+    },
+    {
+      "path": "icons/svg/statuses/falling.svg",
+      "size": 855,
+      "sha256": "5418b709511c56b9ea8857121d49156f01a40c6a6d738d1c2a1411b8f7d8a884"
+    },
+    {
+      "path": "icons/svg/statuses/flying.svg",
+      "size": 695,
+      "sha256": "1e50630563912f9388da12ffca38a159ac3f35c8d3fa66b440884ee71aeb1c3b"
+    },
+    {
+      "path": "icons/svg/statuses/frightened.svg",
+      "size": 2036,
+      "sha256": "072a15e52bf963634128c41e41508526936a206029fa59ba8a329e3abdd0ab62"
+    },
+    {
+      "path": "icons/svg/statuses/grappled.svg",
+      "size": 1988,
+      "sha256": "9dca09b17fab9ba614137eb98b4cc0bcbbc8d46cf1c3291ad84e122f017116cd"
+    },
+    {
+      "path": "icons/svg/statuses/heavily-encumbered.svg",
+      "size": 1410,
+      "sha256": "fa28bae964ebe2f34a3219f0887c478763d8ad40a4408a303ce034918db7d834"
+    },
+    {
+      "path": "icons/svg/statuses/hiding.svg",
+      "size": 2388,
+      "sha256": "0cb9a195863e986d99aa1ffc0c295cb35d6a04d36e5e0ac8f892331833dc34bc"
+    },
+    {
+      "path": "icons/svg/statuses/hovering.svg",
+      "size": 1544,
+      "sha256": "09409cd3fe484f33dc259feeb499a8fdcdd3522c2f5b34ce8ced877532343761"
+    },
+    {
+      "path": "icons/svg/statuses/incapacitated.svg",
+      "size": 2029,
+      "sha256": "b1844098ae6dc1d6df0cbd038a4d1e5eaa593f6be8e433bfdc6eea4413b3f6d9"
+    },
+    {
+      "path": "icons/svg/statuses/invisible.svg",
+      "size": 2544,
+      "sha256": "2a916414d20e19c622e1d2a8ae5190ce6d53a2949bca0609ad6e802dd95b11cb"
+    },
+    {
+      "path": "icons/svg/statuses/malnutrition.svg",
+      "size": 1948,
+      "sha256": "6f6a4cf1655a8936f4f4ca2fe531ee9a544d912e07a5b0e2f2de8fe0ee9967ea"
+    },
+    {
+      "path": "icons/svg/statuses/marked.svg",
+      "size": 1198,
+      "sha256": "8bdc0cc608ef7ed5b23475978e9f1dbd11f710f36bc10f51c1829fa6fdbce14e"
+    },
+    {
+      "path": "icons/svg/statuses/paralyzed.svg",
+      "size": 2464,
+      "sha256": "14026fbc013a5b5d56ab95eeeb8f0f8ce3fa21bda74bcd6b7dc17dc86300d205"
+    },
+    {
+      "path": "icons/svg/statuses/petrified.svg",
+      "size": 8014,
+      "sha256": "4043bf66b413232c3b944efce242c22b8f4496c5859c9611283b247c97e7c985"
+    },
+    {
+      "path": "icons/svg/statuses/poisoned.svg",
+      "size": 2591,
+      "sha256": "ec982c23f7233bc1bf951f5896555dceebb5fc7637b79027f24459e4a9ad6560"
+    },
+    {
+      "path": "icons/svg/statuses/prone.svg",
+      "size": 2524,
+      "sha256": "e782898464443cd6e732230cb2cdb0ca4293f1c385a0f379e79bf0686a956dcf"
+    },
+    {
+      "path": "icons/svg/statuses/restrained.svg",
+      "size": 3197,
+      "sha256": "fccbbf3123fc1bb7f4a86e5765ab77ab761c7236974afc18a2ee96cdc4ff5d06"
+    },
+    {
+      "path": "icons/svg/statuses/silenced.svg",
+      "size": 2800,
+      "sha256": "56d3ff29610f4e3ab6ecc049be4ef78dc807e8a8c370f1265db8a77cd0fd8fe5"
+    },
+    {
+      "path": "icons/svg/statuses/sleeping.svg",
+      "size": 663,
+      "sha256": "869cbfffe855606a08ff6a28e2d110fee4ca57b0eccf96685ff9acd7bdab64d1"
+    },
+    {
+      "path": "icons/svg/statuses/stable.svg",
+      "size": 2297,
+      "sha256": "de1616976e105e0d0ce86f125f7bb125a4a1622eaa8ebd8570df2e27564e8b2b"
+    },
+    {
+      "path": "icons/svg/statuses/stunned.svg",
+      "size": 1547,
+      "sha256": "036d1a008c604fc25b7e380c02e5a9520fce74050575da5f87229d0ca75a7d36"
+    },
+    {
+      "path": "icons/svg/statuses/suffocation.svg",
+      "size": 1547,
+      "sha256": "1f1b9e772638ba9578dca85d766765bb2c91fc8a2f64a36b42cabb1e443a915c"
+    },
+    {
+      "path": "icons/svg/statuses/surprised.svg",
+      "size": 1344,
+      "sha256": "5af98b010847d3364b37758873b43d157b9d38f671ede3ce4f56e9dd57c7a0f5"
+    },
+    {
+      "path": "icons/svg/statuses/transformed.svg",
+      "size": 1252,
+      "sha256": "73cbc262c20e22c65fb926b9300686c45728e61437dd0eeaacda51e8b4803605"
+    },
+    {
+      "path": "icons/svg/statuses/unconscious.svg",
+      "size": 1468,
+      "sha256": "a13be54e671c9457f6064fd4696fe675229f3c2d64686073f26fd7181097f49a"
+    },
+    {
+      "path": "icons/svg/subclass.svg",
+      "size": 3042,
+      "sha256": "5c2a98086e6cc772ea65da728c4e22e62610cd70b97b5feb00b827be3b39081a"
+    },
+    {
+      "path": "icons/svg/trait-armor-proficiencies.svg",
+      "size": 2053,
+      "sha256": "faac04384e39b1ddacaa7926448c12b5fcdf761a5be8558c520a7a56ce894941"
+    },
+    {
+      "path": "icons/svg/trait-condition-immunities.svg",
+      "size": 1700,
+      "sha256": "1a30e989d8224c6a3f9194c4d3a5c900ecdbe67a456e677169feb5fb613b49ae"
+    },
+    {
+      "path": "icons/svg/trait-damage-immunities.svg",
+      "size": 1714,
+      "sha256": "7e454c7128a6267331caa1c18959db6cc160079fe54f56d35404e3fb1e8cda77"
+    },
+    {
+      "path": "icons/svg/trait-damage-resistances.svg",
+      "size": 1931,
+      "sha256": "377feca62484ce0ce7709ca50eef8b06e314e051fe0e149ab5321fd26bb03bf9"
+    },
+    {
+      "path": "icons/svg/trait-damage-vulnerabilities.svg",
+      "size": 1707,
+      "sha256": "cd94c3aa2802b077382eab7f7da80e85ee3adbb05cb70507a9db71ace88b32bd"
+    },
+    {
+      "path": "icons/svg/trait-languages.svg",
+      "size": 1584,
+      "sha256": "440cb80993fe7e6d9794d1493341b1eb513965705b59782d7693f84c64f0ce76"
+    },
+    {
+      "path": "icons/svg/trait-saves.svg",
+      "size": 1736,
+      "sha256": "bde6d791d78efb4ca53d9d97db19209c3ff0345670237a4105c8727c5d4e3bdd"
+    },
+    {
+      "path": "icons/svg/trait-skills.svg",
+      "size": 1605,
+      "sha256": "c2e799d2e4b94bf7222073bd90b99d0f947a6082d1783536d9ad4df79153c64d"
+    },
+    {
+      "path": "icons/svg/trait-tool-proficiencies.svg",
+      "size": 1995,
+      "sha256": "f73025992ad6c7a9f019416c0380954ab2963339cf29e0fdb4b81e3e63c94ced"
+    },
+    {
+      "path": "icons/svg/trait-weapon-proficiencies.svg",
+      "size": 1339,
+      "sha256": "70f26c467ecc53aeed133e7b33e5cccd09e5fc19cb9acf1850e80eaf80266526"
+    },
+    {
+      "path": "icons/svg/trait.svg",
+      "size": 2052,
+      "sha256": "bb10f58c872e6011c3f3495cada9a7fab7e2c9d8c280dcf44837b079bac78ba5"
+    },
+    {
+      "path": "icons/svg/versatile.svg",
+      "size": 2021,
+      "sha256": "407f590aece8b5bb7c2af36833c6c4f7373848e817941bcc8babd82c9d77f4b6"
+    },
+    {
+      "path": "icons/svg/warlock.svg",
+      "size": 2347,
+      "sha256": "39f1d77fda82cf6ba74a61f595a75c09de80df58eae59c88f5a810bfb6b1fc3f"
+    },
+    {
+      "path": "icons/svg/wizard.svg",
+      "size": 1673,
+      "sha256": "057bb72005468d920c4c71ea08a3f749209c859097c3b0792f2a4b9f08e9f073"
+    },
+    {
+      "path": "json/fa-token-mapping.json",
+      "size": 140180,
+      "sha256": "a92c827adc0c7f34d867cefa3fac05be64222c93837d6d8ad49a67cadd4f54fa"
+    },
+    {
+      "path": "lang/en.json",
+      "size": 189477,
+      "sha256": "bf11f20e4d15133cf8461fa22a7330f2bb66538d58361c3f920a6dc567d7f0c2"
+    },
+    {
+      "path": "packs-folders/actors24.json",
+      "size": 3491,
+      "sha256": "ee2e61813fa0075c59f26e0a1973befd14de9d1a374b0d4601cb09e30a988de4"
+    },
+    {
+      "path": "packs-folders/backgrounds.json",
+      "size": 233,
+      "sha256": "84ddb51b6a591654f53ad3790daac23033ee58426a416b2afbe23619be461c31"
+    },
+    {
+      "path": "packs-folders/classes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "packs-folders/classes24.json",
+      "size": 6202,
+      "sha256": "2f20af70bf0952e10d1e564b8dae7359d5d84b0d7aa3ea082855762465863931"
+    },
+    {
+      "path": "packs-folders/classfeatures.json",
+      "size": 5062,
+      "sha256": "b31b14597ce216d09404a6074428bfe5b95cf1d4673a30a94902f5258ebc7c6a"
+    },
+    {
+      "path": "packs-folders/content24.json",
+      "size": 1438,
+      "sha256": "d32a1f105aa0832bb067b05ada2d7b1f56085d02face9eb86e44d341572788f9"
+    },
+    {
+      "path": "packs-folders/equipment24.json",
+      "size": 5595,
+      "sha256": "6e4ffb6f8024b175cd00f1cf43cde7fcc287248d56b47f0a18619aa64116fa47"
+    },
+    {
+      "path": "packs-folders/feats24.json",
+      "size": 488,
+      "sha256": "d3cfe5ae5358ea7b4029b7c7803d1eb51ff97fbffcdc2919612a17cf8678d664"
+    },
+    {
+      "path": "packs-folders/heroes.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "packs-folders/items.json",
+      "size": 1731,
+      "sha256": "b30d1360e29568d3dc6aba8b5740eecccc24e866cd621ef13ee70fc0cd6599df"
+    },
+    {
+      "path": "packs-folders/monsterfeatures.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "packs-folders/monsterfeatures24.json",
+      "size": 434,
+      "sha256": "af59f583562dfab7d9966f354b934eeff6c6ab010e4446da18a3bc3286d2a03f"
+    },
+    {
+      "path": "packs-folders/monsters.json",
+      "size": 1528,
+      "sha256": "88798e31eab076ad637f9480b7a4d3f14e5e5b310fa1d5e9a9a334b91a67ab11"
+    },
+    {
+      "path": "packs-folders/origins24.json",
+      "size": 1356,
+      "sha256": "7e5773e9e6f051aab64588f751edbab450e63ca84663a3ac8f4d7ce164610e4a"
+    },
+    {
+      "path": "packs-folders/races.json",
+      "size": 1755,
+      "sha256": "c85a1f56f0af48546a5b60a9650559393c65bc689c9a67704ac482d34c10e7dd"
+    },
+    {
+      "path": "packs-folders/rules.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "packs-folders/spells.json",
+      "size": 1111,
+      "sha256": "e837f310210ba4ac64bd968998b4555081b2443f4587d68af1ceeb3bd445c6f7"
+    },
+    {
+      "path": "packs-folders/spells24.json",
+      "size": 1230,
+      "sha256": "29125b67dd874acce682265b887e305ba5a026a16007719df91e84a7c9afea18"
+    },
+    {
+      "path": "packs-folders/subclasses.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "packs-folders/tables.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "packs-folders/tables24.json",
+      "size": 1153,
+      "sha256": "996bf3d873ca530f8402cbb233d85801081bb3d66efefaa0e162303373137a57"
+    },
+    {
+      "path": "packs-folders/tradegoods.json",
+      "size": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "packs-index/actors24.json",
+      "size": 108477,
+      "sha256": "40ca6b1b2340034ca41bf703482a3ec4dac03cbf948bd24e81d42277db7811df"
+    },
+    {
+      "path": "packs-index/backgrounds.json",
+      "size": 930,
+      "sha256": "6942eaa132465e2dc0e1a76471cef024c06b2b5805dc40ea73994d486eaa9578"
+    },
+    {
+      "path": "packs-index/classes.json",
+      "size": 3279,
+      "sha256": "8bde135e7a8fd712865b071ee8c8a08a2f45199eb81af570bb025f8ab297b7ed"
+    },
+    {
+      "path": "packs-index/classes24.json",
+      "size": 94791,
+      "sha256": "e4ed02f82d575b2c175f0806b2f888eb827c93488a70b958a569c810cf2b69d6"
+    },
+    {
+      "path": "packs-index/classfeatures.json",
+      "size": 79315,
+      "sha256": "baae984c0ce981ae66a108f4bb0bcf5a48a414223886776189ebb2e3295d9e62"
+    },
+    {
+      "path": "packs-index/content24.json",
+      "size": 5392,
+      "sha256": "e89122d4b146931dd4f3d9a755c1f31fe93a2d29f7a936a4005f7b814520c0c2"
+    },
+    {
+      "path": "packs-index/equipment24.json",
+      "size": 221389,
+      "sha256": "e15ad6f1d4edeaac9f6e22676ae66a21a63f470f8057456d6f7551115ed85f51"
+    },
+    {
+      "path": "packs-index/feats24.json",
+      "size": 5990,
+      "sha256": "9360e1cd7414544ada5819b7c85f93818504f21691ddc24ac88afb6de451990a"
+    },
+    {
+      "path": "packs-index/heroes.json",
+      "size": 1354,
+      "sha256": "d7efae732da5b552f55e2b5e957a00ae71fcba538a6add732b727f91a12feb0f"
+    },
+    {
+      "path": "packs-index/items.json",
+      "size": 314118,
+      "sha256": "b423b2c741082572fb52e29105bc38011d83ac4b82317e3b69265a6c125931f2"
+    },
+    {
+      "path": "packs-index/monsterfeatures.json",
+      "size": 79554,
+      "sha256": "0fbf05793a826d734e74dce5c099441980b35d26c7f9b609eb7b998a5db77ef0"
+    },
+    {
+      "path": "packs-index/monsterfeatures24.json",
+      "size": 111622,
+      "sha256": "db1285cb26e2cd80111d6574137c7fc39129e115b4351414a64daa8232873dd1"
+    },
+    {
+      "path": "packs-index/monsters.json",
+      "size": 91559,
+      "sha256": "cca65d1581e0869ef6c04da0cfeda99baca31a3bc328bf24137136872907d98c"
+    },
+    {
+      "path": "packs-index/origins24.json",
+      "size": 17851,
+      "sha256": "75d3deee34dc33bf02cace828842c56db578fa5d3c3b28bc526912ffa181c6f9"
+    },
+    {
+      "path": "packs-index/races.json",
+      "size": 11434,
+      "sha256": "5bd33e86be42f0b977eadedab9e6d627ae131e31fde0087d065521fba777aa31"
+    },
+    {
+      "path": "packs-index/rules.json",
+      "size": 2008,
+      "sha256": "762abb76b03b340fbf4157e8d0c588789f41a32f55848f96451128c8d5650747"
+    },
+    {
+      "path": "packs-index/spells.json",
+      "size": 101421,
+      "sha256": "98c84d241d33ce0799350bc1ce6ef676d3c54232a2e9036292b4057ee73f9112"
+    },
+    {
+      "path": "packs-index/spells24.json",
+      "size": 106717,
+      "sha256": "1bae8eb2e9fed09711cd5edb15e744fdbdb59feb93e4ea1b6d957193db000ab9"
+    },
+    {
+      "path": "packs-index/subclasses.json",
+      "size": 3855,
+      "sha256": "1676badbaedcf7db94e38ad948310ffba201e7ec6c2f863f83f42ea0a7b5053c"
+    },
+    {
+      "path": "packs-index/tables.json",
+      "size": 4296,
+      "sha256": "076f26297148351f4c013f0dbea5070ede3d6041eccc41baa27de59c5efa675a"
+    },
+    {
+      "path": "packs-index/tables24.json",
+      "size": 10189,
+      "sha256": "30794e9fc9db64f624d4d7ee8a536a691eaa3bd3891583993d1095d744b2d2d2"
+    },
+    {
+      "path": "packs-index/tradegoods.json",
+      "size": 7021,
+      "sha256": "e8cf7f09d2d7e2d5197f58886cd35ba980fa0451d4326e5e40734bf834ac7689"
+    },
+    {
+      "path": "packs-json/actors24.json",
+      "size": 9506214,
+      "sha256": "792e39f13f857c9811ccdef979bcdd2d6fd6acf76c1dba1d95d30a05c433391f"
+    },
+    {
+      "path": "packs-json/backgrounds.json",
+      "size": 7987,
+      "sha256": "15c89ad3574c9b0be8c7b01796d446ccc747a6d4a53699d716567bd247cb350f"
+    },
+    {
+      "path": "packs-json/classes.json",
+      "size": 121374,
+      "sha256": "d366314613b47bf062e913e7f634faaf9b335a357107c14d97de1a214a526496"
+    },
+    {
+      "path": "packs-json/classes24.json",
+      "size": 1028526,
+      "sha256": "a3e826bf1fa13011d0523e1dfef278bebb28d42990636129294129b3cf2a16bb"
+    },
+    {
+      "path": "packs-json/classfeatures.json",
+      "size": 416747,
+      "sha256": "511bf2cddb389b7d0283cf1b8bf99ee0edb74d95e81ca3fb7bb2854829e33659"
+    },
+    {
+      "path": "packs-json/content24.json",
+      "size": 1531340,
+      "sha256": "aaa0f85f108135638ae22c7956aecedcb42298549c25f82c98cac19272718657"
+    },
+    {
+      "path": "packs-json/equipment24.json",
+      "size": 2235292,
+      "sha256": "fb140c905a66f73d633f23b0cb269f9c89616e08c93596d50d4e4603d2957428"
+    },
+    {
+      "path": "packs-json/feats24.json",
+      "size": 35121,
+      "sha256": "f843ce8826365265abb6eb90722f1876b687863c5727bfd15eeca36137b634e6"
+    },
+    {
+      "path": "packs-json/heroes.json",
+      "size": 915484,
+      "sha256": "4ba8b204f66d8b271b1c6bd39d535e492fdaded249845db9ab2e5edd5724400e"
+    },
+    {
+      "path": "packs-json/items.json",
+      "size": 2175256,
+      "sha256": "6ae9ee57b97051706bef5b1879c7f5e297e632809abb9a0ba62111eb80007b77"
+    },
+    {
+      "path": "packs-json/monsterfeatures.json",
+      "size": 419067,
+      "sha256": "da6d86cc31a459f65c8f849633fada48915165b6d73e80e04c435ca249e73672"
+    },
+    {
+      "path": "packs-json/monsterfeatures24.json",
+      "size": 944969,
+      "sha256": "f4d7ae4f212aa8d44ecfc97a06ddc1e1be969aba41593a5115e40fde81d2e3a9"
+    },
+    {
+      "path": "packs-json/monsters.json",
+      "size": 5655977,
+      "sha256": "8a250df4a97c16c5b7e858484e24997bd7024607e5f46207d28aa3d566479326"
+    },
+    {
+      "path": "packs-json/origins24.json",
+      "size": 149338,
+      "sha256": "8830b1a0aa9f7f1cc8c9802c16428fafb5059e170fcbfc4db0cb333829e03ddf"
+    },
+    {
+      "path": "packs-json/races.json",
+      "size": 88759,
+      "sha256": "13ad0c39132bf5bc4973216b8f7555acfec8d5fe5577acfa2903905308a32c69"
+    },
+    {
+      "path": "packs-json/rules.json",
+      "size": 714652,
+      "sha256": "b320cf9db27d5297efc702a605076f0e69e84b06ec47cb234a5d97f4dd9e1916"
+    },
+    {
+      "path": "packs-json/spells.json",
+      "size": 2169820,
+      "sha256": "7dc4b297cf01cdb51af185a510640ffef44521c5f6550eca538cfb4f3b2e9e17"
+    },
+    {
+      "path": "packs-json/spells24.json",
+      "size": 1348453,
+      "sha256": "11c63f68c423fd0a4af6b42da360f1be333caf91e697c40738079447588889a6"
+    },
+    {
+      "path": "packs-json/subclasses.json",
+      "size": 36791,
+      "sha256": "b9f49b684038c28e8cd1eac544a3425944e4bcfb9cee4201144f056f54220dea"
+    },
+    {
+      "path": "packs-json/tables.json",
+      "size": 136201,
+      "sha256": "689d6c0813a9443c48147c47cf2e436d9912bc978d7dd4cdd2bd80b1bf615b59"
+    },
+    {
+      "path": "packs-json/tables24.json",
+      "size": 327881,
+      "sha256": "ca40ba24681d7c15a520cdb08c2c5fbd5a0045a8fcef135ed09a83f530b51821"
+    },
+    {
+      "path": "packs-json/tradegoods.json",
+      "size": 24763,
+      "sha256": "95b28cf8719ef321b86d9ccc6665ac9d88fcb5745a1893d1bc5d04a94701320c"
+    },
+    {
+      "path": "system.json",
+      "size": 15685,
+      "sha256": "b4ccb0d2d7582a08ae5b6a2a87a8967842c2c826f05ff37e1aa7a2448e6f5705"
+    },
+    {
+      "path": "templates.json",
+      "size": 485279,
+      "sha256": "07f98040da3f04ad55247b4e99ea49c2aa20ffa0b0100c38dd430ccb38fd123b"
+    },
+    {
+      "path": "templates/activity/activation.hbs",
+      "size": 527,
+      "sha256": "b6a69f0f9738d547eeda76092225cc3422010935e2cbda5413c553013a8bc645"
+    },
+    {
+      "path": "templates/activity/activity-choices.hbs",
+      "size": 523,
+      "sha256": "97f71432d0413697ebbf0b84b65f13b8090f301760025c16c70bc9ba5187a37b"
+    },
+    {
+      "path": "templates/activity/activity-row-summary.hbs",
+      "size": 844,
+      "sha256": "7ba2bc68a92d19728f43378a50986b95fa951189130cdc7b73f4d0037251e6d3"
+    },
+    {
+      "path": "templates/activity/activity-usage-concentration.hbs",
+      "size": 324,
+      "sha256": "8c9c27dde95311da3ba5d334bbbdb3df39f57bd51ae373c3a2c5d16259a5e52e"
+    },
+    {
+      "path": "templates/activity/activity-usage-consumption.hbs",
+      "size": 666,
+      "sha256": "924086069f2843b85beb9c9d1549dd2ebffe5ffadc7d3c265317edf746d35b6f"
+    },
+    {
+      "path": "templates/activity/activity-usage-creation.hbs",
+      "size": 358,
+      "sha256": "b7f384a676a0d181f1bc74f1f265ceb61d4dd2510afa724ad02ab2fe2e84acc7"
+    },
+    {
+      "path": "templates/activity/activity-usage-scaling.hbs",
+      "size": 1050,
+      "sha256": "c3f8dac7e11d11fc81e9d36f85a162282cc80954ff8c1fbced3e7f49574d1d08"
+    },
+    {
+      "path": "templates/activity/attack-effect.hbs",
+      "size": 341,
+      "sha256": "0dd624da36944839ed172653ec563e6171a5c989ec9d55271e1eecb66c1e524a"
+    },
+    {
+      "path": "templates/activity/attack-identity.hbs",
+      "size": 503,
+      "sha256": "910ab9d3f6b0e10e3af28f64f1e99fd280d13c44dba80df8acaf1c3c76388023"
+    },
+    {
+      "path": "templates/activity/cast-effect.hbs",
+      "size": 263,
+      "sha256": "0e0a9f2807844d7c3328a0a1d6d34073bf2f0108a797676250a9633055f10c77"
+    },
+    {
+      "path": "templates/activity/check-effect.hbs",
+      "size": 270,
+      "sha256": "93f1b1ed185bf84b5f168a5c3c22e0bc687c084f5f067ad853cc082388d90410"
+    },
+    {
+      "path": "templates/activity/damage-effect.hbs",
+      "size": 270,
+      "sha256": "f0fbd57352879e7ddb03159069c75f3400e1bd993a49c728cabcca1a35de99fd"
+    },
+    {
+      "path": "templates/activity/effect.hbs",
+      "size": 229,
+      "sha256": "c3607298a87fca2b3691c4fa950b1396ec584b9e85fb8c08914e4499b22993bb"
+    },
+    {
+      "path": "templates/activity/enchant-effect.hbs",
+      "size": 421,
+      "sha256": "0d9a2368b36916af15d27089a00f889ed1de9ca94d959583bf4541e70e9a0982"
+    },
+    {
+      "path": "templates/activity/enchant-usage-creation.hbs",
+      "size": 751,
+      "sha256": "03b473ea23b95dff52f415c554ca6bc1b1194de25dd6025654f8de9a1ac675b1"
+    },
+    {
+      "path": "templates/activity/forward-activation.hbs",
+      "size": 1149,
+      "sha256": "0133d9ae1175e32b72f575f40cf5de2c3cee29e7bfbdac3e98294bdb44b216f2"
+    },
+    {
+      "path": "templates/activity/forward-effect.hbs",
+      "size": 335,
+      "sha256": "c7a4a9fb3fa94d44944b330674118702c77f30a3ab55dc104e80c06a630c5f55"
+    },
+    {
+      "path": "templates/activity/heal-effect.hbs",
+      "size": 269,
+      "sha256": "3b5f88d172c3c99f5c00a11a0796f2503316e3bbf53beac0b4cb1f9faa583427"
+    },
+    {
+      "path": "templates/activity/identity.hbs",
+      "size": 477,
+      "sha256": "4f58dff3c9d9fcfe70a69d1bbcbe9d09161522f348ea8b55a4ac4d1c6f341e00"
+    },
+    {
+      "path": "templates/activity/order-usage.hbs",
+      "size": 4719,
+      "sha256": "9b5099b7e5402d7365d3090831ea972dd78949ca7f0020fc4c33efbbe9e0ed0a"
+    },
+    {
+      "path": "templates/activity/parts/activity-consumption.hbs",
+      "size": 3971,
+      "sha256": "87a56d2bc76f118cab137254b60f1858ef1c9b6cc75b7763782e06457b86b124"
+    },
+    {
+      "path": "templates/activity/parts/activity-effect-level-limit.hbs",
+      "size": 784,
+      "sha256": "a7b93647dca0099aaaa54fa48d089d5540b4124f23ae17c02641e4a68e7fbabe"
+    },
+    {
+      "path": "templates/activity/parts/activity-effect-settings.hbs",
+      "size": 97,
+      "sha256": "e9e88ef5dcf7711c6506f853fec6e3054a1653d1aee49587db71a022a514abe8"
+    },
+    {
+      "path": "templates/activity/parts/activity-effects.hbs",
+      "size": 2135,
+      "sha256": "a1091cbb8f34d190af46fecb53a6663f78394c4d21a89d2979a77e9196364467"
+    },
+    {
+      "path": "templates/activity/parts/activity-identity.hbs",
+      "size": 376,
+      "sha256": "c82e1bf8bff869d55ff10b318cfe1c59b11928caaa7d1e68cf12ea545a2e465d"
+    },
+    {
+      "path": "templates/activity/parts/activity-targeting.hbs",
+      "size": 1072,
+      "sha256": "6ffebeaea00621239bf3c2a6307bc08b1fbe9dd80825daaced3f598467248220"
+    },
+    {
+      "path": "templates/activity/parts/activity-time.hbs",
+      "size": 2081,
+      "sha256": "2997fd7d5d8d7f31044597bbbec857b1d6bfd27640acfb021b023f9b4b528530"
+    },
+    {
+      "path": "templates/activity/parts/activity-usage-notes.hbs",
+      "size": 75,
+      "sha256": "18f2b54bfa4153c920a6125db15114dc8193c0ae6f02188f643b458b0037a700"
+    },
+    {
+      "path": "templates/activity/parts/activity-visibility.hbs",
+      "size": 1200,
+      "sha256": "74fd476f21bb760e900bf29ce570b6426554bd0c38aad07df7ad127b9b461dab"
+    },
+    {
+      "path": "templates/activity/parts/attack-damage.hbs",
+      "size": 757,
+      "sha256": "486846afbdc5d53e7f2aacbca92a387e569134f085b188aca31bcbe45695a4ab"
+    },
+    {
+      "path": "templates/activity/parts/attack-details.hbs",
+      "size": 583,
+      "sha256": "5aaa87b4a12296db8dbc57f16ddc5482003cf660b3ecfcb733ddfd2c0166083c"
+    },
+    {
+      "path": "templates/activity/parts/attack-identity.hbs",
+      "size": 463,
+      "sha256": "ae2cbb9d2dcaee5fff67906e0de11acf395d5fb7741629ad22186e7c442da941"
+    },
+    {
+      "path": "templates/activity/parts/cast-details.hbs",
+      "size": 933,
+      "sha256": "f509423ee7558e6055b985c5e0e12999206dbce6bfcc9862dceedd684ba28fbd"
+    },
+    {
+      "path": "templates/activity/parts/cast-spell.hbs",
+      "size": 708,
+      "sha256": "cf4d4fded012eb8a58dcfad22b4620881858fd25065b2600a8118dc6aa7a6e43"
+    },
+    {
+      "path": "templates/activity/parts/check-details.hbs",
+      "size": 947,
+      "sha256": "1f8964d40bbfd761fb5e12437e3badbd9edfc2f6bbf51c40d78d6fd2278eb5e1"
+    },
+    {
+      "path": "templates/activity/parts/damage-damage.hbs",
+      "size": 807,
+      "sha256": "e56502d4b2ce930952049cd74935ed9298472c6062bac06f7792626d6c3a841c"
+    },
+    {
+      "path": "templates/activity/parts/damage-part.hbs",
+      "size": 3335,
+      "sha256": "ba194acef301b5ec14609d0fd08c12e022500a8a9ba3671f76f5d9621ffb3ba6"
+    },
+    {
+      "path": "templates/activity/parts/damage-parts.hbs",
+      "size": 446,
+      "sha256": "fb5f141f8ab5759cc89ccd050c67e9e4c8643fd1d710582509a8bb6b2e5b6e57"
+    },
+    {
+      "path": "templates/activity/parts/enchant-enchantments.hbs",
+      "size": 3833,
+      "sha256": "af94e96273865bfc78bc336b60771438d74f2be1189aea859de70e180323b836"
+    },
+    {
+      "path": "templates/activity/parts/enchant-restrictions.hbs",
+      "size": 1046,
+      "sha256": "3df00873b1f4cd5cedf57e6b908f4698daf6309ab1725e655e99de594cbbcad0"
+    },
+    {
+      "path": "templates/activity/parts/heal-healing.hbs",
+      "size": 263,
+      "sha256": "81cdc222e8d0b87db01ebd19d0f95fd07b4108281699c9656405bc2384e2afe2"
+    },
+    {
+      "path": "templates/activity/parts/save-damage.hbs",
+      "size": 553,
+      "sha256": "a313506ad2fc5aefc6b41a655c11c885638001c9c2609fee652148d1589a5864"
+    },
+    {
+      "path": "templates/activity/parts/save-details.hbs",
+      "size": 818,
+      "sha256": "4838f8f9683344964e63510d06c61f348edfe0e12440a8d9c292b93d7efc8650"
+    },
+    {
+      "path": "templates/activity/parts/save-effect-settings.hbs",
+      "size": 378,
+      "sha256": "ae1889131334ce949dabb21da54f7e29cc768b1744b353ffeba415d92661fc48"
+    },
+    {
+      "path": "templates/activity/parts/summon-changes.hbs",
+      "size": 2254,
+      "sha256": "5d8cd4168d290b1dac28b168b6b4046e8720cb089c9aa024f3fa6966656785f5"
+    },
+    {
+      "path": "templates/activity/parts/summon-profiles.hbs",
+      "size": 4540,
+      "sha256": "d7971b9ebbf15844a8b6f96039c47774a5362fe2b751c7334be93d1caaa1098b"
+    },
+    {
+      "path": "templates/activity/parts/transform-profiles.hbs",
+      "size": 4675,
+      "sha256": "117b68a6028d52f0da08591ddb00c130b4a8543ff45cff8f86ea9152d92d9bbd"
+    },
+    {
+      "path": "templates/activity/parts/transform-settings.hbs",
+      "size": 877,
+      "sha256": "ac4798b188891a0ccdf20579a48b213bf93a5e878d74f6e9eda7d64f2cb14126"
+    },
+    {
+      "path": "templates/activity/save-effect.hbs",
+      "size": 337,
+      "sha256": "bd013250165dcfefa0dc6ba98d37d5c977048cf4daac0bef56cc3f1ea867541b"
+    },
+    {
+      "path": "templates/activity/summon-effect.hbs",
+      "size": 401,
+      "sha256": "bc67ab25bef458926c7c3d32dce7d922baeb48015bfd5984fcb898d6c3dd0545"
+    },
+    {
+      "path": "templates/activity/summon-usage-creation.hbs",
+      "size": 789,
+      "sha256": "719d7e8364a2802239ae8a2901616f7bd683d24997847ac262a811928754d08b"
+    },
+    {
+      "path": "templates/activity/transform-effect.hbs",
+      "size": 409,
+      "sha256": "45d25d63bfb73970c13950679261aa8c9010451293af287074d9aa61265fd328"
+    },
+    {
+      "path": "templates/activity/transform-usage-creation.hbs",
+      "size": 805,
+      "sha256": "ee335e591ec43daa690fa9c7bdb96f3ef43053342954f0a8a93b3bd6f7b17df2"
+    },
+    {
+      "path": "templates/activity/utility-effect.hbs",
+      "size": 563,
+      "sha256": "d7ec3c9845b4cf35db6df1ab04f8586ec4a7938fb1a7d1933d81a22d9e549bb0"
+    },
+    {
+      "path": "templates/actors/character-ability-scores.hbs",
+      "size": 1526,
+      "sha256": "53889a7eb1b99d4b29418e7e7cf6ff6a5275f0a8cc76a54e3d02cdddfb632475"
+    },
+    {
+      "path": "templates/actors/character-header.hbs",
+      "size": 2909,
+      "sha256": "6059cb4dbd62efe80d070d7a885d6ccd980925fa269edc9488e1347fca08fd04"
+    },
+    {
+      "path": "templates/actors/character-sidebar.hbs",
+      "size": 17843,
+      "sha256": "a857d6f8180e1a6940ec48d703215e6d04a68bd704782d214fce765ef02cf32d"
+    },
+    {
+      "path": "templates/actors/config/ability-config.hbs",
+      "size": 4456,
+      "sha256": "fe919e759632abf04c363692b8ca3ad03e8ba0b4d294e4e8d537eb944ce20cc1"
+    },
+    {
+      "path": "templates/actors/config/armor-class-config.hbs",
+      "size": 1870,
+      "sha256": "cc8663b7285d1f82144715ad6e647cf3b954d178697204913951982ca04523e5"
+    },
+    {
+      "path": "templates/actors/config/concentration-config.hbs",
+      "size": 1840,
+      "sha256": "cdf43a3dceea3584195da4d1d4b7bd9e8d7d75815b65491fd17b9034f3cd2dba"
+    },
+    {
+      "path": "templates/actors/config/damages-config.hbs",
+      "size": 1020,
+      "sha256": "9e2ae67e85d28dc9e91012e25ccda140ad8421cbf5515768f7f8e827adbcc91e"
+    },
+    {
+      "path": "templates/actors/config/death-config.hbs",
+      "size": 1617,
+      "sha256": "c0b54c78a90afd8335973aa873eb63a1cb34e8d1e1bdf34491cfad057ad9891f"
+    },
+    {
+      "path": "templates/actors/config/habitat-config.hbs",
+      "size": 1163,
+      "sha256": "291b5574b815d87d9b59b22bfba2d3dd432908960daf19a8bad8ce6b253d6dc1"
+    },
+    {
+      "path": "templates/actors/config/hit-dice-config.hbs",
+      "size": 1212,
+      "sha256": "bb76926164c8217af29351a97a337b9fcf8d61678ceec4c4e3c5f7ad3b53e394"
+    },
+    {
+      "path": "templates/actors/config/hit-points-config.hbs",
+      "size": 3334,
+      "sha256": "21d6c218a511c8f7f8f54560cfeedfa0a83bdc06de1da84716d7b52ece9ed3c4"
+    },
+    {
+      "path": "templates/actors/config/initiative-config.hbs",
+      "size": 1927,
+      "sha256": "173c572af356cef23bf944d3b65b1ff1b6f060906cbf2090cb7a40b5e2804989"
+    },
+    {
+      "path": "templates/actors/config/languages-config.hbs",
+      "size": 1076,
+      "sha256": "1eb7b3129b3b602ec9ff78d1099b4e006925aca0789a76196a7e32c324a9f922"
+    },
+    {
+      "path": "templates/actors/config/skill-tool-config.hbs",
+      "size": 2849,
+      "sha256": "bad8a13925d832ab3246a51ce4f7142d842075955c2b6bef5204a21ed1bec593"
+    },
+    {
+      "path": "templates/actors/config/skills-config.hbs",
+      "size": 784,
+      "sha256": "e5aa4dd4bcd1f3dba6f452412930c0b2417fd6de2561339b44bb8fe9cb4fdb0a"
+    },
+    {
+      "path": "templates/actors/config/spell-slots-config.hbs",
+      "size": 361,
+      "sha256": "3f7293243f668af7c10bbcda39c8b26d2495216f7a8495664eadbe81f7c5b6b7"
+    },
+    {
+      "path": "templates/actors/config/tools-config.hbs",
+      "size": 1186,
+      "sha256": "a8c94eda4ebf2b9122665742b1190268234e98f04cf9c9f6026037dc2754b53b"
+    },
+    {
+      "path": "templates/actors/config/traits-config.hbs",
+      "size": 581,
+      "sha256": "1c6f9f3b8a5b99fcab0958bd9ce053adc7cde1d616012cdc1e825e02898c2546"
+    },
+    {
+      "path": "templates/actors/config/treasure-config.hbs",
+      "size": 492,
+      "sha256": "8141a8df602f6f4a908fb6f1cc7ce03896f616c5358a51ff691ec2dca5f03921"
+    },
+    {
+      "path": "templates/actors/config/weapons-config.hbs",
+      "size": 2075,
+      "sha256": "85867665a02f0754ca4ff81f61fbdea820f470f118bc7adaba17b575574cf505"
+    },
+    {
+      "path": "templates/actors/embeds/npc-embed.hbs",
+      "size": 2937,
+      "sha256": "4ee7295aff4e5c98f30ac9eb0880ad011db9de6f9b9a74de71e2d1f7d4ba47d2"
+    },
+    {
+      "path": "templates/actors/encounter/header.hbs",
+      "size": 1579,
+      "sha256": "2efd465c5c516452fec797d4437ac1a455897e9e043bcef65c69ca00ac2fa891"
+    },
+    {
+      "path": "templates/actors/encounter/members.hbs",
+      "size": 4840,
+      "sha256": "08b4da01c79bbd83a78a5dbff7aae438e08c9016b57aa0b95573d9f04ed1fb1d"
+    },
+    {
+      "path": "templates/actors/group/biography.hbs",
+      "size": 1885,
+      "sha256": "99f427150effe905a3bb8e63fbe2cec833a36e4b4546349d0f9614826557e5f5"
+    },
+    {
+      "path": "templates/actors/group/header.hbs",
+      "size": 5672,
+      "sha256": "3fa7f88f6e306cb474406dfca95a9bb10b9474f278f517bc6c60b752c8827da3"
+    },
+    {
+      "path": "templates/actors/group/inventory.hbs",
+      "size": 1429,
+      "sha256": "183777b6cce8fe17efd9b27e9b35b7366e0de9ad00bfab6dd49b05de505712d1"
+    },
+    {
+      "path": "templates/actors/group/member.hbs",
+      "size": 6187,
+      "sha256": "053a31e5213d159cd14275f4103b0296560734de0f3170ada79bd1023b63e0b8"
+    },
+    {
+      "path": "templates/actors/group/members.hbs",
+      "size": 510,
+      "sha256": "72e52ab7cabe63b91078bb0a593672c684579970ff805d1beeb61df763d30a21"
+    },
+    {
+      "path": "templates/actors/limited-body.hbs",
+      "size": 542,
+      "sha256": "f449ba7a69d6b53f168ca406496883cb8f7e5ac721470877a4f3fab13c8592a2"
+    },
+    {
+      "path": "templates/actors/limited-header.hbs",
+      "size": 445,
+      "sha256": "17ddd8ec3dbbec284da6082261618d3b8627a1e5f270efa170ba33e3f8b41f71"
+    },
+    {
+      "path": "templates/actors/limited-sheet.hbs",
+      "size": 721,
+      "sha256": "40d9b12fd508894aa4bfd90358c6433b3178a45fe37d2a40607c4cc1df45efd1"
+    },
+    {
+      "path": "templates/actors/npc-header.hbs",
+      "size": 19383,
+      "sha256": "e8b3e2f0c9dd0ce4adc04947cd06ad0c7ece39db34977623d4ee4b3124d41970"
+    },
+    {
+      "path": "templates/actors/npc-sidebar.hbs",
+      "size": 2716,
+      "sha256": "4948be230d95f065305b220ac7d3700045f01964a9227ad3070b87e19f421e37"
+    },
+    {
+      "path": "templates/actors/parts/actor-classes.hbs",
+      "size": 2905,
+      "sha256": "5f8d379291f78d00d70c51cef2d82922b8c3295dd80a333e72598b9a80a23666"
+    },
+    {
+      "path": "templates/actors/parts/actor-features.hbs",
+      "size": 5343,
+      "sha256": "f80b20e342d83c7bdc2e1f0bcc8220ba4d1c6bccbf66af38e3d771bdb1de65be"
+    },
+    {
+      "path": "templates/actors/parts/actor-spellbook.hbs",
+      "size": 6452,
+      "sha256": "a7442577ce004cd8ad80c88ced51c57eaa9bbdcddc0f20c83977c693996df71b"
+    },
+    {
+      "path": "templates/actors/parts/actor-trait-line.hbs",
+      "size": 1129,
+      "sha256": "dfe9779f1fa4bf2c227ac5604bffc6e0931ba2130e159331f6c2088d78690d3d"
+    },
+    {
+      "path": "templates/actors/parts/actor-trait-pills.hbs",
+      "size": 1555,
+      "sha256": "9dce80ca1e53a590f94b42bd1d3f988553cf634dec2f8e1a44f6033547b10403"
+    },
+    {
+      "path": "templates/actors/parts/actor-traits.hbs",
+      "size": 6160,
+      "sha256": "4b137b2e6664af766f0768316dd0217f37e66ad65ca8f55ea15ff522f5fcde10"
+    },
+    {
+      "path": "templates/actors/parts/actor-warnings-dialog.hbs",
+      "size": 374,
+      "sha256": "9ace820b6b3f3dc7c53a4a91c791a4af499a411ad848deb6f9619b99603a075b"
+    },
+    {
+      "path": "templates/actors/parts/actor-warnings.hbs",
+      "size": 221,
+      "sha256": "180cd81f5978bb0eb84a34a8bf0e84ae26621bbfe1c66d3fa85f2d194fea00e9"
+    },
+    {
+      "path": "templates/actors/parts/biography-textbox.hbs",
+      "size": 446,
+      "sha256": "c28c4a3c1653b1ed77535ed5056d944901d9e4842f538f29a798eb18ed8a7f18"
+    },
+    {
+      "path": "templates/actors/parts/sidebar-collapser.hbs",
+      "size": 424,
+      "sha256": "8585e956fb5289e3d156f73e3f375f9eea92a8aa75e78d143b1ab429e1671617"
+    },
+    {
+      "path": "templates/actors/rest/base-rest.hbs",
+      "size": 183,
+      "sha256": "48c218070cd9e8d7e27030d41ea5e2dfe88ff78b582f616ce406bf2cbef585ba"
+    },
+    {
+      "path": "templates/actors/rest/long-rest.hbs",
+      "size": 322,
+      "sha256": "e46ea425f7f93003bd2e0059988b938c278178c71459c041798d74fb9b72ff81"
+    },
+    {
+      "path": "templates/actors/rest/parts/hit-dice.hbs",
+      "size": 688,
+      "sha256": "0eca7ee9c29a4d34ad152935052f9684063b54bd13d9f37fa436e17f7185afc4"
+    },
+    {
+      "path": "templates/actors/rest/parts/rest-request.hbs",
+      "size": 123,
+      "sha256": "c78c7dc83c022c00419acc4a5c944f9767063d6f186b35eaffd52e3a9a1113fc"
+    },
+    {
+      "path": "templates/actors/rest/short-rest.hbs",
+      "size": 1121,
+      "sha256": "04cdfa15b01c64c7b5546ba7eea03d8accd8499d3ebd5b720bf27d48b309a6de"
+    },
+    {
+      "path": "templates/actors/tabs/actor-effects.hbs",
+      "size": 139,
+      "sha256": "3d549195998ed8d7f5f632b0ea2757c047e5dd8bf5c3bd16b987aba2e6f40820"
+    },
+    {
+      "path": "templates/actors/tabs/actor-features.hbs",
+      "size": 166,
+      "sha256": "4045fb255f7f9dce419c47a9cf96276e56434aec5de107f0ff20761610c62b2c"
+    },
+    {
+      "path": "templates/actors/tabs/actor-inventory.hbs",
+      "size": 166,
+      "sha256": "4045fb255f7f9dce419c47a9cf96276e56434aec5de107f0ff20761610c62b2c"
+    },
+    {
+      "path": "templates/actors/tabs/character-bastion.hbs",
+      "size": 6923,
+      "sha256": "8126f80eec19fb599e739d44e61ccd7fbfa08abf079d4490ba140a6f73d1c62d"
+    },
+    {
+      "path": "templates/actors/tabs/character-biography.hbs",
+      "size": 2523,
+      "sha256": "6ca4d5e15dcd5ec19d7adbffc4a55ac40af6654ae79f7cec27e42a6736541ac9"
+    },
+    {
+      "path": "templates/actors/tabs/character-details.hbs",
+      "size": 10891,
+      "sha256": "7c060e34b8de55e23ef641273097727ff1cda2f22ee69588e27036d254ac4aef"
+    },
+    {
+      "path": "templates/actors/tabs/character-features.hbs",
+      "size": 199,
+      "sha256": "f580249840dab53955fe0a8735491992e90c57f23014a7de0e285ba6ed5e442c"
+    },
+    {
+      "path": "templates/actors/tabs/character-inventory.hbs",
+      "size": 1384,
+      "sha256": "57789a65593fdc7dafe724898fe16bce659406cd2c0ce517d3d3ceb0937ca8c5"
+    },
+    {
+      "path": "templates/actors/tabs/creature-special-traits.hbs",
+      "size": 1463,
+      "sha256": "a5661d65923bc6f52fbdfc3a70db0a89c457ea415c08e038f6cbfbf8db9c5a70"
+    },
+    {
+      "path": "templates/actors/tabs/creature-spells.hbs",
+      "size": 3948,
+      "sha256": "05b7e4b36bd1d5a53e43a2088ffaa62018e68cd37bb0b9c2626c65ed7f128ead"
+    },
+    {
+      "path": "templates/actors/tabs/npc-biography.hbs",
+      "size": 2544,
+      "sha256": "ea22cfb50f2fd4dcc8f4d246934ac4de696b0c6775b47d1d785d8d0bf4d6afd0"
+    },
+    {
+      "path": "templates/actors/vehicle/crew.hbs",
+      "size": 3394,
+      "sha256": "d6ff1d0a7e4743d17f98822cd4493c87884880451cecff0158ea7ce78b962f57"
+    },
+    {
+      "path": "templates/actors/vehicle/description.hbs",
+      "size": 445,
+      "sha256": "008b0879cfe40003bc06c06efd71114ebc0d94a2a03cd7448e5aeb21a17e42f8"
+    },
+    {
+      "path": "templates/actors/vehicle/sidebar.hbs",
+      "size": 13856,
+      "sha256": "268840edd78e978bbdcb3ed998231e65babda0c10d7a265b54f737c32c19f066"
+    },
+    {
+      "path": "templates/actors/vehicle/stations.hbs",
+      "size": 9042,
+      "sha256": "e7aecfd8310e0c85a181c0dd46c1a8c5b8ec173835b5de1fb325d486f1517554"
+    },
+    {
+      "path": "templates/advancement/ability-score-improvement-config-details.hbs",
+      "size": 618,
+      "sha256": "44374b1c658f60d77f87484e90f46e6debe472a723f78f372e41e66e5e7fdcbd"
+    },
+    {
+      "path": "templates/advancement/ability-score-improvement-config-scores.hbs",
+      "size": 521,
+      "sha256": "3b9b01034420a5bf7e00a7cd8268457d06e0e3c0de3ae99e22e07387116f17f2"
+    },
+    {
+      "path": "templates/advancement/ability-score-improvement-flow.hbs",
+      "size": 2963,
+      "sha256": "47f7822cb9862553a3be0ac0fd0c720a6d7df9bbbd5c4c332163e7efcbccadb2"
+    },
+    {
+      "path": "templates/advancement/advancement-config.hbs",
+      "size": 73,
+      "sha256": "8e3b5405ce28d93df1b4194b60c7d11365ef930b414fb837de4faf8686167b0d"
+    },
+    {
+      "path": "templates/advancement/advancement-confirmation-dialog.hbs",
+      "size": 502,
+      "sha256": "15d43942ff25c6ec4b29052ad3fa1c6617472c2522040d59a81c67b49ce28d2c"
+    },
+    {
+      "path": "templates/advancement/advancement-controls-section.hbs",
+      "size": 134,
+      "sha256": "8782e5df657d51cc59eb8f73ebe193d49b05bb5a1bba78a13554b820abcba205"
+    },
+    {
+      "path": "templates/advancement/advancement-flow-header.hbs",
+      "size": 76,
+      "sha256": "989b73130a16297fe63b78694efa8130acb5a709ced9fb2000018b81f5fc7191"
+    },
+    {
+      "path": "templates/advancement/advancement-flow-summary.hbs",
+      "size": 33,
+      "sha256": "80454c3cc1de4c8695e11af5ca5a6552f1e93791fdd209b92a5ba4f053b73a6f"
+    },
+    {
+      "path": "templates/advancement/advancement-flow.hbs",
+      "size": 103,
+      "sha256": "99d4b46c6bcbc8c27870167c8982eac8a801193a87aa0a8069c7409fc90c66ea"
+    },
+    {
+      "path": "templates/advancement/advancement-manager.hbs",
+      "size": 1061,
+      "sha256": "21633774fd09227a787e6d7bdf7ee828b184a91ba890593e9b402aee62b869ef"
+    },
+    {
+      "path": "templates/advancement/advancement-migration-dialog.hbs",
+      "size": 1066,
+      "sha256": "74cefecf9aa265a907bd4bb9be81fb3d9f07864092d75dbb4a4d672213f72b34"
+    },
+    {
+      "path": "templates/advancement/advancement-selection.hbs",
+      "size": 726,
+      "sha256": "b16207073435f9b57520346518e507e43855c8d421d4750caccd41ced4d0d632"
+    },
+    {
+      "path": "templates/advancement/advancement-spell-config-section.hbs",
+      "size": 1890,
+      "sha256": "897d34afbf4accb633c874829e601e537a91b3a98cd9e0fcec0ced91e98177c7"
+    },
+    {
+      "path": "templates/advancement/advancement-visualizer.hbs",
+      "size": 938,
+      "sha256": "e73c6e2eeb321070143774649dcdbfd50757b26abfa894dd03d78a42e5ca5cdf"
+    },
+    {
+      "path": "templates/advancement/hit-points-config.hbs",
+      "size": 619,
+      "sha256": "1b6bfd6b247b2d468b3580087d32d52540d84b636418e2ce548e8b4d7f2acc59"
+    },
+    {
+      "path": "templates/advancement/hit-points-flow.hbs",
+      "size": 3206,
+      "sha256": "d2725b79a8eb3576f640e86ded0960274f40c2361babced1c47820a7a083b66d"
+    },
+    {
+      "path": "templates/advancement/item-choice-config-details.hbs",
+      "size": 1409,
+      "sha256": "febd3a42f4086aeae6869369791d569106f8efa33ae26148970c254393bcf679"
+    },
+    {
+      "path": "templates/advancement/item-choice-config-items.hbs",
+      "size": 1252,
+      "sha256": "15e3a0a40cf047d67fe8f83f8a4b85d112569e6f5d07d05bd01c77f4bddaf8b1"
+    },
+    {
+      "path": "templates/advancement/item-choice-config-levels.hbs",
+      "size": 1281,
+      "sha256": "6de869a5aa71b398443a2949e3d7168eeb6c4c62183f91b851bf3633a28442f0"
+    },
+    {
+      "path": "templates/advancement/item-choice-flow.hbs",
+      "size": 2690,
+      "sha256": "abdf04fdf764d8a2b98cd5057aa10ffa9d2b1f4855fd920010233545aa219a37"
+    },
+    {
+      "path": "templates/advancement/item-grant-config-details.hbs",
+      "size": 275,
+      "sha256": "1055e378a7340013f81638622a0030fa6dab5517c175b5435645e42b320cec9a"
+    },
+    {
+      "path": "templates/advancement/item-grant-config-items.hbs",
+      "size": 1674,
+      "sha256": "f9136cbf04d8c944a1cc676461a1d1e7cc3fed8ba24a5bf7e98ff6d77a3fbfc2"
+    },
+    {
+      "path": "templates/advancement/item-grant-flow-v2.hbs",
+      "size": 1299,
+      "sha256": "13d2b411be4c9416a248333da86c88f94dd28008962e94aefe63e1841ec17e31"
+    },
+    {
+      "path": "templates/advancement/item-grant-flow.hbs",
+      "size": 1021,
+      "sha256": "739b634e53b459179d38e2a112cb2793b81fb9a6adc342656b6bb9489dc5cac7"
+    },
+    {
+      "path": "templates/advancement/parts/advancement-ability-score-control.hbs",
+      "size": 1939,
+      "sha256": "c917e6f05518bb343ae012931105db0b339a5dcda15d5317becce867100661fe"
+    },
+    {
+      "path": "templates/advancement/parts/advancement-controls.hbs",
+      "size": 1570,
+      "sha256": "376ab9cd22406bebf84ac2b1cf42cd81a04572f24ebb0df5ebf5c025ff148404"
+    },
+    {
+      "path": "templates/advancement/parts/advancement-spell-config.hbs",
+      "size": 1671,
+      "sha256": "f2c51ae6cc289d1e15cfce25bba54447cf689fef567424bc23b1408fce610022"
+    },
+    {
+      "path": "templates/advancement/scale-value-config-details.hbs",
+      "size": 988,
+      "sha256": "e1dbf640cff956e729413ada2f546e6b9f93fd61b625326e73a54d6e091ceb99"
+    },
+    {
+      "path": "templates/advancement/scale-value-config-levels.hbs",
+      "size": 926,
+      "sha256": "f269e2be2f32e724e05684158110e41ccca529425dd1827b6b955f85a0439fa9"
+    },
+    {
+      "path": "templates/advancement/scale-value-flow.hbs",
+      "size": 275,
+      "sha256": "f246ebec44a1b0a7d756de9c20998b310c84e526df9c7d9e8f7e3e6a1466bea7"
+    },
+    {
+      "path": "templates/advancement/size-config-details.hbs",
+      "size": 324,
+      "sha256": "a3a0ef965c8fb00d180e81eb7c1fd748ede1a97ead30500991401c8af94a7f22"
+    },
+    {
+      "path": "templates/advancement/size-flow.hbs",
+      "size": 243,
+      "sha256": "e41945f62f09070e3aecf8a83dd9994cd5cd2e2a9a834e2cea7325beb6ff9c4a"
+    },
+    {
+      "path": "templates/advancement/subclass-flow.hbs",
+      "size": 701,
+      "sha256": "8c81fa80b6f1463bb6ebdbde2f156812e4baf0053814221ac183786982a6f318"
+    },
+    {
+      "path": "templates/advancement/trait-config-choices.hbs",
+      "size": 1325,
+      "sha256": "220993483d56069591567130696afd5e7050f2400b6aed79c21048fb0375c6be"
+    },
+    {
+      "path": "templates/advancement/trait-config-details.hbs",
+      "size": 518,
+      "sha256": "c1d6d4a4503a3832188b08c2b9421d9a54accb4dd701c3062c42ab9cd10f5365"
+    },
+    {
+      "path": "templates/advancement/trait-config-guaranteed.hbs",
+      "size": 753,
+      "sha256": "a1b8a8bc26dc4318e463075aa0e521bdfdee136d9b14778411bd061b28fb0944"
+    },
+    {
+      "path": "templates/advancement/trait-config-traits.hbs",
+      "size": 740,
+      "sha256": "d8dd7d2a2edec7cf2d36fb1719b9968e1f4ddd0894f9e4410d01b6d500c7348a"
+    },
+    {
+      "path": "templates/advancement/trait-flow.hbs",
+      "size": 1443,
+      "sha256": "b58f0f13a17a1919bfb91d5357367b89f497f4f45211f9e6c00671a671793c81"
+    },
+    {
+      "path": "templates/apps/award.hbs",
+      "size": 1465,
+      "sha256": "ce2ccf8e6ddceff62b40e400f84d2f6146916233f59ffac2c78e1fd0e69ddef6"
+    },
+    {
+      "path": "templates/apps/bastion-attack-dialog.hbs",
+      "size": 180,
+      "sha256": "79e580b20906c32e94117806195133d1fa581e55e6ef77b9291b86d1b8699beb"
+    },
+    {
+      "path": "templates/apps/calendar-buttons.hbs",
+      "size": 753,
+      "sha256": "1e9504f5e4cb48b4f2f788a4d3b86b262c7d2b812ad5578ea198ea45f606815c"
+    },
+    {
+      "path": "templates/apps/calendar-core.hbs",
+      "size": 222,
+      "sha256": "554e77d6aaad05612f1115d8f2217fa0339e916186507c93f48a7d8ba7026081"
+    },
+    {
+      "path": "templates/apps/currency-manager-convert.hbs",
+      "size": 335,
+      "sha256": "3717b38725628eb6c1480c8c9119f99effd335ec7d640ba978802cf144a9af71"
+    },
+    {
+      "path": "templates/apps/currency-manager-transfer.hbs",
+      "size": 1256,
+      "sha256": "7ab2c96823270a76b7eee02be97c5e0f8d480eb905703e8781b727d80685cb1e"
+    },
+    {
+      "path": "templates/apps/document-create.hbs",
+      "size": 859,
+      "sha256": "b2925573d136415a3688f45b2667abaeb4bed853d84d678e8f0fabede8c96d1d"
+    },
+    {
+      "path": "templates/apps/module-art-config.hbs",
+      "size": 1475,
+      "sha256": "7d629d2f5cf550c901b22e73fc9f7aeadccf21e0068c13e0f8f2a7a1d9e79c7c"
+    },
+    {
+      "path": "templates/apps/parts/trait-list.hbs",
+      "size": 621,
+      "sha256": "66771af297405ad1cce8b9b81d54b1e968e9682f5336caac67a9f65ab761660e"
+    },
+    {
+      "path": "templates/apps/parts/traits-list.hbs",
+      "size": 981,
+      "sha256": "9e8974abca74b7331856c5aa05699dff61fe3bc07f633ec0d0ffd5e5c364c6d8"
+    },
+    {
+      "path": "templates/apps/property-attribution.hbs",
+      "size": 507,
+      "sha256": "876bed5cf0456d5bac55e0e648ac6695576cc206c7f270283c57aed03777e058"
+    },
+    {
+      "path": "templates/apps/set-date-dialog.hbs",
+      "size": 125,
+      "sha256": "bab265dcd1cdfff2778f3d945ab3dae0eefa5850e89e14a1a26aff8d848f61c1"
+    },
+    {
+      "path": "templates/apps/source-config.hbs",
+      "size": 1251,
+      "sha256": "0856fffcff3d5ca0ea9a6a5af98107356969a03169bf2ba0f27891a9cb657adb"
+    },
+    {
+      "path": "templates/apps/spell-scroll-dialog.hbs",
+      "size": 843,
+      "sha256": "fc4c27a5b7ca31ddaf1bb14530cd56a510bf1ad8078822f29a7c7a5fc920c587"
+    },
+    {
+      "path": "templates/apps/starting-equipment-config.hbs",
+      "size": 3075,
+      "sha256": "2334e644ee9936ff84187f5ee45f7d3f38de46b0c53dab8e43df7c210c639480"
+    },
+    {
+      "path": "templates/apps/transform-details.hbs",
+      "size": 369,
+      "sha256": "151be4b2fdaa77c2cfd59614f9339c490f097164befc3fd84980f3d24fbf2922"
+    },
+    {
+      "path": "templates/apps/transform-presets.hbs",
+      "size": 584,
+      "sha256": "ff659ef35c4d9e186d3b23ee199b2a7abd522e7af5852cfcafd71045085e23d5"
+    },
+    {
+      "path": "templates/apps/transform-settings.hbs",
+      "size": 429,
+      "sha256": "3f8152604fb529b3290d1ac93b990310f673567acebe611fe61c34c3b29fec69"
+    },
+    {
+      "path": "templates/chat/activity-card.hbs",
+      "size": 1329,
+      "sha256": "8ff60cb73141bf1f4b1d283201833d013473d596b7356651099018afb73b28a0"
+    },
+    {
+      "path": "templates/chat/bastion-attack-summary.hbs",
+      "size": 555,
+      "sha256": "2ef2a34accb6e19e2f762ce7e5a0415bd0c08dec4bf842694b0881620b08e7ff"
+    },
+    {
+      "path": "templates/chat/bastion-turn-summary.hbs",
+      "size": 1231,
+      "sha256": "e62eb67be0ed400783e7d9f2ed8e83ec3f1730868d2ec6f2b399130be27cccea"
+    },
+    {
+      "path": "templates/chat/item-card.hbs",
+      "size": 1714,
+      "sha256": "eda61e190fcb7d3c97e9cc4f36e7b9054fed07a9596a2a5b22e965c4f73e9fc4"
+    },
+    {
+      "path": "templates/chat/order-activity-card.hbs",
+      "size": 509,
+      "sha256": "f04e18dde5b33052d5e75a3b136e306ce5b7b23104270b10f3d4e47a1aadf69a"
+    },
+    {
+      "path": "templates/chat/parts/card-activities.hbs",
+      "size": 700,
+      "sha256": "1bc641887c3054e96d636d5bb3e0e864b83f8fd8a4b3e6908f62210f8523d6e2"
+    },
+    {
+      "path": "templates/chat/parts/card-deltas.hbs",
+      "size": 1066,
+      "sha256": "1ba217a2434fb4e97a29784ec1d4c445b1a3e453272eec5aa46974b6fabf2f2f"
+    },
+    {
+      "path": "templates/chat/request-card.hbs",
+      "size": 1379,
+      "sha256": "d4a1710cda922297ced695ead0350604275d79e652cae437297ecbc6e2ac3d1b"
+    },
+    {
+      "path": "templates/chat/rest-card.hbs",
+      "size": 266,
+      "sha256": "a084e8d6b5e0b63b8d45e1a5ce58b410334c65ea6c9620b3279d85432af3aef4"
+    },
+    {
+      "path": "templates/chat/roll-breakdown.hbs",
+      "size": 843,
+      "sha256": "8771b0cf2559bf31a06e4e63dbd8b769671677e799a3e3a7353eddd4794d3273"
+    },
+    {
+      "path": "templates/chat/roll-dialog.hbs",
+      "size": 1936,
+      "sha256": "fca8e1406fa55456d28d03259e48d4894958ab23c7699e89e5096f0a940b43b9"
+    },
+    {
+      "path": "templates/chat/roll-request-card.hbs",
+      "size": 320,
+      "sha256": "cfd6f5a5e6c833ac7c29105530025428387703acb686f5816b9662402dec3986"
+    },
+    {
+      "path": "templates/chat/turn-card.hbs",
+      "size": 321,
+      "sha256": "f20a21ef9b6582be572fcf85483b1e405d74e0c6d4ea8a5a58305d85135e31bf"
+    },
+    {
+      "path": "templates/chat/usage-card.hbs",
+      "size": 226,
+      "sha256": "dca2f620fa36c73a46fc0bab500b03f3a993e3812016465a066f72e4d9e75570"
+    },
+    {
+      "path": "templates/compendium/browser-entry.hbs",
+      "size": 1115,
+      "sha256": "92b0ddd39b92a9cbcc23670e82fdd2cfd87746106ebbc3e636ee6d16a37af9df"
+    },
+    {
+      "path": "templates/compendium/browser-footer.hbs",
+      "size": 405,
+      "sha256": "65790f62afce4ce5a5c6290ee8e2ab8a52974d83fee828053f44f551619970b9"
+    },
+    {
+      "path": "templates/compendium/browser-header.hbs",
+      "size": 362,
+      "sha256": "3d463f6d3685968752e8af118b93aaa0f1ee06b67617969ae872e88f1286a924"
+    },
+    {
+      "path": "templates/compendium/browser-results.hbs",
+      "size": 722,
+      "sha256": "cf7ab196d2dae5eb467156d6dcb81616b08b285d38383cbc02b574579e050b93"
+    },
+    {
+      "path": "templates/compendium/browser-sidebar-filter-set.hbs",
+      "size": 1486,
+      "sha256": "14c3696c90b4bbc6a9dbee9b8c93207c6f17a700c25fa084bd64baebad19d289"
+    },
+    {
+      "path": "templates/compendium/browser-sidebar-filters.hbs",
+      "size": 1488,
+      "sha256": "cdb2d2d4176e22cb4a76d985ba688d1a9c894c2cbf524ede723ce0e98f7e13ed"
+    },
+    {
+      "path": "templates/compendium/browser-sidebar-search.hbs",
+      "size": 619,
+      "sha256": "aa598c3cc3c7f3a90fac7ad4bb632d923742fc6a6787f43a557d5869fee24486"
+    },
+    {
+      "path": "templates/compendium/browser-sidebar-types.hbs",
+      "size": 1166,
+      "sha256": "41973c0a2dbb6491a1cf3f7609a8537b0b69433a8cd57e0785c9ee44e393a928"
+    },
+    {
+      "path": "templates/compendium/browser-tabs.hbs",
+      "size": 445,
+      "sha256": "461d42debe101d2dd7e5e7c325fa8558c20eca7030b5a8a20f66acf5dcbd2161"
+    },
+    {
+      "path": "templates/compendium/sources-packs.hbs",
+      "size": 1224,
+      "sha256": "12af604d72fd77fa14ed6ad4a9ae437253990bdc150b4d2e3ff6a803d9491a12"
+    },
+    {
+      "path": "templates/compendium/sources-sidebar.hbs",
+      "size": 1561,
+      "sha256": "0326f063ff176a98e2e3f44daa9856abd77216adfe7ff6716ff8720fc20025b6"
+    },
+    {
+      "path": "templates/dice/damage-formulas.hbs",
+      "size": 1530,
+      "sha256": "d791d22e45b9c7a4df532cd3ed668e5cd7e169211874fae2019ce3657f45243b"
+    },
+    {
+      "path": "templates/dice/roll-buttons.hbs",
+      "size": 197,
+      "sha256": "c5f1bc2c0919a8a0cddf7bb4eef6b73a7c17e9e1c9de34a9dec29cf8b90d853c"
+    },
+    {
+      "path": "templates/dice/roll-configuration.hbs",
+      "size": 214,
+      "sha256": "843a66a0ad82d7258b1ce3ba500f5b1bd20b21b1e129728fdbc2ee32c80e54b0"
+    },
+    {
+      "path": "templates/dice/roll-formulas.hbs",
+      "size": 981,
+      "sha256": "1b381ebd4cde7b211558bad3c2f871b5c79d8e86f259c63672d9bf4fac9e24c6"
+    },
+    {
+      "path": "templates/effects/parts/effect-tooltip.hbs",
+      "size": 1042,
+      "sha256": "af86c29bac61460a9c29c88682c74b2dd4526b0b06e3dea2529529872b67fb9d"
+    },
+    {
+      "path": "templates/inventory/activity.hbs",
+      "size": 725,
+      "sha256": "83616f69d948a7dc8f9507ab9c6216a5c1ae77b9d41c9c4d08ce1f2df4fb7b7e"
+    },
+    {
+      "path": "templates/inventory/columns/capacity.hbs",
+      "size": 581,
+      "sha256": "fcef342b399fc6c1eb75adab812a805fbc4439e4d9006d1433635f0789a26f55"
+    },
+    {
+      "path": "templates/inventory/columns/controls.hbs",
+      "size": 2486,
+      "sha256": "661fb0897df81c808754b33067d74e02dbd08e471e824bdedd9a36f835c72e2a"
+    },
+    {
+      "path": "templates/inventory/columns/formula.hbs",
+      "size": 525,
+      "sha256": "5d9f2af31559985e3f2a9a8fe173bfeba1e5b01cf7b273444a56b2bbcfd80a51"
+    },
+    {
+      "path": "templates/inventory/columns/price.hbs",
+      "size": 428,
+      "sha256": "751ba632df4ecbc1ac92ebb72518d5b39a916bc6ddb45a0caeea317ec276450b"
+    },
+    {
+      "path": "templates/inventory/columns/quantity.hbs",
+      "size": 845,
+      "sha256": "6d48c7eefc2279911f4779a082a6fbdfdf171e21c550e81589f8ed5aba705bb6"
+    },
+    {
+      "path": "templates/inventory/columns/range.hbs",
+      "size": 578,
+      "sha256": "aefcfa0cf2654c6161b13a9a7135ce681eb3fbb441a415bba8eb816120b4af95"
+    },
+    {
+      "path": "templates/inventory/columns/recovery.hbs",
+      "size": 232,
+      "sha256": "4f5084645d28e27aaf80e196271564e6dd1457a860e84f87a45613f66bfb0788"
+    },
+    {
+      "path": "templates/inventory/columns/roll.hbs",
+      "size": 447,
+      "sha256": "e9f3874c13c813ca634edf97a8371b3e352effcfafe604de5815a22a9ff33a30"
+    },
+    {
+      "path": "templates/inventory/columns/school.hbs",
+      "size": 393,
+      "sha256": "358d5f625bc813a751174fcad3a68150d6490f3c1f774b41389c5c0f920694b7"
+    },
+    {
+      "path": "templates/inventory/columns/target.hbs",
+      "size": 222,
+      "sha256": "169ee3dacc113195b32d0618eb6341a281d8e277a010095d06de7ea880849c93"
+    },
+    {
+      "path": "templates/inventory/columns/time.hbs",
+      "size": 444,
+      "sha256": "9d5d09198968bd4084fe1aa7b5f766bacffccc17efd3b0946744b277913c7cc8"
+    },
+    {
+      "path": "templates/inventory/columns/uses.hbs",
+      "size": 1410,
+      "sha256": "2a1582b6faa6cc43c1359960bddaf5c56a9c42786c811763ae9523fab176e209"
+    },
+    {
+      "path": "templates/inventory/columns/weight.hbs",
+      "size": 228,
+      "sha256": "a748b88a348d18e4d7c108520f0c2e7bd1c30fc9c7147adeceaf99032c877c14"
+    },
+    {
+      "path": "templates/inventory/containers.hbs",
+      "size": 719,
+      "sha256": "ed8b15ed5c6eb659446ab60d56f1a0110f93ab988a3160cad46b8506a6ac63b8"
+    },
+    {
+      "path": "templates/inventory/encumbrance.hbs",
+      "size": 1134,
+      "sha256": "bc5b864adc4a8164c9badcbccc14a2d150ec45f6a94822a2f914ecfa9f02df4a"
+    },
+    {
+      "path": "templates/inventory/inventory.hbs",
+      "size": 7773,
+      "sha256": "bd7ebe39825dfb0ab2977c2cf6aa4b736360cae0535d4428a44a5d08b765da9f"
+    },
+    {
+      "path": "templates/items/activities.hbs",
+      "size": 175,
+      "sha256": "4d7f5072db5b212dc7770726f3d258840e708a64089a36334063448ed57eff1b"
+    },
+    {
+      "path": "templates/items/advancement.hbs",
+      "size": 4564,
+      "sha256": "5d36b39db35930184fdff8ef4ca6189aaf2be075f28a2521e3e3eed0d52f187e"
+    },
+    {
+      "path": "templates/items/contents.hbs",
+      "size": 195,
+      "sha256": "e5afc8106c81b371420d4b50f6efc01fdada5b1489cc7e02458f12866407f1e5"
+    },
+    {
+      "path": "templates/items/description.hbs",
+      "size": 4517,
+      "sha256": "cb7cc1e3bef245505af63461eae8b013a0f6bbd22aee0f2eaf9da2ed7e4eafa3"
+    },
+    {
+      "path": "templates/items/details.hbs",
+      "size": 181,
+      "sha256": "ccbba32c89321f71442605a0ac1410350b16b3cc994868563998a61d5ff7f6f2"
+    },
+    {
+      "path": "templates/items/details/details-background.hbs",
+      "size": 280,
+      "sha256": "5ce70dcf64bfa15a223a4277d38a359d0cd305b8d79d13f06a365c2a7a15539e"
+    },
+    {
+      "path": "templates/items/details/details-class.hbs",
+      "size": 2047,
+      "sha256": "7679b13e1c6b10e1a5609f35b25a71a8622d46a48a5d3cb12332e3e419b7ac32"
+    },
+    {
+      "path": "templates/items/details/details-consumable.hbs",
+      "size": 2851,
+      "sha256": "6ec5eb6cfb4827f6a96e36d0bac5ab741c53e2c5ae6cb918d37869cd5c8ee992"
+    },
+    {
+      "path": "templates/items/details/details-container.hbs",
+      "size": 2787,
+      "sha256": "6088855f5673a7c40e704ad1de0f86217b41d2c1ae2a89df513925ac5b63ec3c"
+    },
+    {
+      "path": "templates/items/details/details-equipment.hbs",
+      "size": 3449,
+      "sha256": "a01b9a2eaf460b04e64d410aef4c712582079942b5d8f36f5513f51dc3771682"
+    },
+    {
+      "path": "templates/items/details/details-facility.hbs",
+      "size": 6053,
+      "sha256": "db461f06829d1681aa3fc2ebe8588f830471cdc087c6c15e11fde8b96d7cecda"
+    },
+    {
+      "path": "templates/items/details/details-feat.hbs",
+      "size": 2251,
+      "sha256": "b1730464b5ff7fc715dcbaaac4d3704f941044d1b52df8ca4b37c53162c4c1c1"
+    },
+    {
+      "path": "templates/items/details/details-loot.hbs",
+      "size": 850,
+      "sha256": "287a86799f245ad4c0b80e83eaa6c08051395e8be9b3754523e572dd939321c1"
+    },
+    {
+      "path": "templates/items/details/details-mountable.hbs",
+      "size": 3188,
+      "sha256": "f450a035a42213d8aff1446845d65cfdf7bef77054b73c4d397293eb4766900f"
+    },
+    {
+      "path": "templates/items/details/details-species.hbs",
+      "size": 277,
+      "sha256": "21e966047c56b78dc4ad2f87452bf688bec4a1843c44e6ef6336717d7976434c"
+    },
+    {
+      "path": "templates/items/details/details-spell.hbs",
+      "size": 4086,
+      "sha256": "2a08b821eecc2d74dbf5f127ebe4713e5c44963857706c384a98a84370992b47"
+    },
+    {
+      "path": "templates/items/details/details-spellcasting.hbs",
+      "size": 731,
+      "sha256": "7d9268c508fe40c2cef5e8bb083020d37b549df773eb87e57e78b290ae9be473"
+    },
+    {
+      "path": "templates/items/details/details-starting-equipment.hbs",
+      "size": 902,
+      "sha256": "a355b2246125f355934f3a8d287589726d8c9c945a35eddb6c0c11f37a763e0c"
+    },
+    {
+      "path": "templates/items/details/details-subclass.hbs",
+      "size": 464,
+      "sha256": "c3ff6e4ee64a4c7c04fd712613b01f075849531aa6e827ba562e2cbdd718ec6e"
+    },
+    {
+      "path": "templates/items/details/details-tool.hbs",
+      "size": 2323,
+      "sha256": "dcba23e0c6358ce11b0d8e8d390d0980631f9ae02042223dade71973963a7aa7"
+    },
+    {
+      "path": "templates/items/details/details-weapon.hbs",
+      "size": 6185,
+      "sha256": "29de870ea4b9959ae925a67c5453ac81db396763b67e598a4015262b032778f8"
+    },
+    {
+      "path": "templates/items/effects.hbs",
+      "size": 147,
+      "sha256": "6cd918f382b3611236987fd0c98d5d4ef9d28aa97d56e69317f010242b3e3c6a"
+    },
+    {
+      "path": "templates/items/header.hbs",
+      "size": 4333,
+      "sha256": "169aff2d58062b41ab2fac723a52f931125e41322bcda0e1ab6deafec915070b"
+    },
+    {
+      "path": "templates/items/parts/item-summary.hbs",
+      "size": 204,
+      "sha256": "a0571074973a73fefd98eae46fc29ce7b0adf6f85c4f19162c4ac4468f183e72"
+    },
+    {
+      "path": "templates/items/parts/item-tooltip.hbs",
+      "size": 2018,
+      "sha256": "aff86eb828c34b27a66192dcbb3d22f5bd33392cba44d09980510c1c496ff261"
+    },
+    {
+      "path": "templates/items/parts/spell-block.hbs",
+      "size": 1579,
+      "sha256": "147a23bad94f26f4dcd3015279c5f6ef8261d2e00999ecaa9a155788e6dadd51"
+    },
+    {
+      "path": "templates/journal/config/navigation-config.hbs",
+      "size": 72,
+      "sha256": "248c83d577a16c4097a4dba092e599b5b59dcfb616cd16be618284ef658d738f"
+    },
+    {
+      "path": "templates/journal/journal-editor.hbs",
+      "size": 179,
+      "sha256": "787407c0017ee8d227fa4df9ae4331bf3cbfc550db1bfb981ef27d8d91afa7a4"
+    },
+    {
+      "path": "templates/journal/page-class-edit.hbs",
+      "size": 5093,
+      "sha256": "ad326efef7f8cb5cbb9911df3897eddf2bfcc42948186e3203c54472466917e2"
+    },
+    {
+      "path": "templates/journal/page-class-view.hbs",
+      "size": 2753,
+      "sha256": "d00758b1d2bb0b2171b6c8b4d5b4e31e7da9451187b717216b18dff23b50b2d0"
+    },
+    {
+      "path": "templates/journal/page-rule-edit.hbs",
+      "size": 475,
+      "sha256": "3b8eac98ced92d5cb71f673c3512f448d364f8b4acc8981a27cb4f1cc919f057"
+    },
+    {
+      "path": "templates/journal/page-rule-tooltip.hbs",
+      "size": 282,
+      "sha256": "8ef1cef415354e31d4aff0c8a26bdf7fd3ba7f1fc06de715d41d17b305f17d51"
+    },
+    {
+      "path": "templates/journal/page-subclass-edit.hbs",
+      "size": 1625,
+      "sha256": "02b24ca09518dcad35a749bfbfef2f5eba9de7583b92a15f02af463c1e8cbab3"
+    },
+    {
+      "path": "templates/journal/page-subclass-view.hbs",
+      "size": 1148,
+      "sha256": "533a2cb772d03b335fa9b5c5bd5034280925860fd6ee9cccee3cc881d19598d4"
+    },
+    {
+      "path": "templates/journal/parts/journal-legacy-traits.hbs",
+      "size": 1651,
+      "sha256": "2440db5e0829599a11e147ee9adc97c7ade4d685eed64f06fec9d721da39a3b5"
+    },
+    {
+      "path": "templates/journal/parts/journal-modern-traits.hbs",
+      "size": 1542,
+      "sha256": "92f6a120a835bfafca3f9ac23e99d2c2451f45314614147d4e56aeb10ab2927a"
+    },
+    {
+      "path": "templates/journal/parts/journal-table.hbs",
+      "size": 966,
+      "sha256": "fd298c403538a1aa082e61f95af3a86a23f8c411d94727bb13de7965fea584ae"
+    },
+    {
+      "path": "templates/journal/passive-tooltip.hbs",
+      "size": 444,
+      "sha256": "ddee39962651dd4839d8c67d0b16ce40894259979074dca793ec517f8381b2eb"
+    },
+    {
+      "path": "templates/journal/spell/config.hbs",
+      "size": 1205,
+      "sha256": "b42874fad1442e7842cdf334cf15819a8d80030ad246bd8a6bba60d4e2e7a9ca"
+    },
+    {
+      "path": "templates/journal/spell/list.hbs",
+      "size": 1546,
+      "sha256": "f3e047e138fb61aaf75e14e90d830ad0cc6cc6f7820202ddcd1576ba680b6d52"
+    },
+    {
+      "path": "templates/journal/spell/table.hbs",
+      "size": 455,
+      "sha256": "b3e9c77842b9cb796703da4e5cb388a030ec7ca6e252f562b3a397560d709619"
+    },
+    {
+      "path": "templates/journal/spell/unlinked-source.hbs",
+      "size": 1018,
+      "sha256": "d9648c0b35b0fe41b6729ad9da661939f2e2ceb579c7918841d59397d0722cbe"
+    },
+    {
+      "path": "templates/journal/spell/unlinked-spell.hbs",
+      "size": 566,
+      "sha256": "f1f7d5c8e0369f350e24a82880607c53d8f7deec308a9547f94e935564cb516c"
+    },
+    {
+      "path": "templates/journal/spell/view.hbs",
+      "size": 786,
+      "sha256": "014f481276029b1d7bacf8ede16a3e9fffe0a7645ff653ae66a2c0411eb1973d"
+    },
+    {
+      "path": "templates/journal/table-of-contents.hbs",
+      "size": 1278,
+      "sha256": "d566408af8a84cbca0ba95872df243d6054f55e2a8ca2d3f57064874003c9503"
+    },
+    {
+      "path": "templates/region-behaviors/rotate-area-config.hbs",
+      "size": 1100,
+      "sha256": "76df216fa5a7d840b125ae7da91602a16a88d3a795300555104fd18ad9e993ff"
+    },
+    {
+      "path": "templates/settings/base-config.hbs",
+      "size": 248,
+      "sha256": "0a31a439e3f59f7e06feef60175a2fa3f707c48caa011ff860db92dbaaccab20"
+    },
+    {
+      "path": "templates/settings/bastion-config.hbs",
+      "size": 630,
+      "sha256": "cf088d506e4f6712c8d0fe508478dc3887a6a915d34bebd5061c14ddfde53c8d"
+    },
+    {
+      "path": "templates/shared/active-effects.hbs",
+      "size": 5748,
+      "sha256": "4f93942b1d953a40394f20b64916f6b8ee9ad17537e92e5d3616a57a739055f0"
+    },
+    {
+      "path": "templates/shared/activities.hbs",
+      "size": 3326,
+      "sha256": "7fb6f5650b2066f3058cbaef807608ad8147d158fb730884c1a2a1739bcab96b"
+    },
+    {
+      "path": "templates/shared/config/creature-type-config.hbs",
+      "size": 1421,
+      "sha256": "75847cc49497e6b96d32dade2315d07a79176c5315d1d5c11018c04555ca6c25"
+    },
+    {
+      "path": "templates/shared/config/movement-senses-config.hbs",
+      "size": 2607,
+      "sha256": "f9641387a239d81dcd2230266f7dde750c61ada037be27c61df3f26f62710556"
+    },
+    {
+      "path": "templates/shared/dialog-content.hbs",
+      "size": 41,
+      "sha256": "ed1d1d0e68d76e77ba42ada558d533f5413a22682f903d5e5092ff65a41c71ea"
+    },
+    {
+      "path": "templates/shared/fields/field-activation.hbs",
+      "size": 817,
+      "sha256": "6139baa556da0a0526a5c34b03655ee1b6eaa315ec946f0695ab4030c6448056"
+    },
+    {
+      "path": "templates/shared/fields/field-damage.hbs",
+      "size": 2888,
+      "sha256": "cca0c77b858864a7d0de8fbba1c4bf3856901595c76891d10c5dc5b4c1a47554"
+    },
+    {
+      "path": "templates/shared/fields/field-duration.hbs",
+      "size": 902,
+      "sha256": "73afc5c5d404e58278bcdef255552910e39a6408a75db08f996a7616c870feb4"
+    },
+    {
+      "path": "templates/shared/fields/field-range.hbs",
+      "size": 826,
+      "sha256": "6c54044de782ecdbae7b3c5f87f74fd3f05e772fdfb5ad0d40ee3d81707e63e4"
+    },
+    {
+      "path": "templates/shared/fields/field-targets.hbs",
+      "size": 4632,
+      "sha256": "75f56a6fabea6858f4eb64f10cba982f54dd5a40086b0d0e9719fa260ba7f29c"
+    },
+    {
+      "path": "templates/shared/fields/field-uses.hbs",
+      "size": 2805,
+      "sha256": "df7442a86840320b12b71cf8e4aee993d1d09b30df7922eb9d9b3ff115b56f5d"
+    },
+    {
+      "path": "templates/shared/fields/fieldlist.hbs",
+      "size": 520,
+      "sha256": "c46bba0907c899b9caebca860e87392ca84a86b67fb384aa50213cf3f635ab2a"
+    },
+    {
+      "path": "templates/shared/fields/formlist.hbs",
+      "size": 127,
+      "sha256": "21dd70edfb400beffa2f20dd724fd1a751307e0107f9c98010e651eee3b8d3a1"
+    },
+    {
+      "path": "templates/shared/horizontal-tabs.hbs",
+      "size": 90,
+      "sha256": "70e843438532d4e28412d21e9562f92528ccf835e94fbf08421171bd8411950f"
+    },
+    {
+      "path": "templates/shared/sheet-config.hbs",
+      "size": 1226,
+      "sha256": "71308d98c30ddd3630dbfc0cecfb67621b68728b765ff0259cb8edbd1d4e58b7"
+    },
+    {
+      "path": "templates/shared/sidebar-tabs.hbs",
+      "size": 462,
+      "sha256": "13f21d03d5523be6cf0a70bdea783c822cbbcd8daf53b6feb0acec2cabdb5bf8"
+    },
+    {
+      "path": "ui/ability-score-tab-dark.svg",
+      "size": 449,
+      "sha256": "3b63cb4f03503f58f20ae387c9181c8993395ab27a350918a693e41666e01b39"
+    },
+    {
+      "path": "ui/ability-score-tab-hc.svg",
+      "size": 451,
+      "sha256": "6bfcb6cd89493f3816e8e95c1063802269a1592a3231e95bd5c1a5babfd0af51"
+    },
+    {
+      "path": "ui/ability-score-tab.svg",
+      "size": 451,
+      "sha256": "97fa9479b44e1e2c1e2e594b4c860485a02478804eca0102e2a61bc07f7eb2c4"
+    },
+    {
+      "path": "ui/ac-badge.webp",
+      "size": 5522,
+      "sha256": "fc919dd401b8ddaf08c29bc77a318417119b4b60e155ca6c24405f24cf681c51"
+    },
+    {
+      "path": "ui/boon-badge.webp",
+      "size": 1762,
+      "sha256": "d21ed3fd7129f16b3b586170d8ee19c8f2094c60823c388018665a4c33663c40"
+    },
+    {
+      "path": "ui/cr-badge.webp",
+      "size": 1788,
+      "sha256": "48b015d139e7ad3baae1459a0a0b62d36a622173fe7772d5d06194eb4db7458d"
+    },
+    {
+      "path": "ui/inspiration.webp",
+      "size": 2258,
+      "sha256": "1a0e612c8fb2238a6d05668831939845ec5a3f2a4683a9bced119241e143a64b"
+    },
+    {
+      "path": "ui/legact-active.webp",
+      "size": 1852,
+      "sha256": "0be1a3d8450fcac6982766ac7df960a7ea1f2618e5dacb11c626a8954db0fa96"
+    },
+    {
+      "path": "ui/legact-inactive.webp",
+      "size": 1578,
+      "sha256": "6d28fb0756dcd88e9b04514c6886adf5b303fb2d952639cd0d6e42a45aa5041d"
+    },
+    {
+      "path": "ui/legres-active.webp",
+      "size": 1570,
+      "sha256": "3192471a9179306759e29b0fbed762d939d8934344c18797613c071bc9313351"
+    },
+    {
+      "path": "ui/legres-inactive.webp",
+      "size": 1442,
+      "sha256": "2e38574796b298d09f5546ff40c2b3ed28f624fb307de4d165f43a0e08a12087"
+    },
+    {
+      "path": "ui/level-badge.webp",
+      "size": 5194,
+      "sha256": "2a0e35f7eefb1bd8bb1c3742e7223b1f96fd3c5241101cef1d624044d83ff561"
+    },
+    {
+      "path": "ui/loyalty-badge.webp",
+      "size": 7848,
+      "sha256": "9c876ff7ec42b9977079ef09c6ab820786babdef4593f9638f5a47a550bf7bef"
+    },
+    {
+      "path": "ui/lozenge.svg",
+      "size": 418,
+      "sha256": "d7fe0824dd3147d497793b3131d5d9ce8df4fe68d072ccee3270a84f278c6f8e"
+    },
+    {
+      "path": "ui/notable-left-corner.svg",
+      "size": 186,
+      "sha256": "0e693285b279abde0c3136ab6a81f647849ebead16f9e2d3ab773cc3fbb29d85"
+    },
+    {
+      "path": "ui/notable-right-corner.svg",
+      "size": 182,
+      "sha256": "f5b39de1dfd1131ea7f8c06233acf03c47bf0ad1d5626a6c256d326d6e3afb86"
+    },
+    {
+      "path": "ui/parchment.jpg",
+      "size": 112260,
+      "sha256": "398e46c9dbb386a8f9a52675d5826d720f5a2db38fdd913ccb769ede526f8e8a"
+    },
+    {
+      "path": "ui/resize-handle.webp",
+      "size": 54,
+      "sha256": "1196768e8b5ccfa3cb501944d3d1517f9dcb455a53788d9b2113461ac124da08"
+    },
+    {
+      "path": "ui/texture-gray1.webp",
+      "size": 189660,
+      "sha256": "f1f52688b631633c9f5ceb29c94194f1be446496378521dd5b75a9cb4128a656"
+    },
+    {
+      "path": "ui/texture-gray2.webp",
+      "size": 190262,
+      "sha256": "b7a8b9e9ddf8fed864dcaa87dc59e626a1c2fcd54abd13c0ce97b44f27aa4ce4"
+    },
+    {
+      "path": "ui/texture1.webp",
+      "size": 296666,
+      "sha256": "9e8b5c79e5405dfa72253acae938600dae7a359c38eeb6f51d1dcd7b1cb98f49"
+    },
+    {
+      "path": "ui/texture2.webp",
+      "size": 262220,
+      "sha256": "38e68b5729b5d497012a0990532bc72d3213b09f8fd4afbf39480fc1fa88b3de"
+    }
+  ]
+}
