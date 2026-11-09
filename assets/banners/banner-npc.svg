@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1229" height="439" viewBox="0 0 1229 439">
+  <!-- banner-npc — NPC 卡头部横幅（ArcaneDesk 自绘 2026-10-11，替换 ui/official/banner-npc-dark.webp）。
+       构图：中央拱门 + 拱内菱形「目」，两侧参差立石柱自底升起（CSS top/cover 全高可见，
+       左右各裁约 11%），零星星点；CSS opacity .05 下仅剩剪影层。 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13161f"/>
+      <stop offset="0.55" stop-color="#171b27"/>
+      <stop offset="1" stop-color="#0f1219"/>
+    </linearGradient>
+    <radialGradient id="glow-violet" cx="0.5" cy="0.38" r="0.55">
+      <stop offset="0" stop-color="#8b7cff" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#8b7cff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="seat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0e1016" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#0e1016" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0e1016" stop-opacity="0.55"/>
+    </linearGradient>
+  </defs>
+  <rect width="1229" height="439" fill="url(#bg)"/>
+  <rect width="1229" height="439" fill="url(#glow-violet)"/>
+  <g fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M524 439V210Q614 130 704 210V439" stroke="#e8b84b" stroke-width="4" opacity="0.5"/>
+    <polygon points="614,190 636,220 614,250 592,220" stroke="#e8b84b" stroke-width="3" opacity="0.6"/>
+    <path d="M470 439V190M758 439V190" stroke="#e8b84b" stroke-width="4" opacity="0.35"/>
+    <path d="M200 439V300M330 439V250M460 439V330" stroke="#f0eee5" stroke-width="4" opacity="0.22"/>
+    <path d="M768 439V320M898 439V260M1028 439V310" stroke="#f0eee5" stroke-width="4" opacity="0.22"/>
+    <circle cx="150" cy="90" r="2" fill="#f0eee5" stroke="none" opacity="0.15"/>
+    <circle cx="420" cy="60" r="2" fill="#f0eee5" stroke="none" opacity="0.15"/>
+    <circle cx="640" cy="50" r="2" fill="#f0eee5" stroke="none" opacity="0.15"/>
+    <circle cx="900" cy="70" r="2" fill="#f0eee5" stroke="none" opacity="0.15"/>
+    <circle cx="1100" cy="120" r="2" fill="#f0eee5" stroke="none" opacity="0.15"/>
+  </g>
+  <rect width="1229" height="439" fill="url(#seat)"/>
+</svg>
