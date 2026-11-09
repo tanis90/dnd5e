@@ -3,6 +3,8 @@ dnd5e.css
 dnd5e.css.map
 dnd5e-compiled*
 dnd5e.lock
+# 出件派生件（owner CI 现场生成，不进 git：清单才是字节口径）
+templates.json
 packs/*
 !packs/_source/
 dist/
