@@ -49,7 +49,7 @@ node tools/owner-ci/build.mjs assemble --out-dir /tmp/dnd5e-artifact
 
 `publish` job 只在 `release-*` tag 上跑，并在出件前做两条硬校验：
 
-1. `git merge-base --is-ancestor <tag commit> origin/arcaned-5.3.3`——tag 必须落在主线血统上；
+1. `git merge-base --is-ancestor <tag commit> origin/main`——tag 必须落在主线血统上；
 2. 出件后 `verify-payload` 与解包文件集复核——包内成员必须与清单恰等。
 
 分支 push / PR 只跑 `test`（出件到 workflow run artifact，保留 7 天），**不建 Release**，

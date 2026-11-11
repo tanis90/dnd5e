@@ -1,6 +1,6 @@
-# dnd5e fork（arcaned-5.3.3）—— ArcaneDesk owner CI 出件仓
+# dnd5e fork（main）—— ArcaneDesk owner CI 出件仓
 
-本仓是 [foundryvtt/dnd5e](https://github.com/foundryvtt/dnd5e) 的 fork（分支 `arcaned-5.3.3`，
+本仓是 [foundryvtt/dnd5e](https://github.com/foundryvtt/dnd5e) 的 fork（默认生产分支 `main`，
 含补丁 P1–P6 + 部署面快照），承担「mt-foundry-compat 前端 dnd5e 系统」的 **A 类出件**：
 `web/packages/dnd5e` 的字节真源不再是任何开发机的 live 目录，而是本仓 owner CI 产出的
 GitHub Release 三件。
@@ -8,9 +8,9 @@ GitHub Release 三件。
 ## 出件模型（D2/D8）
 
 - **坐标 = GitHub Release**：tag `release-*`（如 `release-5.3.3-arcane.1`）。
-- **D8 血统门**：tag 必须切自默认生产分支 `arcaned-5.3.3`（owner CI 用
+- **D8 血统门**：tag 必须切自默认生产分支 `main`（owner CI 用
   `git merge-base --is-ancestor` 校验，非血统 tag fail-closed 不出件）。
-  本仓无 `main` 分支——这就是默认生产分支，与 D8 的「main 祖先线」语义等价。
+  `main` 只接受经 CI 验证的 PR 合入；旧 `arcaned-5.3.3` 仅作历史回滚参照，不再作为新 tag 来源。
 - **同一 release 身份只对应一份字节**：已发布 Release 不得覆盖；修复出新 tag。
 - 分支 push / PR 只跑测试（`test` job），不产出任何坐标。
 
