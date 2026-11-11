@@ -5,8 +5,8 @@
 #      出件工具 tools/owner-ci/build.mjs 按清单逐文件校验 sha256，再按确定性 recipe
 #      组装 system.zip（store、路径 code-unit 升序、固定 1980-01-01T00:00:00Z、0644、
 #      UTF-8 名），最后从源树重建 zip 做逐字节复核。不按目录猜成员，清单外一律不进包。
-#   2. 出件只发生在 tag 上，且 tag 必须落在 arcaned-5.3.3 的血统线上（D8：坐标语义 =
-#      主线上的 tag，分支产物没有资格变成坐标）。push 到 arcaned-5.3.3 与 PR 只跑测试
+#   2. 出件只发生在 tag 上，且 tag 必须落在 main 的血统线上（D8：坐标语义 =
+#      主线上的 tag，分支产物没有资格变成坐标）。push 到 main 与 PR 只跑测试
 #      出件到 run artifact，不建 Release、不产出可采纳坐标。
 #   3. 产物三件：system.zip + system-manifest.json（清单 + 逐文件 sha256/size）+
 #      system-receipt.json（runUrl/commit/zip 与 manifest 两个哈希）。本地出证 runUrl 为
@@ -18,10 +18,10 @@ name: owner-ci
 
 on:
   push:
-    branches: [arcaned-5.3.3]
+    branches: [main]
     tags: ["release-*"]
   pull_request:
-    branches: [arcaned-5.3.3]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -84,9 +84,9 @@ jobs:
           if-no-files-found: error
           retention-days: 7
 
-  # 出件线：仅 tag push（release-*），且 tag commit 必须在 arcaned-5.3.3 祖先线上。
+  # 出件线：仅 tag push（release-*），且 tag commit 必须在 main 祖先线上。
   publish:
-    name: publish release artifact (tag on arcaned-5.3.3 lineage only)
+    name: publish release artifact (tag on main lineage only)
     if: github.ref_type == 'tag' && startsWith(github.ref, 'refs/tags/release-')
     needs: test
     runs-on: ubuntu-latest
@@ -99,15 +99,15 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: D8 lineage guard (tag commit must be an ancestor of arcaned-5.3.3)
+      - name: D8 lineage guard (tag commit must be an ancestor of main)
         run: |
           TAG_COMMIT="$(git rev-parse HEAD)"
-          git fetch --no-tags origin arcaned-5.3.3:refs/remotes/origin/arcaned-5.3.3
-          if ! git merge-base --is-ancestor "$TAG_COMMIT" refs/remotes/origin/arcaned-5.3.3; then
-            echo "::error::tag $GITHUB_REF_NAME（$TAG_COMMIT）不在 arcaned-5.3.3 血统线上，拒绝出件（D8）"
+          git fetch --no-tags origin main:refs/remotes/origin/main
+          if ! git merge-base --is-ancestor "$TAG_COMMIT" refs/remotes/origin/main; then
+            echo "::error::tag $GITHUB_REF_NAME（$TAG_COMMIT）不在 main 血统线上，拒绝出件（D8）"
             exit 1
           fi
-          echo "tag $GITHUB_REF_NAME @ $TAG_COMMIT ∈ arcaned-5.3.3 血统 ✔" >> "$GITHUB_STEP_SUMMARY"
+          echo "tag $GITHUB_REF_NAME @ $TAG_COMMIT ∈ main 血统 ✔" >> "$GITHUB_STEP_SUMMARY"
 
       - uses: actions/setup-node@v4
         with:
