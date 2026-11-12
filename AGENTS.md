@@ -10,7 +10,8 @@ GitHub Release 三件。
 - **坐标 = GitHub Release**：tag `release-*`（如 `release-5.3.3-arcane.1`）。
 - **D8 血统门**：tag 必须切自默认生产分支 `main`（owner CI 用
   `git merge-base --is-ancestor` 校验，非血统 tag fail-closed 不出件）。
-  `main` 只接受经 CI 验证的 PR 合入；旧 `arcaned-5.3.3` 仅作历史回滚参照，不再作为新 tag 来源。
+  `main` 是默认且受保护的生产分支，只接受经 required CI 验证的 PR 合入，禁止直推、force-push 和删除；
+  旧 `arcaned-5.3.3` 仅作历史回滚参照，不再作为新 tag 来源。
 - **同一 release 身份只对应一份字节**：已发布 Release 不得覆盖；修复出新 tag。
 - 分支 push / PR 只跑测试（`test` job），不产出任何坐标。
 
@@ -39,6 +40,11 @@ GitHub Release 三件。
 ## 消费方
 
 mt-foundry-compat `docs/federated-manifests/dnd5e.json` 的 `source.ownerArtifact` 钉本仓
-runUrl/tag/三件 sha256；采纳 `tools/federated-adopt-artifact.mjs --system dnd5e
+runUrl/tag/三件 sha256；正式采纳必须提供 `release.tag`，runUrl 和完整 commit 只作证据或诊断，
+不得替代正式 Release。采纳 `tools/federated-adopt-artifact.mjs --system dnd5e
 --from-manifest`；`web/packages/dnd5e` 由 `tools/materialize-system-surface.mjs` 从
 payload 精确物化。**消费方升级 = 改钉值 + 重跑采纳，不是拷文件。**
+
+前端集成 receipt 只上传为旁路验证证据，不回写 unit manifest 的验证状态，不改变
+`manifestHash` 或 release lock。一组依赖只由前端 CI 组装和验证一次，再经 PR 合并到 main
+自动部署；不得通过 receipt 回写制造第二轮组装。
