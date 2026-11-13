@@ -28,7 +28,7 @@ system:
     value: feat
     subtype: epicBoon
   prerequisites:
-    level: null
+    level: 19
     repeatable: false
   properties: []
   requirements: ''
