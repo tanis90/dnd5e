@@ -8,6 +8,7 @@ build/artifact-files.json     出件成员白名单 + 逐文件 size/sha256（�
 tools/owner-ci/zip.mjs        确定性 zip writer/reader（octopus-system-artifact-zip/1）
 tools/owner-ci/build.mjs      generate / assemble / verify / payload
 tools/owner-ci/verify-payload.mjs   zip ↔ 清单 的成员与字节复核
+tools/owner-ci/feats24-epic-prereq.test.mjs  feats24 史诗恩惠前置等级 + 账本自洽回归
 .github/workflows/owner-ci.yml     测试线 + 出件线（tag + D8 血统门）
 ```
 
@@ -15,9 +16,10 @@ tools/owner-ci/verify-payload.mjs   zip ↔ 清单 的成员与字节复核
 
 ```bash
 npm ci --ignore-scripts --no-audit --no-fund
+node --test tools/owner-ci/feats24-epic-prereq.test.mjs   # 聚焦数据回归
 node tools/owner-ci/build.mjs assemble --out-dir /tmp/dnd5e-artifact
 # → system.zip / system-manifest.json / system-receipt.json
-# 期望 zip sha256 = 59a1bfe372a607f1a69017cf5b6a22dc3bbf7105cf1f72d18ead29e5ea296b94
+# 期望 zip sha256 = 7530b58b79e442d7b68073b5f1f6da16ad660e1175d2fabf1c6577cc279bdf24
 ```
 
 `assemble` 自带全部门：清单逐文件 sha256 → 两次构建逐字节一致 → 从源树重建 zip

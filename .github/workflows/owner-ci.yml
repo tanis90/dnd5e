@@ -55,6 +55,9 @@ jobs:
       - name: install build toolchain
         run: npm ci --ignore-scripts --no-audit --no-fund
 
+      - name: focused data regression (feats24 epic boon prerequisites + payload ledger)
+        run: node --test tools/owner-ci/feats24-epic-prereq.test.mjs
+
       - name: assemble + verify (payload sha256 → zip → rebuild from source)
         run: node tools/owner-ci/build.mjs assemble --out-dir "$RUNNER_TEMP/owner-ci"
 
