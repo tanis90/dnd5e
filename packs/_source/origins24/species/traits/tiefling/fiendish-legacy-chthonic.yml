@@ -10,31 +10,8 @@ system:
     max: ''
   description:
     value: >-
-      <p>You are the recipient of a legacy that grants you supernatural
-      abilities.</p><p>When you reach character levels 3 and 5, you learn a
-      higher-level spell, as shown on the table. You always have that spell
-      prepared. You can cast it once without a spell slot, and you regain the
-      ability to cast it in that way when you finish a Long Rest. You can also
-      cast the spell using any spell slots you have of the appropriate level.
-      Intelligence, Wisdom, or Charisma is your spellcasting ability for the
-      spells you cast with this trait (choose the ability when you select the
-      legacy).</p><h3 data-anchor="chthonic">Chthonic</h3><p>Tieflings who have
-      the chthonic legacy feel not only the tug of Carceri but also the greed of
-      Gehenna and the gloom of Hades. Some of these tieflings look cadaverous.
-      Others possess the unearthly beauty of a succubus, or they have physical
-      features in common with a night hag, a yugoloth, or some other Neutral
-      Evil fiendish ancestor.</p><table><caption>Chthonic Legacy
-      Traits</caption><thead><tr><td>Level 1</td><td>Level 3</td><td>Level
-      5</td></tr></thead><tbody><tr><td>You have Resistance to Necrotic
-      damage.You also know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplChillTouch]{Chill Touch}
-      cantrip.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplFalseLife0]{False
-      Life}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplRayofEnfee]{Ray
-      of Enfeeblement}</td></tr></tbody></table><section class="secret"
-      id="secret-GmBAOZVbkBYItbCL"><p><strong>Foundry Note</strong></p><p>The
-      Resistance and spells are granted to you automatically and you will be
-      prompted to choose the spellcasting ability during
-      advancement.</p></section>
+      <p>你承载着一份给予你超自然能力的邪魔遗赠。</p><p>当你达到3级和5级时，你学会一道更高环阶的法术，如表中所示。你始终准备着该法术。你可以不消耗法术位地施展它一次，完成一次长休后你重获以此方式施展它的能力。你也可以用你拥有的相应环阶的任何法术位施展该法术。智力、感知或魅力是你以此特质施展法术时的施法属性（选择遗赠时选择该属性）。</p><h3>幽冥
+      Chthonic</h3><p>拥有幽冥邪魔遗赠的提夫林不仅能感受到卡瑟利的泥淖，也能感受到焦炎火狱中的贪婪和哈迪斯中的阴暗。这些提夫林中，有的肤色苍白，彷如死尸。另一些则如同梦魔与魅魔般美丽，还有的则是有着与其那夜鬼婆、尤格罗斯魔或其他中立邪恶的邪魔先祖相似的身体特征。</p><table><caption>幽冥遗赠特质</caption><thead><tr><td>1级</td><td>3级</td><td>5级</td></tr></thead><tbody><tr><td>你具有暗蚀伤害抗性。你还知晓颤栗之触戏法。</td><td>虚假生命</td><td>衰弱射线</td></tr></tbody></table>
     chat: ''
   source:
     revision: 1

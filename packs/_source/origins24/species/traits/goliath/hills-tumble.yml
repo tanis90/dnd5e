@@ -66,9 +66,7 @@ system:
     max: '@prof'
   description:
     value: >-
-      <p>When you hit a Large or smaller creature with an attack roll and deal
-      damage to it, you can give that target the &amp;Reference[Prone]
-      condition.</p>
+      <p>当你以攻击检定命中一个体型不超过大型的生物并对其造成伤害时，你可以令其陷入 &amp;Reference[Prone] 状态。</p>
     chat: ''
   source:
     revision: 1

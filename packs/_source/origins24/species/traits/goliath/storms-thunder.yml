@@ -73,8 +73,7 @@ system:
     max: '@prof'
   description:
     value: >-
-      <p>When you take damage from a creature within 60 feet of you, you can
-      take a Reaction to deal 1d8 Thunder damage to that creature.</p>
+      <p>当你被60尺内的生物造成伤害时，你可以使用反应对该生物造成1d8点雷鸣伤害。</p>
     chat: ''
   source:
     revision: 1

@@ -10,16 +10,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>You know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplMinorIllus]{Minor Illusion}
-      cantrip. You also always have the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithA]{Speak with Animals}
-      spell prepared. You can cast it without a spell slot a number of times
-      equal to your Proficiency Bonus, and you regain all expended uses when you
-      finish a Long Rest. You can also use any spell slots you have to cast the
-      spell.</p><section id="secret-CwVBuqSGI27gl6R9"
-      class="secret"><p><strong>Foundry Note</strong></p><p>The free castings
-      are included in the spell.</p></section>
+      <p>你知晓次级幻象戏法。你也始终准备着动物交谈法术。你可以不消耗法术位地施展该法术，次数等于你的熟练加值，完成一次长休后你重获全部已消耗的使用次数。你也可以用你拥有的任何法术位施展该法术。</p>
     chat: ''
   source:
     revision: 1

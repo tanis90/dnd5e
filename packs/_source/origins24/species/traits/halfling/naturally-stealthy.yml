@@ -10,8 +10,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>You can take the &amp;Reference[Hide] action even when you are obscured
-      only by a creature that is at least one size larger than you.</p>
+      <p>即使你仅被一个至少比你大一级的生物所遮蔽，你也可以采取&amp;Reference[Hide]动作。</p>
     chat: ''
   source:
     revision: 1

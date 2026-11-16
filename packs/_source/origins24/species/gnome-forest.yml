@@ -5,26 +5,8 @@ img: icons/environment/wilderness/tree-oak.webp
 system:
   description:
     value: >-
-      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGnome000000
-      inline classes="free-rules-embed"]</p><h3 data-anchor="gnome-traits">Gnome
-      Traits</h3><p><strong>Creature Type: </strong>Humanoid</p><p><strong>Size:
-      </strong>Small (about 3–4 feet tall)</p><p><strong>Speed:</strong> 30
-      feet</p><p>As a Gnome, you have these special
-      traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a
-      range of 60 feet.</p><p><strong>Gnomish Cunning.</strong> You have
-      Advantage on Intelligence, Wisdom, and Charisma saving
-      throws.</p><p><strong>Gnomish Lineage.</strong> You are part of a lineage
-      that grants you supernatural abilities. Whichever lineage you choose,
-      Intelligence, Wisdom, or Charisma is your spellcasting ability for the
-      spells you cast with this trait (choose the ability when you select the
-      lineage):</p><p><strong>Forest Gnome.</strong> You know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplMinorIllus]{Minor Illusion}
-      cantrip. You also always have the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplSpeakwithA]{Speak with Animals}
-      spell prepared. You can cast it without a spell slot a number of times
-      equal to your Proficiency Bonus, and you regain all expended uses when you
-      finish a Long Rest. You can also use any spell slots you have to cast the
-      spell.</p>
+      <h3>侏儒特质 Gnome
+      Traits</h3><p><strong>生物类型：</strong>类人</p><p><strong>体型：</strong>小型（约3–4尺高）</p><p><strong>速度：</strong>30尺</p><p>作为侏儒，你具有以下特殊特质。</p><p><strong>黑暗视觉。</strong>你具有60尺黑暗视觉。</p><p><strong>侏儒狡黠。</strong>你进行的智力、感知和魅力豁免检定具有优势。</p><p><strong>侏儒血系。</strong>你属于一支赋予你超自然能力的血系。无论你选择哪支血系，智力、感知或魅力是你以此特质施展法术时的施法属性（选择血系时选择该属性）：</p><p><strong>森林侏儒。</strong>你知晓次级幻象戏法。你也始终准备着动物交谈法术。你可以不消耗法术位地施展该法术，次数等于你的熟练加值，完成一次长休后你重获全部已消耗的使用次数。你也可以用你拥有的任何法术位施展该法术。</p>
     chat: ''
   source:
     revision: 2

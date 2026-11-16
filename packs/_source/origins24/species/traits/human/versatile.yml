@@ -10,13 +10,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You gain an
-      @UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.otAeQs0TLHYIBNuj]{Origin
-      feat} of your choice.
-      @UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{Skilled} is
-      recommended.</p><section id="secret-9E1yve6WHohyBage"
-      class="secret"><p><strong>Foundry Note</strong></p><p>You will be prompted
-      for your choice when you select this Species.</p></section>
+      <p>你获得一个自选的@UUID[Compendium.dnd5e.content24.JournalEntry.phbFeats00000000.JournalEntryPage.otAeQs0TLHYIBNuj]{起源专长}。推荐选择@UUID[Compendium.dnd5e.feats24.Item.phbftSkilled0000]{熟习}。</p><section
+      id="secret-9E1yve6WHohyBage"
+      class="secret"><p><strong>Foundry备注</strong></p><p>当你选择此物种时，系统会提示你做出选择。</p></section>
     chat: ''
   source:
     revision: 1

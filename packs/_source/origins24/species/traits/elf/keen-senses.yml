@@ -10,10 +10,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>You have proficiency in the Insight, Perception, or Survival
-      skill.</p><section id="secret-Tecxufp7EFDVqTEY"
-      class="secret"><p><strong>Foundry Note</strong></p><p>You will be prompted
-      for your choice after selecting this species.</p></section>
+      <p>你获得洞悉、察觉或求生技能之一的熟练。</p>
     chat: ''
   source:
     revision: 1

@@ -20,8 +20,8 @@
     "system.json": "源树 system.json + 发行期变换（hotReload=false / Free Rules 书目 / 中性 system 图）"
   },
   "fileCount": 1022,
-  "bytes": 48447885,
-  "setHash": "4a5b5deb9e09b091a79a3857e60edfaae1256b5efb04067663dfafd37b6a2e36",
+  "bytes": 48440372,
+  "setHash": "54f24cc930d644cd2fa9177a1a8aa659d005919c14ebb5a335ea9366664393b5",
   "files": [
     {
       "path": "COMPLIANCE.md",
@@ -3550,8 +3550,8 @@
     },
     {
       "path": "packs-json/origins24.json",
-      "size": 149338,
-      "sha256": "8830b1a0aa9f7f1cc8c9802c16428fafb5059e170fcbfc4db0cb333829e03ddf"
+      "size": 141825,
+      "sha256": "33f1a9ca08fd1342aed10233cfab57cdd096fc45ab65fa1f42de7415ab9bd6a3"
     },
     {
       "path": "packs-json/races.json",

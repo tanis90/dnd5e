@@ -10,12 +10,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You have Resistance to Poison damage. You also have Advantage on saving
-      throws you make to avoid or end the Poisoned condition.</p><section
-      id="secret-EDaMIgklKLK2il2D" class="secret"><p><strong>Foundry
-      Note</strong></p><p>You will automatically be granted Resistance to Poison
-      damage but not Advantage on saving throws to avoid/end the Poisoned
-      condition.</p></section>
+      <p>你拥有毒素伤害抗性。此外，你在为避免或结束中毒状态而进行的豁免检定上具有优势。</p><section id="secret-EDaMIgklKLK2il2D"
+      class="secret"><p><strong>Foundry
+      注记</strong></p><p>系统会自动授予你毒素伤害抗性，但不会授予避免或结束中毒状态的豁免检定优势。</p></section>
     chat: ''
   source:
     revision: 1

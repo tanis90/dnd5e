@@ -5,34 +5,8 @@ img: icons/creatures/unholy/demon-horned-winged-laughing.webp
 system:
   description:
     value: >-
-      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspTiefling000
-      inline classes="free-rules-embed"]</p><h3
-      data-anchor="infernal">Infernal</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspInfernalTie
-      inline classes="free-rules-embed"]</p><h3
-      data-anchor="tiefling-traits">Tiefling Traits</h3><p><strong>Creature
-      Type:</strong> Humanoid</p><p><strong>Size: </strong>Medium (about 4–7
-      feet tall) or Small (about 3–4 feet tall), chosen when you select this
-      species</p><p><strong>Speed:</strong> 30 feet</p><p>As a Tiefling, you
-      have the following special traits.</p><p><strong>Darkvision. </strong>You
-      have Darkvision with a range of 60 feet.</p><p><strong>Fiendish
-      Legacy.</strong> You are the recipient of a legacy that grants you
-      supernatural abilities.</p><p>When you reach character levels 3 and 5, you
-      learn a higher-level spell, as shown on the table. You always have that
-      spell prepared. You can cast it once without a spell slot, and you regain
-      the ability to cast it in that way when you finish a Long Rest. You can
-      also cast the spell using any spell slots you have of the appropriate
-      level. Intelligence, Wisdom, or Charisma is your spellcasting ability for
-      the spells you cast with this trait (choose the ability when you select
-      the legacy).</p><p><strong>Otherworldly Presence.</strong> You know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy}
-      cantrip. When you cast it with this trait, the spell uses the same
-      spellcasting ability you use for your Fiendish Legacy
-      trait.</p><table><caption>Fiendish Legacies</caption><thead><tr><td>Level
-      1</td><td>Level 3</td><td>Level 5</td></tr></thead><tbody><tr><td>You have
-      Resistance to Fire damage. You also know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{Fire Bolt}
-      cantrip.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{Hellish
-      Rebuke}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</td></tr></tbody></table>
+      <h3 data-anchor="infernal">炼狱</h3><h3
+      data-anchor="tiefling-traits">提夫林特质</h3><p><strong>生物类型：</strong>类人</p><p><strong>体型：</strong>中型（约4至7尺高）或小型（约3至4尺高），在你选择该物种时决定</p><p><strong>速度：</strong>30尺</p><p>作为提夫林，你拥有以下特殊特质。</p><p><strong>黑暗视觉。</strong>你拥有60尺黑暗视觉。</p><p><strong>邪魔遗赠。</strong>你接受了一份赋予你超自然能力的遗赠。</p><p>当你达到角色等级3级和5级时，你会习得一个更高环阶的法术，如表中所示。你始终准备着该法术。你可以不消耗法术位施展它一次，完成长休后你重获以此方式施展它的能力。你也可以使用任何具有相应环阶的法术位来施展该法术。智力、感知或魅力是你以此特质施展法术的施法属性（选择传承时选择该属性）。</p><p><strong>异界存在。</strong>你知晓@UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{奇术}戏法。当你以此特质施展它时，该法术使用你用于邪魔遗赠特质的同一施法属性。</p><table><caption>邪魔遗赠</caption><thead><tr><td>1级</td><td>3级</td><td>5级</td></tr></thead><tbody><tr><td>你具有火焰伤害的抗性。你还知晓@UUID[Compendium.dnd5e.spells24.Item.phbsplFireBolt00]{火焰箭}戏法。</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplHellishReb]{炼狱叱喝}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{黑暗术}</td></tr></tbody></table>
     chat: ''
   source:
     revision: 1

@@ -65,9 +65,7 @@ system:
     max: '1'
   description:
     value: >-
-      <p>When you are reduced to 0 Hit Points but not killed outright, you can
-      drop to 1 Hit Point instead. Once you use this trait, you can't do so
-      again until you finish a Long Rest.</p>
+      <p>当你生命值降至0但未被直接杀死时，你可以改为降至1点生命值。一旦你使用此特性，你必须完成一次长休才能再次这样做。</p>
     chat: ''
   source:
     revision: 1

@@ -9,7 +9,8 @@ system:
     recovery: []
     max: ''
   description:
-    value: <p>You gain Heroic Inspiration whenever you finish a Long Rest.</p>
+    value: >-
+      <p>每当你完成一次长休时，你获得英雄激励。</p>
     chat: ''
   source:
     revision: 1

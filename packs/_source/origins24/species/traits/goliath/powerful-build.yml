@@ -10,12 +10,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You have Advantage on any ability check you make to end the
-      &amp;Reference[Grappled apply=false] condition. You also count as one size
-      larger when determining your carrying capacity.</p><section class="secret"
-      id="secret-7qaTRjmRe4PD41G3"><p><strong>Foundry Note</strong></p><p>This
-      feature includes an Active Effect which automatically upgrades your size
-      when determining carrying capacity.</p></section>
+      <p>你为结束&amp;Reference[Grappled apply=false]状态而进行的任何属性检定具有优势。在确定你的负重能力时，你也视为大一级的体型。</p><section
+      class="secret"
+      id="secret-7qaTRjmRe4PD41G3"><p><strong>Foundry备注</strong></p><p>此特性包含一个主动效果，可在确定负重能力时自动提升你的体型。</p></section>
     chat: ''
   source:
     revision: 1

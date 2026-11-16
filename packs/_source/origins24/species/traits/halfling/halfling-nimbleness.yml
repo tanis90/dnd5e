@@ -10,8 +10,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>You can move through the space of any creature that is a size larger
-      than you, but you can't stop in the same space.</p>
+      <p>你可以穿过任何体型比你大的生物所占据的空间，但你不能停在同一空间中。</p>
     chat: ''
   source:
     revision: 1

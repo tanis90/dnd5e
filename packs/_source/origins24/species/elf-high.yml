@@ -5,39 +5,8 @@ img: icons/magic/nature/leaf-oak-wreath-glow-green.webp
 system:
   description:
     value: >-
-      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspElf00000000
-      inline classes="free-rules-embed"]</p><h3 data-anchor="high-elves">High
-      Elves</h3><p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspHighElf0000
-      inline classes="free-rules-embed"]</p><h3 data-anchor="elf-traits">Elf
-      Traits</h3><p><strong>Creature Type:</strong> Humanoid</p><p><strong>Size:
-      </strong>Medium (about 5–6 feet tall)</p><p><strong>Speed:</strong> 30
-      feet</p><p>As an Elf, you have these special
-      traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a
-      range of 60 feet.</p><p><strong>Elven Lineage. </strong>You are part of a
-      lineage that grants you supernatural abilities.</p><p>When you reach
-      character levels 3 and 5, you learn a higher-level spell, as shown on the
-      table. You always have that spell prepared. You can cast it once without a
-      spell slot, and you regain the ability to cast it in that way when you
-      finish a Long Rest. You can also cast the spell using any spell slots you
-      have of the appropriate level. Intelligence, Wisdom, or Charisma is your
-      spellcasting ability for the spells you cast with this trait (choose the
-      ability when you select the lineage).</p><table><caption>High Elf Lineage
-      Features</caption><thead><tr><td>Level 1</td><td>Level 3</td><td>Level
-      5</td></tr></thead><tbody><tr><td>You know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Prestidigitation}
-      cantrip. Whenever you finish a Long Rest, you can replace that cantrip
-      with a different cantrip from the
-      @UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{Wizard
-      spell
-      list}.</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{Detect
-      Magic}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{Misty
-      Step}</td></tr></tbody></table><p><strong>Fey Ancestry.</strong> You have
-      Advantage on saving throws you make to avoid or end the Charmed
-      condition.</p><p><strong>Keen Senses.</strong> You have proficiency in the
-      Insight, Perception, or Survival skill.</p><p><strong>Trance.</strong> You
-      don't need to sleep, and magic can't put you to sleep. You can finish a
-      Long Rest in 4 hours if you spend those hours in a trancelike meditation,
-      during which you retain consciousness.</p>
+      <h3 data-anchor="high-elves">高等精灵</h3><h3
+      data-anchor="elf-traits">精灵特质</h3><p><strong>生物类型：</strong>类人</p><p><strong>体型：</strong>中型（约5至6尺高）</p><p><strong>速度：</strong>30尺</p><p>作为精灵，你拥有以下特殊特质。</p><p><strong>黑暗视觉。</strong>你拥有60尺黑暗视觉。</p><p><strong>精灵血系。</strong>你属于一个赋予你超自然能力的血系。</p><p>当你达到角色等级3级和5级时，你会习得一个更高环阶的法术，如表中所示。你始终准备着该法术。你可以不消耗法术位施展它一次，完成长休后你重获以此方式施展它的能力。你也可以使用任何具有相应环阶的法术位来施展该法术。智力、感知或魅力是你以此特质施展法术的施法属性（选择血系时选择该属性）。</p><table><caption>高等精灵血系特性</caption><thead><tr><td>1级</td><td>3级</td><td>5级</td></tr></thead><tbody><tr><td>你知晓@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{魔法伎俩}戏法。每当你完成一次长休，你可以将该戏法替换为@UUID[Compendium.dnd5e.content24.JournalEntry.phbSpells0000000.JournalEntryPage.6AnqLUowgdsqMFvz]{法师法术列表}中的另一个戏法。</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplDetectMagi]{侦测魔法}</td><td>@UUID[Compendium.dnd5e.spells24.Item.phbsplMistyStep0]{迷踪步}</td></tr></tbody></table><p><strong>妖精血统。</strong>你为避免或结束魅惑状态而进行的豁免检定具有优势。</p><p><strong>敏锐感官。</strong>你获得洞悉、察觉或生存技能的熟练。</p><p><strong>冥想。</strong>你不需要睡眠，魔法也无法使你入睡。如果你以类似恍惚的冥想度过4小时并保持意识，你就能完成一次长休。</p>
     chat: ''
   source:
     revision: 1
