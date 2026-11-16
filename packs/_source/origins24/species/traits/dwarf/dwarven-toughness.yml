@@ -10,11 +10,8 @@ system:
     max: ''
   description:
     value: >-
-      <p>Your Hit Point maximum increases by 1, and it increases by 1 again
-      whenever you gain a level.</p><section class="secret"
-      id="secret-FK9DFLudP5EzEss9"><p><strong>Foundry Note</strong></p><p>The
-      Hit Point maximum increase is handled automatically each
-      level.</p></section>
+      <p>你的生命值上限增加1，并且每当你获得一个等级时再增加1。</p><section class="secret"
+      id="secret-FK9DFLudP5EzEss9"><p><strong>Foundry 注记</strong></p><p>生命值上限的提升会在每个等级自动处理。</p></section>
     chat: ''
   source:
     revision: 1

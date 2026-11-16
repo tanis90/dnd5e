@@ -10,9 +10,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>You don't need to sleep, and magic can't put you to sleep. You can
-      finish a Long Rest in 4 hours if you spend those hours in a trancelike
-      meditation, during which you retain consciousness.</p>
+      <p>你无需睡眠，魔法也无法使你入睡。若你将4小时用于类似出神的冥想，且在此期间保持意识，你就能完成一次长休。</p>
     chat: ''
   source:
     revision: 1

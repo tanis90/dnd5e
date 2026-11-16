@@ -10,8 +10,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>You have Advantage on Intelligence, Wisdom, and Charisma saving
-      throws.</p>
+      <p>你在智力、感知和魅力豁免检定上具有优势。</p>
     chat: ''
   source:
     revision: 2

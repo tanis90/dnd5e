@@ -10,8 +10,7 @@ system:
     max: ''
   description:
     value: >-
-      <p>You have Advantage on saving throws you make to avoid or end the
-      &amp;Reference[Charmed] condition.</p>
+      <p>你为避免或结束&amp;Reference[Charmed] 状态而进行的豁免检定具有优势。</p>
     chat: ''
   source:
     revision: 1

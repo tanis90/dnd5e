@@ -68,9 +68,7 @@ system:
     max: '@prof'
   description:
     value: >-
-      <p>When you take damage, you can take a Reaction to roll 1d12. Add your
-      Constitution modifier to the number rolled and reduce the damage by that
-      total.</p>
+      <p>当你受到伤害时，你可以用反应掷一枚d12。此次所受伤害减少掷骰结果+你的体质调整值点。</p>
     chat: ''
   source:
     revision: 1

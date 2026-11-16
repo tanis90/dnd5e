@@ -10,25 +10,11 @@ system:
     max: ''
   description:
     value: >-
-      <p>You are part of a lineage that grants you supernatural
-      abilities.</p><p>When you reach character levels 3 and 5, you learn a
-      higher-level spell, as shown on the table. You always have that spell
-      prepared. You can cast it once without a spell slot, and you regain the
-      ability to cast it in that way when you finish a Long Rest. You can also
-      cast the spell using any spell slots you have of the appropriate level.
-      Intelligence, Wisdom, or Charisma is your spellcasting ability for the
-      spells you cast with this trait (choose the ability when you select the
-      lineage).</p><h3>Drow Lineage Features</h3><table><thead><tr><td><p>Level
-      1</p></td><td><p>Level 3</p></td><td><p>Level
-      5</p></td></tr></thead><tbody><tr><td><p>The range of your Darkvision
-      increases to 120 feet. You also know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplDancingLig]{Dancing Lights}
-      cantrip.</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{Faerie
-      Fire}</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{Darkness}</p></td></tr></tbody></table><section
+      <p>你属于一个赋予你超自然能力的血系。</p><p>当你达到角色3级和5级时，你会习得一个更高环阶的法术，如表中所示。你始终准备着该法术。你可以不消耗法术位施展它一次，完成一次长休时你恢复以该方式施展它的能力。你也可以使用你拥有的任何适当环阶的法术位来施展该法术。智力、感知或魅力是你使用此特性施展法术时的施法属性（选择血系时选择该属性）。</p><h3>卓尔血系特性</h3><table><thead><tr><td><p>1级</p></td><td><p>3级</p></td><td><p>5级</p></td></tr></thead><tbody><tr><td><p>你的黑暗视觉范围增加至120尺。你还懂得
+      @UUID[Compendium.dnd5e.spells24.Item.phbsplDancingLig]{舞光术}
+      戏法。</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplFaerieFire]{妖火}</p></td><td><p>@UUID[Compendium.dnd5e.spells24.Item.phbsplDarkness00]{黑暗术}</p></td></tr></tbody></table><section
       class="secret" id="secret-9CEnkbCgcLTJ03JL"><p><strong>Foundry
-      Note</strong></p><p>You will automatically be granted the relevant
-      features and spells when you select the species and as you level
-      up.</p></section>
+      注记</strong></p><p>当你选择该种族以及提升等级时，系统会自动授予你相关特性和法术。</p></section>
     chat: ''
   source:
     revision: 1

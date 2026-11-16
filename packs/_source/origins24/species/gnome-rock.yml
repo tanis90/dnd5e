@@ -5,33 +5,9 @@ img: icons/environment/wilderness/terrain-rocks-brown.webp
 system:
   description:
     value: >-
-      <p>@Embed[Compendium.dnd5e.content24.JournalEntry.phbAppendixSpeci.JournalEntryPage.phbspGnome000000
-      inline classes="free-rules-embed"]</p><h3 data-anchor="gnome-traits">Gnome
-      Traits</h3><p><strong>Creature Type: </strong>Humanoid</p><p><strong>Size:
-      </strong>Small (about 3–4 feet tall)</p><p><strong>Speed:</strong> 30
-      feet</p><p>As a Gnome, you have these special
-      traits.</p><p><strong>Darkvision. </strong>You have Darkvision with a
-      range of 60 feet.</p><p><strong>Gnomish Cunning.</strong> You have
-      Advantage on Intelligence, Wisdom, and Charisma saving
-      throws.</p><p><strong>Gnomish Lineage.</strong> You are part of a lineage
-      that grants you supernatural abilities. Whichever lineage you choose,
-      Intelligence, Wisdom, or Charisma is your spellcasting ability for the
-      spells you cast with this trait (choose the ability when you select the
-      lineage):</p><p><strong>Rock Gnome.</strong> You know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending} and
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Prestidigitation}
-      cantrips. In addition, you can spend 10 minutes casting
-      <em>Prestidigitation</em> to create a Tiny clockwork device (AC 5, 1 HP),
-      such as a toy, fire starter, or music box. When you create the device, you
-      determine its function by choosing one effect from
-      <em>Prestidigitation</em>; the device produces that effect whenever you or
-      another creature takes a Bonus Action to activate it with a touch. If the
-      chosen effect has options within it, you choose one of those options for
-      the device when you create it. For example, if you choose the spell's
-      ignite-extinguish effect, you determine whether the device ignites or
-      extinguishes fire; the device doesn't do both. You can have three such
-      devices in existence at a time, and each falls apart 8 hours after its
-      creation or when you dismantle it with a touch as a Utilize action.</p>
+      <h3
+      data-anchor="gnome-traits">侏儒特质</h3><p><strong>生物类型：</strong>类人</p><p><strong>体型：</strong>小型（约3至4尺高）</p><p><strong>速度：</strong>30尺</p><p>作为侏儒，你拥有以下特殊特质。</p><p><strong>黑暗视觉。</strong>你拥有60尺黑暗视觉。</p><p><strong>侏儒狡黠。</strong>你在智力、感知和魅力豁免检定中具有优势。</p><p><strong>侏儒血系。</strong>你属于一个赋予你超自然能力的血系。无论你选择哪个血系，智力、感知或魅力是你以此特质施展法术的施法属性（选择血系时选择该属性）：</p><p><strong>岩石侏儒。</strong>你知晓@UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{修复术}和@UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{魔法伎俩}戏法。此外，你可以花费10分钟施展<em>魔法伎俩</em>，创造一个小型发条装置（AC
+      5，1点生命值），例如玩具、点火器或八音盒。当你创造该装置时，你从<em>魔法伎俩</em>中选择一个效应来决定其功能；每当你或其他生物以一个附赠动作触碰激活它时，该装置就会产生那个效应。如果所选效应内部包含多个选项，你在创造装置时为它选择其中一个选项。例如，如果你选择该法术的点燃/熄灭效应，你需要决定该装置是点燃还是熄灭火焰；该装置不会两者兼具。你同时最多可以拥有三个这样的装置，每个装置在创造8小时后或当你以一个利用动作触碰将其拆解时散架。</p>
     chat: ''
   source:
     revision: 1

@@ -2,15 +2,9 @@ name: Large Form
 system:
   description:
     value: >-
-      <p>Starting at character level 5, you can change your size to Large as a
-      Bonus Action if you're in a big enough space. This transformation lasts
-      for 10 minutes or until you end it (no action required). For that
-      duration, you have Advantage on Strength checks, and your Speed increases
-      by 10 feet. Once you use this trait, you can't use it again until you
-      finish a Long Rest.</p><section class="secret"
-      id="secret-MnS2QCGjgh6nXxEa"><p><strong>Foundry Note</strong></p><p>This
-      feature includes an Active Effect which automates the increase to your
-      Speed and the Advantage on Strength checks.</p></section>
+      <p>从角色等级5级起，只要身处足够大的空间，你就能以一个附赠动作将体型变为大型。此变形持续10分钟，或直到你将其结束（无需动作）。在此期间，你的力量检定具有优势，且你的速度增加10尺。一旦你使用此特性，你必须完成一次长休才能再次使用。</p><section
+      class="secret"
+      id="secret-MnS2QCGjgh6nXxEa"><p><strong>Foundry备注</strong></p><p>此特性包含一个主动效果，可自动处理速度提升与力量检定优势。</p></section>
     chat: ''
   source:
     custom: ''

@@ -10,10 +10,8 @@ system:
     max: ''
   description:
     value: >-
-      <p>You gain proficiency in one skill of your choice.</p><section
-      id="secret-lvP62g2xTxkz2VN3" class="secret"><p><strong>Foundry
-      Note</strong></p><p>You will be prompted for this choice when you select
-      this Species.</p></section>
+      <p>你获得一项自选技能的熟练项。</p><section id="secret-lvP62g2xTxkz2VN3"
+      class="secret"><p><strong>Foundry备注</strong></p><p>当你选择此物种时，系统会提示你做出此选择。</p></section>
     chat: ''
   source:
     revision: 1

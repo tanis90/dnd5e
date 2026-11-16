@@ -64,8 +64,7 @@ system:
     max: '@prof'
   description:
     value: >-
-      <p>As a Bonus Action, you magically teleport up to 30 feet to an
-      unoccupied space you can see.</p>
+      <p>以一个附赠动作，你可以用魔法传送至多30尺，前往一个你能看见的未占据空间。</p>
     chat: ''
   source:
     revision: 1

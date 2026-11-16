@@ -10,13 +10,9 @@ system:
     max: ''
   description:
     value: >-
-      <p>You know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{Thaumaturgy}
-      cantrip. When you cast it with this trait, the spell uses the same
-      spellcasting ability you use for your Fiendish legacy trait.</p><section
-      id="secret-i3PjM9HLuO2Xcae7" class="secret"><p><strong>Foundry
-      Note</strong></p><p>When you're granted this spell it will allow you to
-      choose your spellcasting ability.</p></section>
+      <p>你知晓@UUID[Compendium.dnd5e.spells24.Item.phbsplThaumaturg]{奇术}戏法。当你以此特性施放它时，该法术使用与你用于邪魔传承特性相同的施法属性。</p><section
+      id="secret-i3PjM9HLuO2Xcae7"
+      class="secret"><p><strong>Foundry备注</strong></p><p>当你被授予此法术时，你将可以选择你的施法属性。</p></section>
     chat: ''
   source:
     revision: 1

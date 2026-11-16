@@ -73,12 +73,7 @@ system:
     max: '@prof'
   description:
     value: >-
-      <p>When you hit a target with an attack roll and deal damage to it, you
-      can also deal 1d6 Cold damage to that target and reduce its Speed by 10
-      feet until the start of your next turn.</p><section
-      id="secret-jxuUuY0r33aiP0zL" class="secret"><p><strong>Foundry
-      Note</strong></p><p>This feature includes an Active Effect which can be
-      used for tracking and reduces their Speed by 10.</p></section>
+      <p>当你以攻击检定命中目标并对其造成伤害时，你可以对该目标额外造成1d6点寒冷伤害，并使其速度降低10尺，持续至你的下一回合开始。</p>
     chat: ''
   source:
     revision: 1

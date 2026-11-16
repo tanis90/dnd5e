@@ -155,7 +155,9 @@ system:
         type: recoverAll
     max: '@prof'
   description:
-    value: "<p>When you take the Attack action on your turn, you can replace one of your attacks with an exhalation of magical energy in either a 15-foot Cone or a 30-foot Line that is 5 feet wide (choose the shape each time). Each creature in that area must make a Dexterity saving throw (DC 8 plus your Constitution modifier and Proficiency Bonus). On a failed save, a creature takes 1d10 damage of the type determined by your Draconic Ancestry trait. On a successful save, a creature takes half as much damage. This damage increases by 1d10 when you reach character levels 5 (2d10), 11 (3d10), and 17\_(4d10).You can use this Breath Weapon a number of times equal to your Proficiency Bonus, and you regain all expended uses when you finish a Long Rest.</p><section class=\"secret\" id=\"secret-iuhfGfxgl8GeYWBf\"><p><strong>Foundry Note</strong></p><p>The <strong>Breath Weapon (Cone)</strong> and <strong>Breath Weapon (Line)</strong> activities are both configured for their template type and include each type of damage. The damage also scales as you level up.</p><p>You can select the damage type in the damage roll's dialog box. It will remember your damage choice afterwards. You can edit the activities to remove the other damage types to skip this.</p></section>"
+    value: >-
+      <p>每当你在自己回合内执行攻击动作时，你可以将其中一次攻击替换为释放魔法能量，覆盖15尺锥状区域或30尺长、5尺宽的线状区域（每次选择其形状）。区域内的每名生物必须进行一次敏捷豁免检定（DC
+      8+你的体质调整值+你的熟练加值）。豁免失败时，生物受到1d10点伤害，伤害类型由你的龙族血统特质决定。豁免成功时，伤害减半。当你达到5级（2d10）、11级（3d10）和17级（4d10）时，此伤害增加1d10。</p><p>你可以使用此吐息武器的次数等于你的熟练加值，完成一次长休后你重获全部已消耗的使用次数。</p>
     chat: ''
   source:
     revision: 1

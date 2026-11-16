@@ -10,21 +10,10 @@ system:
     max: ''
   description:
     value: >-
-      <p>You know the
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{Mending} and
-      @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{Prestidigitation}
-      cantrips. In addition, you can spend 10 minutes casting
-      <em>Prestidigitation</em> to create a Tiny clockwork device (AC 5, 1 HP),
-      such as a toy, fire starter, or music box. When you create the device, you
-      determine its function by choosing one effect from
-      <em>Prestidigitation</em>; the device produces that effect whenever you or
-      another creature takes a Bonus Action to activate it with a touch. If the
-      chosen effect has options within it, you choose one of those options for
-      the device when you create it. For example, if you choose the spell's
-      ignite-extinguish effect, you determine whether the device ignites or
-      extinguishes fire; the device doesn't do both. You can have three such
-      devices in existence at a time, and each falls apart 8 hours after its
-      creation or when you dismantle it with a touch as a Utilize action.</p>
+      <p>你懂得 @UUID[Compendium.dnd5e.spells24.Item.phbsplMending000]{修复术} 和
+      @UUID[Compendium.dnd5e.spells24.Item.phbsplPrestidigi]{魔法伎俩} 戏法。此外，你可以花费10分钟施展
+      <em>魔法伎俩</em>，创造一个微型发条装置（AC 5，1生命值），例如玩具、生火器或音乐盒。当你创造该装置时，你通过从 <em>魔法伎俩</em>
+      中选择一种效应来确定其功能；每当你或另一名生物以一个附赠动作触碰并激活它时，该装置便会产生该效应。如果所选效应包含多个选项，则你在创造装置时为该装置选择其中一个选项。例如，如果你选择该法术的点燃-熄灭效应，则你需确定该装置是点燃还是熄灭火焰；该装置不会同时具备两种功能。你同一时间最多可以拥有三个这样的装置，每个装置在其创造8小时后或当你以一个操作动作触碰将其拆解时散架。</p>
     chat: ''
   source:
     revision: 1

@@ -9,6 +9,7 @@ tools/owner-ci/zip.mjs        确定性 zip writer/reader（octopus-system-artif
 tools/owner-ci/build.mjs      generate / assemble / verify / payload
 tools/owner-ci/verify-payload.mjs   zip ↔ 清单 的成员与字节复核
 tools/owner-ci/feats24-epic-prereq.test.mjs  feats24 史诗恩惠前置等级 + 账本自洽回归
+tools/owner-ci/origins24-zh.test.mjs  origins24 SRD 中文正文 + 源 YAML/派生面一致性回归
 .github/workflows/owner-ci.yml     测试线 + 出件线（tag + D8 血统门）
 ```
 
@@ -19,7 +20,7 @@ npm ci --ignore-scripts --no-audit --no-fund
 node --test tools/owner-ci/feats24-epic-prereq.test.mjs   # 聚焦数据回归
 node tools/owner-ci/build.mjs assemble --out-dir /tmp/dnd5e-artifact
 # → system.zip / system-manifest.json / system-receipt.json
-# 期望 zip sha256 = 7530b58b79e442d7b68073b5f1f6da16ad660e1175d2fabf1c6577cc279bdf24
+# 期望 zip sha256 = 17ad6bb3d616efb697c53a47df255ebe439185b8eef6c38d34dc4bed6a529494
 ```
 
 `assemble` 自带全部门：清单逐文件 sha256 → 两次构建逐字节一致 → 从源树重建 zip

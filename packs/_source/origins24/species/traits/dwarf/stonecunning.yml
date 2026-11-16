@@ -2,16 +2,9 @@ name: Stonecunning
 system:
   description:
     value: >-
-      <p>As a Bonus Action, you gain &amp;Reference[Tremorsense] with a range of
-      60 feet for 10 minutes. You must be on a stone surface or touching a stone
-      surface to use this Tremorsense. The stone can be natural or worked. You
-      can use this Bonus Action a number of times equal to your Proficiency
-      Bonus, and you regain all expended uses when you finish a Long
-      Rest.</p><section class="secret"
-      id="secret-7BtT80083mC3Eavg"><p><strong>Foundry Note</strong></p><p>This
-      feature includes the limited uses and an Active Effect that grants you the
-      60 feet of Tremorsense. It does not automatically update your Token's
-      vision settings.</p></section>
+      <p>以一个附赠动作，你获得范围60尺的&amp;Reference[Tremorsense]（震颤感知），持续10分钟。你必须位于石质表面上或接触石质表面才能使用此震颤感知。石头可以是天然的或经过加工的。你可以使用此附赠动作的次数等于你的熟练加值，当你完成长休时，你恢复所有已消耗的使用次数。</p><section
+      class="secret"
+      id="secret-7BtT80083mC3Eavg"><p><strong>Foundry备注</strong></p><p>此特性包含有限使用次数及一个主动效果，赋予你60尺震颤感知。它不会自动更新你指示物的视野设置。</p></section>
     chat: ''
   source:
     custom: ''

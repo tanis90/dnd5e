@@ -72,8 +72,7 @@ system:
     max: '@prof'
   description:
     value: >-
-      <p>When you hit a target with an attack roll and deal damage to it, you
-      can also deal 1d10 Fire damage to that target.</p>
+      <p>当你以攻击检定命中目标并对其造成伤害时，你可以对该目标额外造成1d10点火焰伤害。</p>
     chat: ''
   source:
     revision: 1

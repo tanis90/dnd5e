@@ -2,16 +2,9 @@ name: Draconic Flight
 system:
   description:
     value: >-
-      <p>When you reach character level 5, you can channel draconic magic to
-      give yourself temporary flight. As a Bonus Action, you sprout spectral
-      wings on your back that last for 10 minutes or until you retract the wings
-      (no action required) or have the Incapacitated condition. During that
-      time, you have a Fly Speed equal to your Speed. Your wings appear to be
-      made of the same energy as your Breath Weapon. Once you use this trait,
-      you can't use it again until you finish a Long Rest.</p><section
+      <p>当你达到角色5级时，你可以引导龙族魔法，使自己获得临时飞行能力。以一个附赠动作，你背上长出幽灵般的翅膀，持续10分钟，或直到你收回翅膀（无需动作）或陷入失能状态。在此期间，你拥有等于你速度的飞行速度。你的翅膀看起来与你的吐息武器由相同能量构成。你一经使用此特性，就必须完成一次长休才能再次使用。</p><section
       id="secret-pP4PH5jVYBp1OEa3" class="secret"><p><strong>Foundry
-      Note</strong></p><p>This feature includes an Active Effect for tracking
-      but it does not automatically grant the Fly Speed.</p></section>
+      注记</strong></p><p>此特性包含一个用于追踪的主动效果，但不会自动授予飞行速度。</p></section>
     chat: ''
   source:
     custom: ''
