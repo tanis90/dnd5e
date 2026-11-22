@@ -20,8 +20,8 @@
     "system.json": "源树 system.json + 发行期变换（hotReload=false / Free Rules 书目 / 中性 system 图）"
   },
   "fileCount": 1022,
-  "bytes": 48440372,
-  "setHash": "54f24cc930d644cd2fa9177a1a8aa659d005919c14ebb5a335ea9366664393b5",
+  "bytes": 49699932,
+  "setHash": "73049e00dd14a6b1873bcbcb8cbad7cb93be3c4b877959538e34c8307bf421ab",
   "files": [
     {
       "path": "COMPLIANCE.md",
@@ -3455,8 +3455,8 @@
     },
     {
       "path": "packs-index/spells.json",
-      "size": 101421,
-      "sha256": "98c84d241d33ce0799350bc1ce6ef676d3c54232a2e9036292b4057ee73f9112"
+      "size": 163961,
+      "sha256": "8abe8ccf61ec5da7336baaa24e9ce1fc1965971fd613d78925dee1146171b84e"
     },
     {
       "path": "packs-index/spells24.json",
@@ -3565,8 +3565,8 @@
     },
     {
       "path": "packs-json/spells.json",
-      "size": 2169820,
-      "sha256": "7dc4b297cf01cdb51af185a510640ffef44521c5f6550eca538cfb4f3b2e9e17"
+      "size": 3366840,
+      "sha256": "3ace0dee183de55ba3902e8d4134caa902140d7b8e39fa5bc6125981f16fd115"
     },
     {
       "path": "packs-json/spells24.json",
