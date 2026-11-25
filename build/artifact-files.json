@@ -13,15 +13,10 @@
     "artifactHash": "cd745d66e5d7a5b907b9cc6dafd0b426e234d17fcc91ad73ed872768dd154de3",
     "generatedAt": "2026-11-10"
   },
-  "generated": {
-    "dnd5e.mjs": "rollup（package.json build:code，源树 dnd5e.mjs → 编译包）",
-    "dnd5e.css": "lessc（build:css，less/dnd5e.less --source-map）",
-    "templates.json": "templates/**/*.hbs → {相对路径: 模板文本}（tools/owner-ci/build.mjs）",
-    "system.json": "源树 system.json + 发行期变换（hotReload=false / Free Rules 书目 / 中性 system 图）"
-  },
+  "generated": "2026-11-25T05:12:57.028Z",
   "fileCount": 1022,
-  "bytes": 48440372,
-  "setHash": "54f24cc930d644cd2fa9177a1a8aa659d005919c14ebb5a335ea9366664393b5",
+  "bytes": 48674226,
+  "setHash": "1110f857b73d4d2fa5367fabedb5750105170c86a2179c13449dc3d673d7d914",
   "files": [
     {
       "path": "COMPLIANCE.md",
@@ -3281,12 +3276,12 @@
     {
       "path": "packs-folders/classes24.json",
       "size": 6202,
-      "sha256": "2f20af70bf0952e10d1e564b8dae7359d5d84b0d7aa3ea082855762465863931"
+      "sha256": "b923548974e0c4992a04812081d5288f3aa45e9d68fe065dfe645f9ca3db62c1"
     },
     {
       "path": "packs-folders/classfeatures.json",
       "size": 5062,
-      "sha256": "b31b14597ce216d09404a6074428bfe5b95cf1d4673a30a94902f5258ebc7c6a"
+      "sha256": "b7bb212bd517d1777930557f8491d385a4931c639d5e3af38719557c11a2815a"
     },
     {
       "path": "packs-folders/content24.json",
@@ -3365,8 +3360,8 @@
     },
     {
       "path": "packs-folders/tables24.json",
-      "size": 1153,
-      "sha256": "996bf3d873ca530f8402cbb233d85801081bb3d66efefaa0e162303373137a57"
+      "size": 1319,
+      "sha256": "38c08bbaf4d96727737b493d05783608457995dcbe3b1c672f647b78d61b39ed"
     },
     {
       "path": "packs-folders/tradegoods.json",
@@ -3375,8 +3370,8 @@
     },
     {
       "path": "packs-index/actors24.json",
-      "size": 108477,
-      "sha256": "40ca6b1b2340034ca41bf703482a3ec4dac03cbf948bd24e81d42277db7811df"
+      "size": 108601,
+      "sha256": "df99bf40bf65fe63e44d4a41f6d056f5ae6f064d83721c80d0bcf8505ae93f51"
     },
     {
       "path": "packs-index/backgrounds.json",
@@ -3386,12 +3381,12 @@
     {
       "path": "packs-index/classes.json",
       "size": 3279,
-      "sha256": "8bde135e7a8fd712865b071ee8c8a08a2f45199eb81af570bb025f8ab297b7ed"
+      "sha256": "a07390762c9a5ceb02437c13063a24318c838ff71d201dc3097619cb4b8f4658"
     },
     {
       "path": "packs-index/classes24.json",
-      "size": 94791,
-      "sha256": "e4ed02f82d575b2c175f0806b2f888eb827c93488a70b958a569c810cf2b69d6"
+      "size": 94804,
+      "sha256": "169e9c8485ed968f7a9cfe7d66e77b046caf4360596c3225fad6c14a88c32214"
     },
     {
       "path": "packs-index/classfeatures.json",
@@ -3401,7 +3396,7 @@
     {
       "path": "packs-index/content24.json",
       "size": 5392,
-      "sha256": "e89122d4b146931dd4f3d9a755c1f31fe93a2d29f7a936a4005f7b814520c0c2"
+      "sha256": "55558a3cec2b29e7917cdeebfa9b64a6934379e43cfd458ab6f8a0b1a641cc77"
     },
     {
       "path": "packs-index/equipment24.json",
@@ -3430,8 +3425,8 @@
     },
     {
       "path": "packs-index/monsterfeatures24.json",
-      "size": 111622,
-      "sha256": "db1285cb26e2cd80111d6574137c7fc39129e115b4351414a64daa8232873dd1"
+      "size": 115925,
+      "sha256": "8205f519a3e2d75b28dbfa894f1983f5461f610108bacc0d0ac8755faf2bdca8"
     },
     {
       "path": "packs-index/monsters.json",
@@ -3470,13 +3465,13 @@
     },
     {
       "path": "packs-index/tables.json",
-      "size": 4296,
-      "sha256": "076f26297148351f4c013f0dbea5070ede3d6041eccc41baa27de59c5efa675a"
+      "size": 4813,
+      "sha256": "d4620d3b7cffce546a850b20cd53e5fd89dccb7b45c3e5608b0f8eb08a8a844f"
     },
     {
       "path": "packs-index/tables24.json",
-      "size": 10189,
-      "sha256": "30794e9fc9db64f624d4d7ee8a536a691eaa3bd3891583993d1095d744b2d2d2"
+      "size": 11325,
+      "sha256": "2e2f0985b3d0d90101443421c569ee76edb65d2eef5a3c062f5a7e1cace75536"
     },
     {
       "path": "packs-index/tradegoods.json",
@@ -3485,8 +3480,8 @@
     },
     {
       "path": "packs-json/actors24.json",
-      "size": 9506214,
-      "sha256": "792e39f13f857c9811ccdef979bcdd2d6fd6acf76c1dba1d95d30a05c433391f"
+      "size": 9755014,
+      "sha256": "f04b8b78aeb33e0d5165f1cda34d1f01e29d7228418082ddbbfb67adb0fb13de"
     },
     {
       "path": "packs-json/backgrounds.json",
@@ -3495,98 +3490,98 @@
     },
     {
       "path": "packs-json/classes.json",
-      "size": 121374,
-      "sha256": "d366314613b47bf062e913e7f634faaf9b335a357107c14d97de1a214a526496"
+      "size": 121350,
+      "sha256": "c5d83a413d4b632df6527febd31ce5b77851c855d51214fb38bd27bf5d47a00c"
     },
     {
       "path": "packs-json/classes24.json",
-      "size": 1028526,
-      "sha256": "a3e826bf1fa13011d0523e1dfef278bebb28d42990636129294129b3cf2a16bb"
+      "size": 1006999,
+      "sha256": "5a350359a09d6ba10af5b03f6316a2cd856cf93a44832e3118d690683f30d9ce"
     },
     {
       "path": "packs-json/classfeatures.json",
-      "size": 416747,
-      "sha256": "511bf2cddb389b7d0283cf1b8bf99ee0edb74d95e81ca3fb7bb2854829e33659"
+      "size": 416712,
+      "sha256": "b7f4d533597cd3d3e5f26809776f28da4326deabcc91291868093b6a2af54d1f"
     },
     {
       "path": "packs-json/content24.json",
-      "size": 1531340,
-      "sha256": "aaa0f85f108135638ae22c7956aecedcb42298549c25f82c98cac19272718657"
+      "size": 1529958,
+      "sha256": "aaaa9c67574f7f9d22c6c0811bee0dbcff5797427919d0d65459053932e27e24"
     },
     {
       "path": "packs-json/equipment24.json",
-      "size": 2235292,
-      "sha256": "fb140c905a66f73d633f23b0cb269f9c89616e08c93596d50d4e4603d2957428"
+      "size": 2222445,
+      "sha256": "deb70ed4392bc8ddf8adeef55e9a38b46cc57bbe19f5be279890642869db5e30"
     },
     {
       "path": "packs-json/feats24.json",
-      "size": 35117,
-      "sha256": "776a3e9b7ffd4a87790661c539c4f7661d60dc4e6a830c7b5b841ed2cbfc55b8"
+      "size": 35073,
+      "sha256": "b7663f9f6eb3f14270e664269be9eea6290b5a93431eda2d4779648c178762bd"
     },
     {
       "path": "packs-json/heroes.json",
-      "size": 915484,
-      "sha256": "4ba8b204f66d8b271b1c6bd39d535e492fdaded249845db9ab2e5edd5724400e"
+      "size": 915138,
+      "sha256": "ae1e80e68436ba716f008a14e8cf3c512fce55672bca69e1a3d972cbe95b052a"
     },
     {
       "path": "packs-json/items.json",
-      "size": 2175256,
-      "sha256": "6ae9ee57b97051706bef5b1879c7f5e297e632809abb9a0ba62111eb80007b77"
+      "size": 2174816,
+      "sha256": "eb142d4892120924c92972c3492175ba61cff0e3ed5529aa129c836241be69db"
     },
     {
       "path": "packs-json/monsterfeatures.json",
-      "size": 419067,
-      "sha256": "da6d86cc31a459f65c8f849633fada48915165b6d73e80e04c435ca249e73672"
+      "size": 419022,
+      "sha256": "8130bc8cf55b8959705ac84c3367fc63195e4b668cbf0cf223b3feebac3c0abd"
     },
     {
       "path": "packs-json/monsterfeatures24.json",
-      "size": 944969,
-      "sha256": "f4d7ae4f212aa8d44ecfc97a06ddc1e1be969aba41593a5115e40fde81d2e3a9"
+      "size": 971491,
+      "sha256": "0bbb7761de93551efa0fa7b3159f56b3a6748f37e32a2ff84d3099c93dfe352b"
     },
     {
       "path": "packs-json/monsters.json",
-      "size": 5655977,
-      "sha256": "8a250df4a97c16c5b7e858484e24997bd7024607e5f46207d28aa3d566479326"
+      "size": 5655086,
+      "sha256": "c01b34dfa0ae4d3fca1b26963d8bec8ebeef37f96b3eaea415e4b67eb1bb4472"
     },
     {
       "path": "packs-json/origins24.json",
-      "size": 141825,
-      "sha256": "33f1a9ca08fd1342aed10233cfab57cdd096fc45ab65fa1f42de7415ab9bd6a3"
+      "size": 140900,
+      "sha256": "9dc1c3dc58c71b64a0d2be127d90f44d039c329e7d4cc1eb5bb25ae6043ea1b2"
     },
     {
       "path": "packs-json/races.json",
-      "size": 88759,
-      "sha256": "13ad0c39132bf5bc4973216b8f7555acfec8d5fe5577acfa2903905308a32c69"
+      "size": 88552,
+      "sha256": "a61907216e5da085ccea2c50d19d3aa2fb7b0d03d50336a81cfc516aec1787f1"
     },
     {
       "path": "packs-json/rules.json",
-      "size": 714652,
-      "sha256": "b320cf9db27d5297efc702a605076f0e69e84b06ec47cb234a5d97f4dd9e1916"
+      "size": 699561,
+      "sha256": "c05f74256057a9ea89d4b82f45db61f4626c450144814fbed743b1d5d3e3186d"
     },
     {
       "path": "packs-json/spells.json",
-      "size": 2169820,
-      "sha256": "7dc4b297cf01cdb51af185a510640ffef44521c5f6550eca538cfb4f3b2e9e17"
+      "size": 2167771,
+      "sha256": "95896c30a210d6b00409a6ccde93f5969a211b41c400ffea07b892ea5ba77274"
     },
     {
       "path": "packs-json/spells24.json",
-      "size": 1348453,
-      "sha256": "11c63f68c423fd0a4af6b42da360f1be333caf91e697c40738079447588889a6"
+      "size": 1344681,
+      "sha256": "f457e297e33abc23bb63a2ac2416043a2ecb30246c99406b82d498f89a9233ca"
     },
     {
       "path": "packs-json/subclasses.json",
-      "size": 36791,
-      "sha256": "b9f49b684038c28e8cd1eac544a3425944e4bcfb9cee4201144f056f54220dea"
+      "size": 36802,
+      "sha256": "aeab9e50e67150c69380079f03ff3cda95c4831b005dc5fe449ff3fbfdeea854"
     },
     {
       "path": "packs-json/tables.json",
-      "size": 136201,
-      "sha256": "689d6c0813a9443c48147c47cf2e436d9912bc978d7dd4cdd2bd80b1bf615b59"
+      "size": 140320,
+      "sha256": "433a79e13ca22fbdd71c41dceafab782e5e855b7a17168a704a8045e6c825c86"
     },
     {
       "path": "packs-json/tables24.json",
-      "size": 327881,
-      "sha256": "ca40ba24681d7c15a520cdb08c2c5fbd5a0045a8fcef135ed09a83f530b51821"
+      "size": 335649,
+      "sha256": "cb9b1799102addbb9267897887e69b28a81727d39f0d5da351c6de6f5becd579"
     },
     {
       "path": "packs-json/tradegoods.json",

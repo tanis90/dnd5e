@@ -35,15 +35,14 @@ system:
   activities:
     BSFYZ98EvNknWsaE:
       type: utility
-      name: Improve Fate
+      name: 改善命运
       _id: BSFYZ98EvNknWsaE
       activation:
         type: ''
         value: null
         override: false
         condition: >-
-          When you or another creature within 60 feet of you succeeds or fails a
-          D20 Test
+          当你或你 60 尺内的另一名生物 D20 检定成功或失败时
       consumption:
         scaling:
           allowed: false
