@@ -18,7 +18,8 @@ const TARGETS = [
     id: "phbBoonofFate000",
     source: "packs/_source/feats24/epic-boon-feats/boon-of-fate.yml",
     // 快照：sha256(JSON.stringify(entry 去掉 system.prerequisites.level))；仅当有意修改该条数据时更新。
-    unchangedDigest: "5550ab5b00854463f0fe76b82bb5afb653299394dd77fbfda6d2f22380be91c5"
+    // 2026-11-25 srd-zh：活动名「改善命运」与激活条件中文化（_source YAML 已同步），快照随之更新。
+    unchangedDigest: "615e57212b188f43935349cd291d54cad5660961e426bab62c262d18ade95e45"
   },
   {
     id: "phbBoonofIrresis",
